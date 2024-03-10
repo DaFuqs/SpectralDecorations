@@ -1,17 +1,14 @@
 package de.dafuqs.spectral_decorations;
 
 import de.dafuqs.spectrum.blocks.amphora.*;
-import de.dafuqs.spectrum.blocks.furniture.*;
+import de.dafuqs.spectrum.blocks.decoration.*;
 import de.dafuqs.spectrum.registries.*;
-import net.fabricmc.fabric.api.blockrenderlayer.v1.*;
 import net.fabricmc.fabric.api.item.v1.*;
 import net.minecraft.block.*;
-import net.minecraft.client.render.*;
 import net.minecraft.item.*;
 import net.minecraft.registry.*;
 import net.minecraft.sound.*;
 import net.minecraft.util.*;
-import net.minecraft.util.Pair;
 import oshi.util.tuples.*;
 
 import java.util.*;
