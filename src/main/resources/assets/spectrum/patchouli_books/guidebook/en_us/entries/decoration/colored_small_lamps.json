@@ -1,0 +1,55 @@
+{
+  "name": "Colored Lamps",
+  "icon": "spectral-decorations:cyan_lamp",
+  "advancement": "spectrum:collect_pigment",
+  "category": "spectrum:decoration_category",
+  "extra_recipe_mappings": {
+    "spectral-decorations:black_lamp": 0,
+    "spectral-decorations:blue_lamp": 0,
+    "spectral-decorations:brown_lamp": 0,
+    "spectral-decorations:cyan_lamp": 0,
+    "spectral-decorations:gray_lamp": 0,
+    "spectral-decorations:green_lamp": 0,
+    "spectral-decorations:light_blue_lamp": 0,
+    "spectral-decorations:light_gray_lamp": 0,
+    "spectral-decorations:lime_lamp": 0,
+    "spectral-decorations:magenta_lamp": 0,
+    "spectral-decorations:orange_lamp": 0,
+    "spectral-decorations:pink_lamp": 0,
+    "spectral-decorations:purple_lamp": 0,
+    "spectral-decorations:red_lamp": 0,
+    "spectral-decorations:white_lamp": 0,
+    "spectral-decorations:yellow_lamp": 0
+  },
+  "pages": [
+    {
+      "type": "spectrum:collection",
+      "title": "Colored Lamps",
+      "items": [
+        "spectral-decorations:black_lamp",
+        "spectral-decorations:blue_lamp",
+        "spectral-decorations:brown_lamp",
+        "spectral-decorations:cyan_lamp",
+        "spectral-decorations:gray_lamp",
+        "spectral-decorations:green_lamp",
+        "spectral-decorations:light_blue_lamp",
+        "spectral-decorations:light_gray_lamp",
+        "spectral-decorations:lime_lamp",
+        "spectral-decorations:magenta_lamp",
+        "spectral-decorations:orange_lamp",
+        "spectral-decorations:pink_lamp",
+        "spectral-decorations:purple_lamp",
+        "spectral-decorations:red_lamp",
+        "spectral-decorations:white_lamp",
+        "spectral-decorations:yellow_lamp"
+      ],
+      "text": ""
+    },
+    {
+      "type": "spectrum:pedestal_crafting",
+      "title": "Pedestal Recipe",
+      "recipe": "spectral-decorations:lamps/cyan",
+      "text": ""
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "spectral-decorations",
+  "version": "${version}",
+  "name": "Spectral Decorations",
+  "description": "A Spectrum addon adding more colorful, decorative blocks",
+  "authors": [
+    "brothers_trouble",
+    "DaFuqs"
+  ],
+  "contact": {
+    "repo": "https://github.com/DaFuqs/SpectralDecorations"
+  },
+  "license": "lGPL3",
+  "icon": "assets/spectral-decorations/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "de.dafuqs.spectral_decorations.client.SpectralDecorationsClient"
+    ],
+    "main": [
+      "de.dafuqs.spectral_decorations.SpectralDecorations"
+    ]
+  },
+  "mixins": [],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "minecraft": ">=${minecraft_version}",
+    "fabric": "*",
+    "spectrum": ">=1.7.0"
+  }
+}

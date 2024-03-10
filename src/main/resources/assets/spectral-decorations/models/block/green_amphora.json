@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "bottom": "spectral-decorations:block/colored_light/green_top",
+    "side": "spectral-decorations:block/colored_amphora/green",
+    "top": "spectral-decorations:block/colored_amphora/green_top"
+  }
+}

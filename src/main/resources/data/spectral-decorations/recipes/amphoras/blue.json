@@ -1,0 +1,36 @@
+{
+  "type": "spectrum:pedestal",
+  "group": "colored_amphoras",
+  "time": 240,
+  "tier": "basic",
+  "cyan": 0,
+  "magenta": 0,
+  "yellow": 0,
+  "white": 0,
+  "black": 0,
+  "experience": 1.0,
+  "pattern": [
+    "SAS",
+    "I I",
+    "PSP"
+  ],
+  "key": {
+    "S": {
+      "item": "spectrum:blue_slab"
+    },
+    "P": {
+      "item": "spectrum:blue_planks"
+    },
+    "I": {
+      "item": "minecraft:copper_ingot"
+    },
+    "A": {
+      "item": "minecraft:paper"
+    }
+  },
+  "result": {
+    "item": "spectral-decorations:blue_amphora",
+    "count": 1
+  },
+  "required_advancement": "spectrum:hidden/collect_pigment/collect_blue_pigment"
+}

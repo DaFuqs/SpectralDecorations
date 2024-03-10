@@ -1,0 +1,30 @@
+{
+  "type": "spectrum:pedestal",
+  "group": "colored_lights",
+  "time": 80,
+  "tier": "basic",
+  "cyan": 0,
+  "magenta": 0,
+  "yellow": 0,
+  "white": 0,
+  "black": 0,
+  "experience": 0.1,
+  "pattern": [
+    "PPP",
+    "XXX",
+    "PPP"
+  ],
+  "key": {
+    "P": {
+      "item": "spectrum:orange_planks"
+    },
+    "X": {
+      "item": "spectrum:shimmerstone_gem"
+    }
+  },
+  "result": {
+    "item": "spectral-decorations:orange_light",
+    "count": 2
+  },
+  "required_advancement": "spectrum:hidden/collect_pigment/collect_orange_pigment"
+}
