@@ -1,6 +1,6 @@
 package de.dafuqs.spectral_decorations;
 
-import de.dafuqs.spectrum.api.color.*;
+import de.dafuqs.spectrum.registries.color.*;
 import net.fabricmc.api.*;
 import net.fabricmc.fabric.api.event.lifecycle.v1.*;
 import net.minecraft.item.*;

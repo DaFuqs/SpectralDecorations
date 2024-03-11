@@ -23,7 +23,7 @@ dependencies {
     modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
     modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
-    modImplementation("de.dafuqs.spectrum:Spectrum:${project.spectrum_version}") {
+    modImplementation("com.github.DaFuqs:Spectrum:${project.spectrum_version}") {
         exclude(group: "com.unascribed:ears-api")
         exclude(group: "maven.modrinth:colorful-hearts")
     }
