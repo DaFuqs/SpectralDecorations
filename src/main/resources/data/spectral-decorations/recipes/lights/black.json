@@ -11,7 +11,7 @@
   "experience": 0.1,
   "pattern": [
     "PPP",
-    "XXX",
+    "BXB",
     "PPP"
   ],
   "key": {
@@ -19,12 +19,15 @@
       "item": "spectrum:black_planks"
     },
     "X": {
-      "item": "spectrum:shimmerstone_gem"
+      "item": "spectrum:shimmerstone_block"
+    },
+    "B": {
+      "item": "spectrum:black_block"
     }
   },
   "result": {
     "item": "spectral-decorations:black_light",
-    "count": 2
+    "count": 4
   },
   "required_advancement": "spectrum:hidden/collect_pigment/collect_black_pigment"
 }
