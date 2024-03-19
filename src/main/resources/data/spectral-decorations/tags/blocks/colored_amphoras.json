@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "spectral-decorations:black_amphora",
+    "spectral-decorations:blue_amphora",
+    "spectral-decorations:brown_amphora",
+    "spectral-decorations:cyan_amphora",
+    "spectral-decorations:gray_amphora",
+    "spectral-decorations:green_amphora",
+    "spectral-decorations:light_blue_amphora",
+    "spectral-decorations:light_gray_amphora",
+    "spectral-decorations:lime_amphora",
+    "spectral-decorations:magenta_amphora",
+    "spectral-decorations:orange_amphora",
+    "spectral-decorations:pink_amphora",
+    "spectral-decorations:purple_amphora",
+    "spectral-decorations:red_amphora",
+    "spectral-decorations:white_amphora",
+    "spectral-decorations:yellow_amphora"
+  ]
+}
