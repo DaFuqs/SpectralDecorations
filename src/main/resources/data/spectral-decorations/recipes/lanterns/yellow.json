@@ -10,16 +10,16 @@
   "black": 0,
   "experience": 0.1,
   "pattern": [
-    "SSS",
+    "III",
     "XXX",
-    "III"
+    "SSS"
   ],
   "key": {
     "S": {
       "item": "spectrum:yellow_planks"
     },
     "I": {
-      "item": "minecraft:copper_ingot"
+      "item": "spectrum:yellow_pigment"
     },
     "X": {
       "item": "spectrum:shimmerstone_gem"
