@@ -1,7 +1,7 @@
 {
   "name": "Colored Amphoras",
   "icon": "spectral-decorations:yellow_amphora",
-  "advancement": "spectrum:collect_pigment",
+  "advancement": "spectrum:lategame/collect_noxwood",
   "category": "spectrum:decoration_category",
   "extra_recipe_mappings": {
     "spectral-decorations:black_amphora": 0,
