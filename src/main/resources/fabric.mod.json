@@ -9,7 +9,9 @@
     "DaFuqs"
   ],
   "contact": {
-    "repo": "https://github.com/DaFuqs/SpectralDecorations"
+    "homepage": "https://github.com/DaFuqs/",
+    "sources": "https://github.com/DaFuqs/SpectralDecorations",
+    "issues": "https://github.com/DaFuqs/SpectralDecorations/issues"
   },
   "license": "lGPL3",
   "icon": "assets/spectral-decorations/icon.png",
@@ -27,6 +29,6 @@
     "fabricloader": ">=${loader_version}",
     "minecraft": ">=${minecraft_version}",
     "fabric": "*",
-    "spectrum": ">=1.7.0"
+    "spectrum": ">=1.7.6"
   }
 }
