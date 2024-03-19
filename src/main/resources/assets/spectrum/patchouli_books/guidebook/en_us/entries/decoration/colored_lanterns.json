@@ -43,13 +43,13 @@
         "spectral-decorations:white_lantern",
         "spectral-decorations:yellow_lantern"
       ],
-      "text": ""
+      "text": "Small decorative lanterns. Can be placed on the floor or ceiling, straight or crosswise.$(br)Kneel when placing for an alternative shape."
     },
     {
       "type": "spectrum:pedestal_crafting",
       "title": "Pedestal Recipe",
       "recipe": "spectral-decorations:lanterns/cyan",
-      "text": ""
+      "text": "Comes in all 16 colors."
     }
   ]
 }

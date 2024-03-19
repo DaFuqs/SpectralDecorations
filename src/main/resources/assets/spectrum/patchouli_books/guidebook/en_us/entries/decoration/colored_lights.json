@@ -43,13 +43,13 @@
         "spectral-decorations:white_light",
         "spectral-decorations:yellow_light"
       ],
-      "text": ""
+      "text": "Decorative blocks that bring colour and light to your designs.$(br)"
     },
     {
       "type": "spectrum:pedestal_crafting",
       "title": "Pedestal Recipe",
       "recipe": "spectral-decorations:lights/magenta",
-      "text": ""
+      "text": "Comes in all 16 colors."
     }
   ]
 }
