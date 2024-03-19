@@ -2,8 +2,10 @@ package de.dafuqs.spectral_decorations;
 
 import de.dafuqs.spectrum.blocks.amphora.*;
 import de.dafuqs.spectrum.blocks.furniture.*;
+import de.dafuqs.spectrum.blocks.conditional.colored_tree.*;
 import de.dafuqs.spectrum.registries.*;
 import net.fabricmc.fabric.api.item.v1.*;
+import net.fabricmc.fabric.api.registry.*;
 import net.minecraft.block.*;
 import net.minecraft.item.*;
 import net.minecraft.registry.*;
@@ -26,23 +28,27 @@ public class SpectralDecorationsBlocks {
 	public static void register() {
 		for(DyeColor color : DyeColor.values()) {
 			String colorString = color.asString();
-			Item i = registerBlockWithItem(colorString + "_amphora", new AmphoraBlock(AbstractBlock.Settings.copy(SpectrumBlocks.SLATE_NOXWOOD_AMPHORA).mapColor(color).sounds(BlockSoundGroup.WOOD)), SpectrumItems.IS.of(), Type.AMPHORA, color);
+			Item i = registerBlockWithItem(colorString + "_amphora", new AmphoraBlock(AbstractBlock.Settings.copy(SpectrumBlocks.SLATE_NOXWOOD_AMPHORA).mapColor(color).sounds(BlockSoundGroup.WOOD)), SpectrumItems.IS.of(), Type.AMPHORA, color, 0, 0);
 			if(item == null) {
 				item = i;
 			}
-			registerBlockWithItem(colorString + "_lantern", new FlexLanternBlock(AbstractBlock.Settings.copy(SpectrumBlocks.SLATE_NOXWOOD_LAMP).mapColor(color).sounds(BlockSoundGroup.WOOD)), SpectrumItems.IS.of(), Type.LANTERN, color);
-			registerBlockWithItem(colorString + "_light", new PillarBlock(AbstractBlock.Settings.copy(SpectrumBlocks.SLATE_NOXWOOD_LIGHT).mapColor(color)), SpectrumItems.IS.of(), Type.LIGHT, color);
+			registerBlockWithItem(colorString + "_lantern", new FlexLanternBlock(AbstractBlock.Settings.copy(SpectrumBlocks.SLATE_NOXWOOD_LAMP).mapColor(color).sounds(BlockSoundGroup.WOOD)), SpectrumItems.IS.of(), Type.LANTERN, color, 0, 0);
+			registerBlockWithItem(colorString + "_light", new PillarBlock(AbstractBlock.Settings.copy(SpectrumBlocks.SLATE_NOXWOOD_LIGHT).mapColor(color).sounds(BlockSoundGroup.WOOD)), SpectrumItems.IS.of(), Type.LIGHT, color, 5, 20);
 		}
 	}
 	
 	public static final List<Triplet<Item, SpectralDecorationsBlocks.Type, DyeColor>> items = new ArrayList<>();
 	
-	public static Item registerBlockWithItem(String name, Block block, FabricItemSettings itemSettings, Type type, DyeColor dyeColor) {
+	public static Item registerBlockWithItem(String name, Block block, FabricItemSettings itemSettings, Type type, DyeColor dyeColor, int fireBurn, int fireSpread) {
 		Registry.register(Registries.BLOCK, SpectralDecorations.locate(name), block);
 		BlockItem blockItem = new BlockItem(block, itemSettings);
 		Registry.register(Registries.ITEM, SpectralDecorations.locate(name), blockItem);
 		
 		items.add(new Triplet<>(blockItem, type, dyeColor));
+		
+		if(fireBurn > 0 && fireSpread > 0) {
+			FlammableBlockRegistry.getDefaultInstance().add(ColoredLogBlock.byColor(dyeColor), fireBurn, fireSpread);
+		}
 		
 		return blockItem;
 	}
