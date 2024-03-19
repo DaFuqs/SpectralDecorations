@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "spectral-decorations:black_lantern",
+    "spectral-decorations:blue_lantern",
+    "spectral-decorations:brown_lantern",
+    "spectral-decorations:cyan_lantern",
+    "spectral-decorations:gray_lantern",
+    "spectral-decorations:green_lantern",
+    "spectral-decorations:light_blue_lantern",
+    "spectral-decorations:light_gray_lantern",
+    "spectral-decorations:lime_lantern",
+    "spectral-decorations:magenta_lantern",
+    "spectral-decorations:orange_lantern",
+    "spectral-decorations:pink_lantern",
+    "spectral-decorations:purple_lantern",
+    "spectral-decorations:red_lantern",
+    "spectral-decorations:white_lantern",
+    "spectral-decorations:yellow_lantern"
+  ]
+}

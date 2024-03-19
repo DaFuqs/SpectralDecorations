@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "#spectral-decorations:colored_amphoras",
+    "#spectral-decorations:colored_lanterns",
+    "#spectral-decorations:colored_lights"
+  ]
+}
