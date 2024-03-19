@@ -1,0 +1,28 @@
+{
+	"variants": {
+		"hanging=false,diagonal=false,alt=false": {
+			"model": "spectral-decorations:block/red_lantern"
+		},
+		"hanging=false,diagonal=false,alt=true": {
+			"model": "spectral-decorations:block/red_lantern_alt"
+		},
+		"hanging=false,diagonal=true,alt=false": {
+			"model": "spectral-decorations:block/red_lantern_diagonal"
+		},
+		"hanging=false,diagonal=true,alt=true": {
+			"model": "spectral-decorations:block/red_lantern_diagonal_alt"
+		},
+		"hanging=true,diagonal=false,alt=false": {
+			"model": "spectral-decorations:block/red_lantern_hanging"
+		},
+		"hanging=true,diagonal=false,alt=true": {
+			"model": "spectral-decorations:block/red_lantern_hanging_alt"
+		},
+		"hanging=true,diagonal=true,alt=false": {
+			"model": "spectral-decorations:block/red_lantern_hanging_diagonal"
+		},
+		"hanging=true,diagonal=true,alt=true": {
+			"model": "spectral-decorations:block/red_lantern_hanging_diagonal_alt"
+		}
+	}
+}

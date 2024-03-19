@@ -16,7 +16,7 @@ public class SpectralDecorationsClient implements ClientModInitializer {
 		for (Triplet<Item, SpectralDecorationsBlocks.Type, DyeColor> entry : SpectralDecorationsBlocks.items) {
 			Block block = ((BlockItem) entry.getA()).getBlock();
 			switch (entry.getB()) {
-				case LAMP -> {
+				case LANTERN -> {
 					BlockRenderLayerMap.INSTANCE.putBlock(block, RenderLayer.getCutout());
 				}
 				case LIGHT -> {

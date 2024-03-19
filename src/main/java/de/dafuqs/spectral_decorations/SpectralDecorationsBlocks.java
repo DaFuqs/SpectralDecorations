@@ -17,7 +17,7 @@ public class SpectralDecorationsBlocks {
 	
 	public enum Type {
 		AMPHORA,
-		LAMP,
+		LANTERN,
 		LIGHT
 	}
 	
@@ -30,7 +30,7 @@ public class SpectralDecorationsBlocks {
 			if(item == null) {
 				item = i;
 			}
-			registerBlockWithItem(colorString + "_lamp", new FlexLanternBlock(AbstractBlock.Settings.copy(SpectrumBlocks.SLATE_NOXWOOD_LAMP).mapColor(color).sounds(BlockSoundGroup.WOOD)), SpectrumItems.IS.of(), Type.LAMP, color);
+			registerBlockWithItem(colorString + "_lantern", new FlexLanternBlock(AbstractBlock.Settings.copy(SpectrumBlocks.SLATE_NOXWOOD_LAMP).mapColor(color).sounds(BlockSoundGroup.WOOD)), SpectrumItems.IS.of(), Type.LANTERN, color);
 			registerBlockWithItem(colorString + "_light", new PillarBlock(AbstractBlock.Settings.copy(SpectrumBlocks.SLATE_NOXWOOD_LIGHT).mapColor(color)), SpectrumItems.IS.of(), Type.LIGHT, color);
 		}
 	}
