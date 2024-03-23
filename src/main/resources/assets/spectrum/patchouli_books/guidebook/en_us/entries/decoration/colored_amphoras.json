@@ -43,13 +43,13 @@
         "spectral-decorations:white_amphora",
         "spectral-decorations:yellow_amphora"
       ],
-      "text": "Almost like a barrel, but much more spacious: their capacity matches a double chest. More useful, too! Time to add color coding to your storage room?"
+      "text": "Noxwood is cool and all, but why not make Amphoras also out of the colorful trees you have come across throughout your journey?"
     },
     {
       "type": "spectrum:pedestal_crafting",
       "title": "Pedestal Recipe",
       "recipe": "spectral-decorations:amphoras/yellow",
-      "text": "Comes in all 16 colors."
+      "text": "Almost like a barrel, but much more spacious: their capacity matches a double chest.$(br)Comes in all 16 colors. Time to add color coding to your storage room?"
     }
   ]
 }
