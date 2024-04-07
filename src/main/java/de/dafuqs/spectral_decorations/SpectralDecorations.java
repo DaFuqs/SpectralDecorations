@@ -15,7 +15,6 @@ public class SpectralDecorations implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		SpectralDecorationsBlocks.register();
-		SpectralDecorationsItemGroups.register();
 		
 		ServerLifecycleEvents.SERVER_STARTED.register(new ServerLifecycleEvents.ServerStarted() {
 			@Override
