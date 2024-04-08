@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "spectral-decorations:block/red_beam",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "spectral-decorations:block/red_beam"
+    },
+    "axis=z": {
+      "model": "spectral-decorations:block/red_beam",
+      "x": 90
+    }
+  }
+}

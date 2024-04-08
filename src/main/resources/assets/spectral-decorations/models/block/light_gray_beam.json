@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "spectral-decorations:block/colored_beam/light_gray_beam_top",
+    "side": "spectral-decorations:block/colored_beam/light_gray_beam"
+  }
+}

@@ -4,6 +4,7 @@
   "recipeGroup.spectral-decorations.colored_amphoras": "Colored Amphoras",
   "recipeGroup.spectral-decorations.colored_lanterns": "Colored Lanterns",
   "recipeGroup.spectral-decorations.colored_lights": "Colored Lights",
+  "recipeGroup.spectral-decorations.colored_beams": "Colored Beams",
 
   "block.spectral-decorations.black_amphora": "Black Amphora",
   "block.spectral-decorations.black_lantern": "Black Lantern",
@@ -52,5 +53,22 @@
   "block.spectral-decorations.white_light": "White Light",
   "block.spectral-decorations.yellow_amphora": "Yellow Amphora",
   "block.spectral-decorations.yellow_lantern": "Yellow Lantern",
-  "block.spectral-decorations.yellow_light": "Yellow Light"
+  "block.spectral-decorations.yellow_light": "Yellow Light",
+
+  "block.spectral-decorations.black_beam": "Black Beam",
+  "block.spectral-decorations.blue_beam": "Blue Beam",
+  "block.spectral-decorations.brown_beam": "Brown Beam",
+  "block.spectral-decorations.cyan_beam": "Cyan Beam",
+  "block.spectral-decorations.gray_beam": "Gray Beam",
+  "block.spectral-decorations.green_beam": "Green Beam",
+  "block.spectral-decorations.light_blue_beam": "Light Blue Beam",
+  "block.spectral-decorations.light_gray_beam": "Light Gray Beam",
+  "block.spectral-decorations.lime_beam": "Lime Beam",
+  "block.spectral-decorations.magenta_beam": "Magenta Beam",
+  "block.spectral-decorations.orange_beam": "Orange Beam",
+  "block.spectral-decorations.pink_beam": "Pink Beam",
+  "block.spectral-decorations.purple_beam": "Purple Beam",
+  "block.spectral-decorations.red_beam": "Red Beam",
+  "block.spectral-decorations.white_beam": "White Beam",
+  "block.spectral-decorations.yellow_beam": "Yellow Beam"
 }
