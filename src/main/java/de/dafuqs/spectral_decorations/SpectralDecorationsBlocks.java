@@ -17,24 +17,25 @@ import java.util.*;
 
 public class SpectralDecorationsBlocks {
 	
+	public static void register() {
+		for(DyeColor color : DyeColor.values()) {
+			if (color.getId() > 15) {
+				break;
+			}
+			
+			String colorString = color.asString();
+			registerBlockWithItem(colorString + "_beam", new PillarBlock(AbstractBlock.Settings.create().mapColor(color).sounds(BlockSoundGroup.WOOD)), new FabricItemSettings(), Type.BEAM, color, 5, 20);
+			registerBlockWithItem(colorString + "_amphora", new AmphoraBlock(AbstractBlock.Settings.create().mapColor(color).sounds(BlockSoundGroup.WOOD)), new FabricItemSettings(), Type.AMPHORA, color, 0, 0);
+			registerBlockWithItem(colorString + "_lantern", new FlexLanternBlock(AbstractBlock.Settings.create().mapColor(color).sounds(BlockSoundGroup.WOOD).luminance(state -> 13)), new FabricItemSettings(), Type.LANTERN, color, 0, 0);
+			registerBlockWithItem(colorString + "_light", new PillarBlock(AbstractBlock.Settings.create().mapColor(color).sounds(BlockSoundGroup.WOOD).luminance(state -> 15)), new FabricItemSettings(), Type.LIGHT, color, 5, 20);
+		}
+	}
+
 	public enum Type {
+		BEAM,
 		AMPHORA,
 		LANTERN,
 		LIGHT
-	}
-	
-	public static Item item;
-	
-	public static void register() {
-		for(DyeColor color : DyeColor.values()) {
-			String colorString = color.asString();
-			Item i = registerBlockWithItem(colorString + "_amphora", new AmphoraBlock(AbstractBlock.Settings.copy(SpectrumBlocks.SLATE_NOXWOOD_AMPHORA).mapColor(color).sounds(BlockSoundGroup.WOOD)), SpectrumItems.IS.of(), Type.AMPHORA, color, 0, 0);
-			if(item == null) {
-				item = i;
-			}
-			registerBlockWithItem(colorString + "_lantern", new FlexLanternBlock(AbstractBlock.Settings.copy(SpectrumBlocks.SLATE_NOXWOOD_LAMP).mapColor(color).sounds(BlockSoundGroup.WOOD)), SpectrumItems.IS.of(), Type.LANTERN, color, 0, 0);
-			registerBlockWithItem(colorString + "_light", new PillarBlock(AbstractBlock.Settings.copy(SpectrumBlocks.SLATE_NOXWOOD_LIGHT).mapColor(color).sounds(BlockSoundGroup.WOOD)), SpectrumItems.IS.of(), Type.LIGHT, color, 5, 20);
-		}
 	}
 	
 	public static final List<Triplet<Item, SpectralDecorationsBlocks.Type, DyeColor>> items = new ArrayList<>();

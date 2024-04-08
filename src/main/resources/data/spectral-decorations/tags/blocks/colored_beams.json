@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "spectral-decorations:black_beam",
+    "spectral-decorations:blue_beam",
+    "spectral-decorations:brown_beam",
+    "spectral-decorations:cyan_beam",
+    "spectral-decorations:gray_beam",
+    "spectral-decorations:green_beam",
+    "spectral-decorations:light_blue_beam",
+    "spectral-decorations:light_gray_beam",
+    "spectral-decorations:lime_beam",
+    "spectral-decorations:magenta_beam",
+    "spectral-decorations:orange_beam",
+    "spectral-decorations:pink_beam",
+    "spectral-decorations:purple_beam",
+    "spectral-decorations:red_beam",
+    "spectral-decorations:white_beam",
+    "spectral-decorations:yellow_beam"
+  ]
+}
