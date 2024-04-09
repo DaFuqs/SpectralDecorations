@@ -16,12 +16,9 @@ public class SpectralDecorations implements ModInitializer {
 	public void onInitialize() {
 		SpectralDecorationsBlocks.register();
 		
-		ServerLifecycleEvents.SERVER_STARTED.register(new ServerLifecycleEvents.ServerStarted() {
-			@Override
-			public void onServerStarted(MinecraftServer server) {
-				for(Triplet<Item, SpectralDecorationsBlocks.Type, DyeColor> entry : SpectralDecorationsBlocks.items) {
-					ItemColors.ITEM_COLORS.registerColorMapping(entry.getA(), entry.getC());
-				}
+		ServerLifecycleEvents.SERVER_STARTED.register(server -> {
+			for (Triplet<Item, SpectralDecorationsBlocks.Type, DyeColor> entry : SpectralDecorationsBlocks.items) {
+				ItemColors.ITEM_COLORS.registerColorMapping(entry.getA(), entry.getC());
 			}
 		});
 	}

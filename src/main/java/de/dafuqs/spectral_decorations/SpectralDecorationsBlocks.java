@@ -24,10 +24,10 @@ public class SpectralDecorationsBlocks {
 			}
 			
 			String colorString = color.asString();
-			registerBlockWithItem(colorString + "_beam", new PillarBlock(AbstractBlock.Settings.of(Material.WOOD, color).sounds(BlockSoundGroup.WOOD)), new FabricItemSettings(), Type.BEAM, color, 5, 20);
-			Item i = registerBlockWithItem(colorString + "_amphora", new AmphoraBlock(AbstractBlock.Settings.of(Material.WOOD, color).sounds(BlockSoundGroup.WOOD)), new FabricItemSettings(), Type.AMPHORA, color, 0, 0);
-			registerBlockWithItem(colorString + "_lantern", new FlexLanternBlock(AbstractBlock.Settings.of(Material.WOOD, color).sounds(BlockSoundGroup.WOOD).luminance(state -> 13)), new FabricItemSettings(), Type.LANTERN, color, 0, 0);
-			registerBlockWithItem(colorString + "_light", new PillarBlock(AbstractBlock.Settings.of(Material.WOOD, color).sounds(BlockSoundGroup.WOOD).luminance(state -> 15)), new FabricItemSettings(), Type.LIGHT, color, 5, 20);
+			registerBlockWithItem(colorString + "_beam", new PillarBlock(AbstractBlock.Settings.of(Material.WOOD, color).sounds(BlockSoundGroup.WOOD)), new FabricItemSettings().group(SpectralDecorationsItemGroups.ITEM_GROUP), Type.BEAM, color, 5, 20);
+			Item i = registerBlockWithItem(colorString + "_amphora", new AmphoraBlock(AbstractBlock.Settings.of(Material.WOOD, color).sounds(BlockSoundGroup.WOOD)), new FabricItemSettings().group(SpectralDecorationsItemGroups.ITEM_GROUP), Type.AMPHORA, color, 0, 0);
+			registerBlockWithItem(colorString + "_lantern", new FlexLanternBlock(AbstractBlock.Settings.of(Material.WOOD, color).sounds(BlockSoundGroup.WOOD).luminance(state -> 13)), new FabricItemSettings().group(SpectralDecorationsItemGroups.ITEM_GROUP), Type.LANTERN, color, 0, 0);
+			registerBlockWithItem(colorString + "_light", new PillarBlock(AbstractBlock.Settings.of(Material.WOOD, color).sounds(BlockSoundGroup.WOOD).luminance(state -> 15)), new FabricItemSettings().group(SpectralDecorationsItemGroups.ITEM_GROUP), Type.LIGHT, color, 5, 20);
 		}
 	}
 	
