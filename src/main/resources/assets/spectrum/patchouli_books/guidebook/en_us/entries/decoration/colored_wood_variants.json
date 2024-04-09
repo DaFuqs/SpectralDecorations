@@ -1,0 +1,55 @@
+{
+  "name": "Colored Wood Variants",
+  "icon": "spectral-decorations:orange_beam",
+  "advancement": "spectrum:collect_pigment",
+  "category": "spectrum:decoration_category",
+  "extra_recipe_mappings": {
+    "spectral-decorations:black_beam": 0,
+    "spectral-decorations:blue_beam": 0,
+    "spectral-decorations:brown_beam": 0,
+    "spectral-decorations:cyan_beam": 0,
+    "spectral-decorations:gray_beam": 0,
+    "spectral-decorations:green_beam": 0,
+    "spectral-decorations:light_blue_beam": 0,
+    "spectral-decorations:light_gray_beam": 0,
+    "spectral-decorations:lime_beam": 0,
+    "spectral-decorations:magenta_beam": 0,
+    "spectral-decorations:orange_beam": 0,
+    "spectral-decorations:pink_beam": 0,
+    "spectral-decorations:purple_beam": 0,
+    "spectral-decorations:red_beam": 0,
+    "spectral-decorations:white_beam": 0,
+    "spectral-decorations:yellow_beam": 0
+  },
+  "pages": [
+    {
+      "type": "spectrum:collection",
+      "title": "Colored Beams",
+      "items": [
+        "spectral-decorations:black_beam",
+        "spectral-decorations:blue_beam",
+        "spectral-decorations:brown_beam",
+        "spectral-decorations:cyan_beam",
+        "spectral-decorations:gray_beam",
+        "spectral-decorations:green_beam",
+        "spectral-decorations:light_blue_beam",
+        "spectral-decorations:light_gray_beam",
+        "spectral-decorations:lime_beam",
+        "spectral-decorations:magenta_beam",
+        "spectral-decorations:orange_beam",
+        "spectral-decorations:pink_beam",
+        "spectral-decorations:purple_beam",
+        "spectral-decorations:red_beam",
+        "spectral-decorations:white_beam",
+        "spectral-decorations:yellow_beam"
+      ],
+      "text": "The bright colours of the wood spark a lot of creativity! A wide variety of decorative shapes and patterns some to mind that you can immediately use as enchantment to your buildings."
+    },
+    {
+      "type": "spectrum:pedestal_crafting",
+      "title": "Colored Beams",
+      "recipe": "spectral-decorations:beams/orange",
+      "text": "Come in all 16 colors."
+    }
+  ]
+}
