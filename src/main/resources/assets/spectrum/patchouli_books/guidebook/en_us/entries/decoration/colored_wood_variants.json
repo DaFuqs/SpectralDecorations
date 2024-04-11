@@ -43,13 +43,13 @@
         "spectral-decorations:white_beam",
         "spectral-decorations:yellow_beam"
       ],
-      "text": "The bright colours of the wood spark a lot of creativity! A wide variety of decorative shapes and patterns some to mind that you can immediately use as enchantment to your buildings."
+      "text": "The bright colours of this new type of wood tug at that creative part of your mind. Mere logs and planks won't cut it for some buildings. No, they won't do! You've devised a way to make eye-catching support beams in any colour you'd like."
     },
     {
       "type": "spectrum:pedestal_crafting",
       "title": "Colored Beams",
       "recipe": "spectral-decorations:beams/orange",
-      "text": "Come in all 16 colors."
+      "text": "Comes in all 16 colours."
     }
   ]
 }
