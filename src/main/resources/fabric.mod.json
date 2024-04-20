@@ -27,8 +27,8 @@
   },
   "mixins": [],
   "depends": {
-    "fabricloader": ">=${loader_version}",
     "minecraft": ">=${minecraft_version}",
+    "fabricloader": "*",
     "fabric": "*",
     "spectrum": ">=1.7.6"
   }
