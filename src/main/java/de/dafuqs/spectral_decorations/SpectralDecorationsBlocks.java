@@ -3,7 +3,6 @@ package de.dafuqs.spectral_decorations;
 import de.dafuqs.spectrum.blocks.amphora.*;
 import de.dafuqs.spectrum.blocks.furniture.*;
 import de.dafuqs.spectrum.blocks.conditional.colored_tree.*;
-import de.dafuqs.spectrum.registries.*;
 import net.fabricmc.fabric.api.item.v1.*;
 import net.fabricmc.fabric.api.registry.*;
 import net.minecraft.block.*;
@@ -18,6 +17,15 @@ import java.util.*;
 public class SpectralDecorationsBlocks {
 	
 	public static void register() {
+		for (VanillaWood wood : VanillaWood.values()) {
+			String name = wood.getName();
+			MapColor mapColor = wood.getMapColor();
+			boolean isFireResistant = wood.isFireResistant();
+			registerBlockWithItem(name + "_beam", new PillarBlock(AbstractBlock.Settings.create().mapColor(mapColor).sounds(BlockSoundGroup.WOOD)), new FabricItemSettings(), Type.BEAM, DyeColor.LIME, isFireResistant ? 0 : 5, isFireResistant ? 0 : 20);
+			registerBlockWithItem(name + "_amphora", new AmphoraBlock(AbstractBlock.Settings.create().mapColor(mapColor).sounds(BlockSoundGroup.WOOD)), new FabricItemSettings(), Type.AMPHORA, DyeColor.LIME, 0, 0);
+		}
+		
+		
 		for(DyeColor color : DyeColor.values()) {
 			if (color.getId() > 15) {
 				break;
@@ -28,6 +36,42 @@ public class SpectralDecorationsBlocks {
 			registerBlockWithItem(colorString + "_amphora", new AmphoraBlock(AbstractBlock.Settings.create().mapColor(color).sounds(BlockSoundGroup.WOOD)), new FabricItemSettings(), Type.AMPHORA, color, 0, 0);
 			registerBlockWithItem(colorString + "_lantern", new FlexLanternBlock(AbstractBlock.Settings.create().mapColor(color).sounds(BlockSoundGroup.WOOD).luminance(state -> 13)), new FabricItemSettings(), Type.LANTERN, color, 0, 0);
 			registerBlockWithItem(colorString + "_light", new PillarBlock(AbstractBlock.Settings.create().mapColor(color).sounds(BlockSoundGroup.WOOD).luminance(state -> 15)), new FabricItemSettings(), Type.LIGHT, color, 5, 20);
+		}
+	}
+	
+	public enum VanillaWood {
+		ACACIA,
+		BAMBOO,
+		BIRCH,
+		CHERRY,
+		CRIMSON,
+		DARK_OAK,
+		JUNGLE,
+		MANGROVE,
+		OAK,
+		SPRUCE,
+		WARPED;
+		
+		private String name;
+		private MapColor mapColor;
+		private boolean isFireResistant;
+		
+		VanillaWood(String name, MapColor mapColor, boolean isFireResistant) {
+			this.name = name;
+			this.mapColor = mapColor;
+			this.isFireResistant = isFireResistant;
+		}
+		
+		public String getName() {
+			return name;
+		}
+		
+		public MapColor getMapColor() {
+			return mapColor;
+		}
+		
+		public boolean isFireResistant() {
+			return isFireResistant;
 		}
 	}
 

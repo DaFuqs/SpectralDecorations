@@ -16,6 +16,7 @@ public class SpectralDecorations implements ModInitializer {
 	public void onInitialize() {
 		SpectralDecorationsBlocks.register();
 		SpectralDecorationsItemGroups.register();
+		SpectralDecorationsKindlingVariants.register();
 		
 		ServerLifecycleEvents.SERVER_STARTED.register(server -> {
 			for (Triplet<Item, SpectralDecorationsBlocks.Type, DyeColor> entry : SpectralDecorationsBlocks.items) {
