@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "spectral-decorations:item/light_gray_lantern"
+    "layer0": "spectral-decorations:item/colored_lantern/light_gray"
   }
 }
