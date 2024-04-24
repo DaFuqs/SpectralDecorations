@@ -10,9 +10,9 @@ import net.fabricmc.fabric.api.item.v1.*;
 import net.fabricmc.fabric.api.registry.*;
 import net.minecraft.block.*;
 import net.minecraft.item.*;
-import net.minecraft.registry.*;
 import net.minecraft.sound.*;
 import net.minecraft.util.*;
+import net.minecraft.util.registry.*;
 
 import java.util.*;
 
@@ -26,27 +26,27 @@ public class SpectralDecorationsBlocks {
 			MapColor mapColor = wood.getMapColor();
 			boolean isFireResistant = wood.isFireResistant();
 			BlockSoundGroup blockSoundGroup = wood.getBlockSoundGroup();
-			registerBlockWithItem(SpectrumItemGroups.DECORATION, name + "_beam", new PillarBlock(AbstractBlock.Settings.create().mapColor(mapColor).sounds(blockSoundGroup)), new FabricItemSettings(), Type.BEAM, DyeColor.LIME, isFireResistant ? 0 : 5, isFireResistant ? 0 : 20);
-			registerBlockWithItem(SpectrumItemGroups.DECORATION, name + "_amphora", new AmphoraBlock(AbstractBlock.Settings.create().mapColor(mapColor).sounds(blockSoundGroup)), new FabricItemSettings(), Type.AMPHORA, DyeColor.LIME, 0, 0);
+			registerBlockWithItem(SpectrumItemGroups.DECORATION, name + "_beam", new PillarBlock(AbstractBlock.Settings.of(Material.WOOD, mapColor).sounds(blockSoundGroup)), new Item.Settings().group(SpectralDecorationsItemGroups.ITEM_GROUP), Type.BEAM, DyeColor.LIME, isFireResistant ? 0 : 5, isFireResistant ? 0 : 20);
+			registerBlockWithItem(SpectrumItemGroups.DECORATION, name + "_amphora", new AmphoraBlock(AbstractBlock.Settings.of(Material.WOOD, mapColor).sounds(blockSoundGroup)), new Item.Settings().group(SpectralDecorationsItemGroups.ITEM_GROUP), Type.AMPHORA, DyeColor.LIME, 0, 0);
 		}
 
 		for (DyeColor color : ColorHelper.VANILLA_DYE_COLORS) {
 			String colorString = color.asString();
-			registerBlockWithItem(SpectrumItemGroups.COLORED_WOOD, colorString + "_beam", new PillarBlock(AbstractBlock.Settings.create().mapColor(color).sounds(BlockSoundGroup.WOOD)), new FabricItemSettings(), Type.BEAM, color, 5, 20);
-			registerBlockWithItem(SpectrumItemGroups.COLORED_WOOD, colorString + "_amphora", new AmphoraBlock(AbstractBlock.Settings.create().mapColor(color).sounds(BlockSoundGroup.WOOD)), new FabricItemSettings(), Type.AMPHORA, color, 0, 0);
-			registerBlockWithItem(SpectrumItemGroups.COLORED_WOOD, colorString + "_lantern", new FlexLanternBlock(AbstractBlock.Settings.create().mapColor(color).sounds(BlockSoundGroup.WOOD).luminance(state -> 13)), new FabricItemSettings(), Type.LANTERN, color, 0, 0);
-			registerBlockWithItem(SpectrumItemGroups.COLORED_WOOD, colorString + "_light", new PillarBlock(AbstractBlock.Settings.create().mapColor(color).sounds(BlockSoundGroup.WOOD).luminance(state -> 15)), new FabricItemSettings(), Type.LIGHT, color, 5, 20);
+			registerBlockWithItem(SpectrumItemGroups.COLORED_WOOD, colorString + "_beam", new PillarBlock(AbstractBlock.Settings.of(Material.WOOD, color).sounds(BlockSoundGroup.WOOD)), new Item.Settings().group(SpectralDecorationsItemGroups.ITEM_GROUP), Type.BEAM, color, 5, 20);
+			registerBlockWithItem(SpectrumItemGroups.COLORED_WOOD, colorString + "_amphora", new AmphoraBlock(AbstractBlock.Settings.of(Material.WOOD, color).sounds(BlockSoundGroup.WOOD)), new Item.Settings().group(SpectralDecorationsItemGroups.ITEM_GROUP), Type.AMPHORA, color, 0, 0);
+			registerBlockWithItem(SpectrumItemGroups.COLORED_WOOD, colorString + "_lantern", new FlexLanternBlock(AbstractBlock.Settings.of(Material.WOOD, color).sounds(BlockSoundGroup.WOOD).luminance(state -> 13)), new Item.Settings().group(SpectralDecorationsItemGroups.ITEM_GROUP), Type.LANTERN, color, 0, 0);
+			registerBlockWithItem(SpectrumItemGroups.COLORED_WOOD, colorString + "_light", new PillarBlock(AbstractBlock.Settings.of(Material.WOOD, color).sounds(BlockSoundGroup.WOOD).luminance(state -> 15)), new Item.Settings().group(SpectralDecorationsItemGroups.ITEM_GROUP), Type.LIGHT, color, 5, 20);
 
 			registerBlockWithItem(SpectrumItemGroups.DECORATION, colorString + "_effulgent_block", new CushionedFacingBlock(AbstractBlock.Settings.copy(Blocks.RED_WOOL)), new FabricItemSettings(), Type.EFFULGENT_BLOCK, color, 0, 0);
-			registerBlockWithItem(SpectrumItemGroups.DECORATION, colorString + "_effulgent_cushion", new CushionBlock(AbstractBlock.Settings.copy(Blocks.RED_WOOL).nonOpaque().allowsSpawning((state, world, pos, type) -> false)), new FabricItemSettings(), Type.EFFULGENT_CUSHION, color, 0, 0);
-			registerBlockWithItem(SpectrumItemGroups.DECORATION, colorString + "_effulgent_carpet", new CushionedCarpetBlock(AbstractBlock.Settings.copy(Blocks.RED_CARPET)), new FabricItemSettings(), Type.EFFULGENT_CARPET, color, 0, 0);
+			registerBlockWithItem(SpectrumItemGroups.DECORATION, colorString + "_effulgent_cushion", new CushionBlock(AbstractBlock.Settings.copy(Blocks.RED_WOOL).nonOpaque().allowsSpawning((state, world, pos, type) -> false)), new Item.Settings().group(SpectralDecorationsItemGroups.ITEM_GROUP), Type.EFFULGENT_CUSHION, color, 0, 0);
+			registerBlockWithItem(SpectrumItemGroups.DECORATION, colorString + "_effulgent_carpet", new CushionedCarpetBlock(AbstractBlock.Settings.copy(Blocks.RED_CARPET)), new Item.Settings().group(SpectralDecorationsItemGroups.ITEM_GROUP), Type.EFFULGENT_CARPET, color, 0, 0);
 		}
 	}
-
-	public static void registerBlockWithItem(ItemSubGroup subGroup, String name, Block block, FabricItemSettings itemSettings, Type type, DyeColor dyeColor, int fireBurn, int fireSpread) {
-		Registry.register(Registries.BLOCK, SpectralDecorations.locate(name), block);
+	
+	public static void registerBlockWithItem(ItemSubGroup subGroup, String name, Block block, Item.Settings itemSettings, Type type, DyeColor dyeColor, int fireBurn, int fireSpread) {
+		Registry.register(Registry.BLOCK, SpectralDecorations.locate(name), block);
 		BlockItem blockItem = new BlockItem(block, itemSettings);
-		Registry.register(Registries.ITEM, SpectralDecorations.locate(name), blockItem);
+		Registry.register(Registry.ITEM, SpectralDecorations.locate(name), blockItem);
 		
 		items.add(new PropertyHolder(blockItem, subGroup, type, dyeColor));
 		
@@ -62,11 +62,10 @@ public class SpectralDecorationsBlocks {
 		DARK_OAK("dark_oak", MapColor.BROWN, BlockSoundGroup.WOOD, false),
 		JUNGLE("jungle", MapColor.DIRT_BROWN, BlockSoundGroup.WOOD, false),
 		ACACIA("acacia", MapColor.ORANGE, BlockSoundGroup.WOOD, false),
-		BAMBOO("bamboo", MapColor.YELLOW, BlockSoundGroup.BAMBOO_WOOD, false),
+		BAMBOO("bamboo", MapColor.YELLOW, BlockSoundGroup.BAMBOO, false),
 		MANGROVE("mangrove", MapColor.RED, BlockSoundGroup.WOOD, false),
-		CHERRY("cherry", MapColor.TERRACOTTA_WHITE, BlockSoundGroup.CHERRY_WOOD, false),
-		CRIMSON("crimson", MapColor.DULL_PINK, BlockSoundGroup.NETHER_WOOD, false),
-		WARPED("warped", MapColor.DARK_AQUA, BlockSoundGroup.NETHER_WOOD, false);
+		CRIMSON("crimson", MapColor.DULL_PINK, BlockSoundGroup.NETHER_STEM, true),
+		WARPED("warped", MapColor.DARK_AQUA, BlockSoundGroup.NETHER_STEM, true);
 		
 		private final String name;
 		private final MapColor mapColor;

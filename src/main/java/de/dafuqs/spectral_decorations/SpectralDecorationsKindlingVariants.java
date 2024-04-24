@@ -4,8 +4,8 @@ import com.google.common.collect.*;
 import de.dafuqs.spectrum.entity.variants.*;
 import de.dafuqs.spectrum.helpers.*;
 import de.dafuqs.spectrum.registries.*;
-import net.minecraft.registry.*;
 import net.minecraft.util.*;
+import net.minecraft.util.registry.*;
 
 import java.util.*;
 

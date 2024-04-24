@@ -22,7 +22,6 @@ public class SpectralDecorations implements ModInitializer {
 	public void onInitialize() {
 		SpectralDecorationsBlocks.register();
 		SpectralDecorationsItems.register();
-		SpectralDecorationsItemGroups.register();
 		SpectralDecorationsRecipeTypes.registerRecipeSerializers();
 		SpectralDecorationsKindlingVariants.register();
 
@@ -56,7 +55,7 @@ public class SpectralDecorations implements ModInitializer {
 
 		// Builtin Resource Packs
 		Optional<ModContainer> modContainer = FabricLoader.getInstance().getModContainer(MOD_ID);
-		modContainer.ifPresent(container -> ResourceManagerHelper.registerBuiltinResourcePack(locate("spectral_decorations"), container, Text.of("Spectral Decorations Overrides"), ResourcePackActivationType.DEFAULT_ENABLED));
+		modContainer.ifPresent(container -> ResourceManagerHelper.registerBuiltinResourcePack(locate("spectral_decorations"), container, "Spectral Decorations Overrides", ResourcePackActivationType.DEFAULT_ENABLED));
 	}
 
 	public static Identifier locate(String name) {

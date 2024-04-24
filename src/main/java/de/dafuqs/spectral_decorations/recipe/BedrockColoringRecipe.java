@@ -1,17 +1,15 @@
 package de.dafuqs.spectral_decorations.recipe;
 
-import de.dafuqs.matchbooks.recipe.*;
 import de.dafuqs.spectral_decorations.*;
 import de.dafuqs.spectrum.*;
 import de.dafuqs.spectrum.items.*;
 import de.dafuqs.spectrum.items.armor.*;
-import de.dafuqs.spectrum.recipe.*;
 import de.dafuqs.spectrum.recipe.pedestal.*;
 import de.dafuqs.spectrum.registries.*;
+import net.id.incubus_core.recipe.*;
 import net.minecraft.inventory.*;
 import net.minecraft.item.*;
 import net.minecraft.recipe.*;
-import net.minecraft.registry.*;
 import net.minecraft.util.*;
 
 import java.util.*;
@@ -19,7 +17,7 @@ import java.util.*;
 public class BedrockColoringRecipe extends ShapelessPedestalRecipe {
 	
 	public static final Identifier UNLOCK_IDENTIFIER = SpectrumCommon.locate("unlocks/food/star_candy");
-	public static final RecipeSerializer<BedrockColoringRecipe> SERIALIZER = new EmptyRecipeSerializer<>(BedrockColoringRecipe::new);
+	public static final RecipeSerializer<BedrockColoringRecipe> SERIALIZER = new SpecialRecipeSerializer<>(BedrockColoringRecipe::new);
 	
 	public BedrockColoringRecipe(Identifier id) {
 		super(id, "", false, UNLOCK_IDENTIFIER, PedestalRecipeTier.BASIC, List.of(
@@ -31,7 +29,7 @@ public class BedrockColoringRecipe extends ShapelessPedestalRecipe {
 	}
 	
 	@Override
-	public ItemStack craft(Inventory inv, DynamicRegistryManager drm) {
+	public ItemStack craft(Inventory inv) {
 		ItemStack armorStack = null;
 		PigmentItem pigment = null;
 		

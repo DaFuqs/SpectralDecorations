@@ -11,15 +11,12 @@
   "experience": 0.1,
   "pattern": [
     "PP",
-    "LL",
+    "PP",
     "PP"
   ],
   "key": {
     "P": {
-      "item": "minecraft:bamboo_planks"
-    },
-    "L": {
-      "item": "minecraft:bamboo_block"
+      "item": "minecraft:bamboo"
     }
   },
   "result": {

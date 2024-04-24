@@ -12,14 +12,11 @@
   "pattern": [
     "SAS",
     "I I",
-    "PSP"
+    "SSS"
   ],
   "key": {
     "S": {
-      "item": "minecraft:bamboo_slab"
-    },
-    "P": {
-      "item": "minecraft:bamboo_planks"
+      "item": "minecraft:bamboo"
     },
     "I": {
       "tag": "spectrum:pigments"
