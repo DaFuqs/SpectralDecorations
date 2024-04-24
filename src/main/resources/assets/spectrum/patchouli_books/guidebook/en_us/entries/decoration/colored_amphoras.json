@@ -48,7 +48,7 @@
     {
       "type": "spectrum:pedestal_crafting",
       "title": "Pedestal Recipe",
-      "recipe": "spectral-decorations:amphoras/yellow",
+      "recipe": "spectral-decorations:colored_amphoras/yellow",
       "text": "Almost like a barrel, but much more spacious: their capacity matches a double chest.$(br)Comes in all 16 colors. Time to add color coding to your storage room?"
     }
   ]

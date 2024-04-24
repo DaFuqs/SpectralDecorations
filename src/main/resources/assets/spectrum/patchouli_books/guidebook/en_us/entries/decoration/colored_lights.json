@@ -48,7 +48,7 @@
     {
       "type": "spectrum:pedestal_crafting",
       "title": "Pedestal Recipe",
-      "recipe": "spectral-decorations:lights/magenta",
+      "recipe": "spectral-decorations:colored_lights/magenta",
       "text": "Come in all 16 colors."
     }
   ]
