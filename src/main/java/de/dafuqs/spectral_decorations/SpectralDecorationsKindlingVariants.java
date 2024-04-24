@@ -7,7 +7,7 @@ import net.minecraft.util.*;
 import java.util.*;
 
 public class SpectralDecorationsKindlingVariants {
-	
+	/*
 	public static Map<DyeColor, KindlingVariant> COLORED_VARIANTS = new HashMap<>();
 	
 	public static void register() {
@@ -23,6 +23,6 @@ public class SpectralDecorationsKindlingVariants {
 				SpectralDecorations.locate(name),
 				new KindlingVariant(SpectralDecorations.locate(defaultTexture), SpectralDecorations.locate(blinkingTexture), SpectralDecorations.locate(angryTexture), SpectralDecorations.locate(clippedTexture), SpectralDecorations.locate(blinkingClippedTexture), SpectralDecorations.locate(angryClippedTexture))
 		);
-	}
+	}*/
 	
 }

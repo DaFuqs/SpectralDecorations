@@ -4,7 +4,6 @@ import de.dafuqs.spectrum.registries.color.*;
 import net.fabricmc.api.*;
 import net.fabricmc.fabric.api.event.lifecycle.v1.*;
 import net.minecraft.item.*;
-import net.minecraft.server.*;
 import net.minecraft.util.*;
 import oshi.util.tuples.*;
 
@@ -16,11 +15,11 @@ public class SpectralDecorations implements ModInitializer {
 	public void onInitialize() {
 		SpectralDecorationsBlocks.register();
 		SpectralDecorationsItemGroups.register();
-		SpectralDecorationsKindlingVariants.register();
+		//SpectralDecorationsKindlingVariants.register();
 		
 		ServerLifecycleEvents.SERVER_STARTED.register(server -> {
-			for (Triplet<Item, SpectralDecorationsBlocks.Type, DyeColor> entry : SpectralDecorationsBlocks.items) {
-				ItemColors.ITEM_COLORS.registerColorMapping(entry.getA(), entry.getC());
+			for (SpectralDecorationsBlocks.PropertyHolder entry : SpectralDecorationsBlocks.items) {
+				ItemColors.ITEM_COLORS.registerColorMapping(entry.item(), entry.color());
 			}
 		});
 	}

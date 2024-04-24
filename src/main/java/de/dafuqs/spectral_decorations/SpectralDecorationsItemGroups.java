@@ -10,8 +10,17 @@ public class SpectralDecorationsItemGroups {
 
 	public static void register() {
 		ItemSubGroupEvents.modifyEntriesEvent(ItemGroupIDs.SUBTAB_COLORED_WOOD).register(entries -> {
-			for (Triplet<Item, SpectralDecorationsBlocks.Type, DyeColor> item : SpectralDecorationsBlocks.items) {
-				entries.add(new ItemStack(item.getA()));
+			for (SpectralDecorationsBlocks.PropertyHolder item : SpectralDecorationsBlocks.items) {
+				if (item.subGroup().getIdentifier().equals(ItemGroupIDs.SUBTAB_COLORED_WOOD)) {
+					entries.add(new ItemStack(item.item()));
+				}
+			}
+		});
+		ItemSubGroupEvents.modifyEntriesEvent(ItemGroupIDs.SUBTAB_DECORATION).register(entries -> {
+			for (SpectralDecorationsBlocks.PropertyHolder item : SpectralDecorationsBlocks.items) {
+				if (item.subGroup().getIdentifier().equals(ItemGroupIDs.SUBTAB_DECORATION)) {
+					entries.add(new ItemStack(item.item()));
+				}
 			}
 		});
 	}
