@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "spectral-decorations:oak_amphora",
+    "spectral-decorations:spruce_amphora",
+    "spectral-decorations:birch_amphora",
+    "spectral-decorations:dark_oak_amphora",
+    "spectral-decorations:jungle_amphora",
+    "spectral-decorations:acacia_amphora",
+    "spectral-decorations:bamboo_amphora",
+    "spectral-decorations:mangrove_amphora",
+    "spectral-decorations:cherry_amphora",
+    "spectral-decorations:crimson_amphora",
+    "spectral-decorations:warped_amphora"
+  ]
+}

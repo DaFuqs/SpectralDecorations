@@ -4,6 +4,9 @@
     "#spectral-decorations:colored_beams",
     "#spectral-decorations:colored_amphoras",
     "#spectral-decorations:colored_lanterns",
-    "#spectral-decorations:colored_lights"
+    "#spectral-decorations:colored_lights",
+
+    "#spectral-decorations:vanilla_wood_amphoras",
+    "#spectral-decorations:vanilla_wood_beams"
   ]
 }
