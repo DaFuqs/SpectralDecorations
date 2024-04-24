@@ -70,5 +70,29 @@
   "block.spectral-decorations.purple_beam": "Purple Beam",
   "block.spectral-decorations.red_beam": "Red Beam",
   "block.spectral-decorations.white_beam": "White Beam",
-  "block.spectral-decorations.yellow_beam": "Yellow Beam"
+  "block.spectral-decorations.yellow_beam": "Yellow Beam",
+
+  "block.spectral-decorations.oak_beam": "Oak Beam",
+  "block.spectral-decorations.spruce_beam": "Spruce Beam",
+  "block.spectral-decorations.birch_beam": "Birch Beam",
+  "block.spectral-decorations.dark_oak_beam": "Dark Oak Beam",
+  "block.spectral-decorations.jungle_beam": "Jungle Beam",
+  "block.spectral-decorations.acacia_beam": "Acacia Beam",
+  "block.spectral-decorations.bamboo_beam": "Bamboo Beam",
+  "block.spectral-decorations.mangrove_beam": "Mangrove Beam",
+  "block.spectral-decorations.cherry_beam": "Cherry Beam",
+  "block.spectral-decorations.crimson_beam": "Crimson Beam",
+  "block.spectral-decorations.warped_beam": "Warped Beam",
+
+  "block.spectral-decorations.oak_amphora": "Oak Amphora",
+  "block.spectral-decorations.spruce_amphora": "Spruce Amphora",
+  "block.spectral-decorations.birch_amphora": "Birch Amphora",
+  "block.spectral-decorations.dark_oak_amphora": "Dark Oak Amphora",
+  "block.spectral-decorations.jungle_amphora": "Jungle Amphora",
+  "block.spectral-decorations.acacia_amphora": "Acacia Amphora",
+  "block.spectral-decorations.bamboo_amphora": "Bamboo Amphora",
+  "block.spectral-decorations.mangrove_amphora": "Mangrove Amphora",
+  "block.spectral-decorations.cherry_amphora": "Cherry Amphora",
+  "block.spectral-decorations.crimson_amphora": "Crimson Amphora",
+  "block.spectral-decorations.warped_amphora": "Warped Amphora"
 }
