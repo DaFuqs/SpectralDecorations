@@ -21,8 +21,9 @@ public class SpectralDecorationsBlocks {
 			String name = wood.getName();
 			MapColor mapColor = wood.getMapColor();
 			boolean isFireResistant = wood.isFireResistant();
-			registerBlockWithItem(name + "_beam", new PillarBlock(AbstractBlock.Settings.create().mapColor(mapColor).sounds(BlockSoundGroup.WOOD)), new FabricItemSettings(), Type.BEAM, DyeColor.LIME, isFireResistant ? 0 : 5, isFireResistant ? 0 : 20);
-			registerBlockWithItem(name + "_amphora", new AmphoraBlock(AbstractBlock.Settings.create().mapColor(mapColor).sounds(BlockSoundGroup.WOOD)), new FabricItemSettings(), Type.AMPHORA, DyeColor.LIME, 0, 0);
+			BlockSoundGroup blockSoundGroup = wood.getBlockSoundGroup();
+			registerBlockWithItem(name + "_beam", new PillarBlock(AbstractBlock.Settings.create().mapColor(mapColor).sounds(blockSoundGroup)), new FabricItemSettings(), Type.BEAM, DyeColor.LIME, isFireResistant ? 0 : 5, isFireResistant ? 0 : 20);
+			registerBlockWithItem(name + "_amphora", new AmphoraBlock(AbstractBlock.Settings.create().mapColor(mapColor).sounds(blockSoundGroup)), new FabricItemSettings(), Type.AMPHORA, DyeColor.LIME, 0, 0);
 		}
 		
 		
@@ -40,30 +41,36 @@ public class SpectralDecorationsBlocks {
 	}
 	
 	public enum VanillaWood {
-		ACACIA,
-		BAMBOO,
-		BIRCH,
-		CHERRY,
-		CRIMSON,
-		DARK_OAK,
-		JUNGLE,
-		MANGROVE,
-		OAK,
-		SPRUCE,
-		WARPED;
+		OAK("oak", MapColor.OAK_TAN, BlockSoundGroup.WOOD, false),
+		SPRUCE("spruce", MapColor.SPRUCE_BROWN, BlockSoundGroup.WOOD, false),
+		BIRCH("birch", MapColor.PALE_YELLOW, BlockSoundGroup.WOOD, false),
+		DARK_OAK("dark_oak", MapColor.BROWN, BlockSoundGroup.WOOD, false),
+		JUNGLE("jungle", MapColor.DIRT_BROWN, BlockSoundGroup.WOOD, false),
+		ACACIA("acacia", MapColor.ORANGE, BlockSoundGroup.WOOD, false),
+		BAMBOO("bamboo", MapColor.YELLOW, BlockSoundGroup.BAMBOO_WOOD, false),
+		MANGROVE("mangrove", MapColor.RED, BlockSoundGroup.WOOD, false),
+		CHERRY("cherry", MapColor.TERRACOTTA_WHITE, BlockSoundGroup.CHERRY_WOOD, false),
+		CRIMSON("crimson", MapColor.DULL_PINK, BlockSoundGroup.NETHER_WOOD, false),
+		WARPED("warped", MapColor.DARK_AQUA, BlockSoundGroup.NETHER_WOOD, false);
 		
-		private String name;
-		private MapColor mapColor;
-		private boolean isFireResistant;
+		private final String name;
+		private final MapColor mapColor;
+		private final BlockSoundGroup blockSoundGroup;
+		private final boolean isFireResistant;
 		
-		VanillaWood(String name, MapColor mapColor, boolean isFireResistant) {
+		VanillaWood(String name, MapColor mapColor, BlockSoundGroup blockSoundGroup, boolean isFireResistant) {
 			this.name = name;
 			this.mapColor = mapColor;
+			this.blockSoundGroup = blockSoundGroup;
 			this.isFireResistant = isFireResistant;
 		}
 		
 		public String getName() {
 			return name;
+		}
+		
+		public BlockSoundGroup getBlockSoundGroup() {
+			return blockSoundGroup;
 		}
 		
 		public MapColor getMapColor() {
