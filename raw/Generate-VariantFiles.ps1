@@ -175,13 +175,50 @@ function Get-LootTable($Name) {
 "@
 }
 
+function Get-BeamRecipe($Name) {
+    Write-Output @"
+{
+	"type": "minecraft:block",
+	"pools": [{
+		"rolls": 1,
+		"bonus_rolls": 0.0,
+		"entries": [{
+			"type": "minecraft:item",
+			"name": "spectral-decorations:$Name"
+		}],
+		"conditions": [{
+			"condition": "minecraft:survives_explosion"
+		}]
+	}]
+}
+"@
+}
+
+function Get-AmphoraRecipe($Name) {
+    Write-Output @"
+{
+	"type": "minecraft:block",
+	"pools": [{
+		"rolls": 1,
+		"bonus_rolls": 0.0,
+		"entries": [{
+			"type": "minecraft:item",
+			"name": "spectral-decorations:$Name"
+		}],
+		"conditions": [{
+			"condition": "minecraft:survives_explosion"
+		}]
+	}]
+}
+"@
+}
+
 $Destination = $PSScriptRoot
 
 Get-LangEntries -Names $BlockNames
 Write-Output ""
 Write-Output "- Mineable Block tags"
 Write-Output "- Guidebook Entry"
-Write-Output "- Recipes"
 Write-Output "- Item Group"
 
 $BlockNames | ForEach-Object {
@@ -199,4 +236,7 @@ $BlockNames | ForEach-Object {
 
     New-Item -Path $(Join-Path -Path $destination -ChildPath "\data\spectral-decorations\loot_tables\blocks\") -Name "$_`_beam.json" -ItemType File -Force -Value $(Get-LootTable -Name "$_`_beam") | Out-Null
     New-Item -Path $(Join-Path -Path $destination -ChildPath "\data\spectral-decorations\loot_tables\blocks\") -Name "$_`_amphora.json" -ItemType File -Force -Value $(Get-LootTable -Name "$_`_amphora") | Out-Null
+
+    New-Item -Path $(Join-Path -Path $destination -ChildPath "\data\spectral-decorations\recipes\") -Name "$_`_beam.json" -ItemType File -Force -Value $(Get-BeamRecipe -Name $_) | Out-Null
+    New-Item -Path $(Join-Path -Path $destination -ChildPath "\data\spectral-decorations\recipes\") -Name "$_`_amphora.json" -ItemType File -Force -Value $(Get-AmphoraRecipe -Name $_) | Out-Null
 }
