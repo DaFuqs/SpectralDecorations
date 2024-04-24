@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "spectral-decorations:block/vanilla_wood_beams/bamboo_top",
+    "side": "spectral-decorations:block/vanilla_wood_beams/bamboo"
+  }
+}

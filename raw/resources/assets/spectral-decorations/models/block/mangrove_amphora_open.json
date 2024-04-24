@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "bottom": "spectral-decorations:block/vanilla_wood_amphoras/mangrove_top",
+    "side": "spectral-decorations:block/vanilla_wood_amphoras/mangrove",
+    "top": "spectral-decorations:block/vanilla_wood_amphoras/mangrove_top_open"
+  }
+}
