@@ -178,18 +178,34 @@ function Get-LootTable($Name) {
 function Get-BeamRecipe($Name) {
     Write-Output @"
 {
-	"type": "minecraft:block",
-	"pools": [{
-		"rolls": 1,
-		"bonus_rolls": 0.0,
-		"entries": [{
-			"type": "minecraft:item",
-			"name": "spectral-decorations:$Name"
-		}],
-		"conditions": [{
-			"condition": "minecraft:survives_explosion"
-		}]
-	}]
+  "type": "spectrum:pedestal",
+  "group": "vanilla_wood_beams",
+  "time": 40,
+  "tier": "basic",
+  "cyan": 0,
+  "magenta": 0,
+  "yellow": 0,
+  "white": 0,
+  "black": 0,
+  "experience": 0.1,
+  "pattern": [
+    "PP",
+    "LL",
+    "PP"
+  ],
+  "key": {
+    "P": {
+      "item": "minecraft:$Name`_planks"
+    },
+    "L": {
+      "item": "minecraft:$Name`_log"
+    }
+  },
+  "result": {
+    "item": "spectral-decorations:$Name`_beam",
+    "count": 4
+  },
+  "required_advancement": "spectrum:spectrum"
 }
 "@
 }
@@ -197,18 +213,40 @@ function Get-BeamRecipe($Name) {
 function Get-AmphoraRecipe($Name) {
     Write-Output @"
 {
-	"type": "minecraft:block",
-	"pools": [{
-		"rolls": 1,
-		"bonus_rolls": 0.0,
-		"entries": [{
-			"type": "minecraft:item",
-			"name": "spectral-decorations:$Name"
-		}],
-		"conditions": [{
-			"condition": "minecraft:survives_explosion"
-		}]
-	}]
+  "type": "spectrum:pedestal",
+  "group": "vanilla_wood_amphoras",
+  "time": 240,
+  "tier": "basic",
+  "cyan": 0,
+  "magenta": 0,
+  "yellow": 0,
+  "white": 0,
+  "black": 0,
+  "experience": 1.0,
+  "pattern": [
+    "SAS",
+    "I I",
+    "PSP"
+  ],
+  "key": {
+    "S": {
+      "item": "minecraft:$Name`_slab"
+    },
+    "P": {
+      "item": "minecraft:$Name`_planks"
+    },
+    "I": {
+      "tag": "spectrum:pigments"
+    },
+    "A": {
+      "item": "minecraft:paper"
+    }
+  },
+  "result": {
+    "item": "spectral-decorations:$Name`_amphora",
+    "count": 1
+  },
+  "required_advancement": "spectrum:lategame/collect_noxwood"
 }
 "@
 }

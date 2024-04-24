@@ -1,0 +1,36 @@
+{
+  "type": "spectrum:pedestal",
+  "group": "vanilla_wood_amphoras",
+  "time": 240,
+  "tier": "basic",
+  "cyan": 0,
+  "magenta": 0,
+  "yellow": 0,
+  "white": 0,
+  "black": 0,
+  "experience": 1.0,
+  "pattern": [
+    "SAS",
+    "I I",
+    "PSP"
+  ],
+  "key": {
+    "S": {
+      "item": "minecraft:warped_slab"
+    },
+    "P": {
+      "item": "minecraft:warped_planks"
+    },
+    "I": {
+      "tag": "spectrum:pigments"
+    },
+    "A": {
+      "item": "minecraft:paper"
+    }
+  },
+  "result": {
+    "item": "spectral-decorations:warped_amphora",
+    "count": 1
+  },
+  "required_advancement": "spectrum:lategame/collect_noxwood"
+}

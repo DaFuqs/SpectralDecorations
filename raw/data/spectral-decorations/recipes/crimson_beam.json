@@ -1,0 +1,30 @@
+{
+  "type": "spectrum:pedestal",
+  "group": "vanilla_wood_beams",
+  "time": 40,
+  "tier": "basic",
+  "cyan": 0,
+  "magenta": 0,
+  "yellow": 0,
+  "white": 0,
+  "black": 0,
+  "experience": 0.1,
+  "pattern": [
+    "PP",
+    "LL",
+    "PP"
+  ],
+  "key": {
+    "P": {
+      "item": "minecraft:crimson_planks"
+    },
+    "L": {
+      "item": "minecraft:crimson_log"
+    }
+  },
+  "result": {
+    "item": "spectral-decorations:crimson_beam",
+    "count": 4
+  },
+  "required_advancement": "spectrum:spectrum"
+}
