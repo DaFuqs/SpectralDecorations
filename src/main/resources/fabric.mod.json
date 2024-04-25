@@ -25,7 +25,9 @@
       "de.dafuqs.spectral_decorations.SpectralDecorations"
     ]
   },
-  "mixins": [],
+  "mixins": [
+    "spectral-decorations.mixins.json"
+  ],
   "depends": {
     "minecraft": ">=${minecraft_version}",
     "fabricloader": "*",
