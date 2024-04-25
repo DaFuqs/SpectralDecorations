@@ -26,13 +26,13 @@ public abstract class BedrockArmorItemMixin {
 		}
 	}
 	
-	@Inject(at = @At("HEAD"), method = "Lde/dafuqs/spectrum/items/armor/BedrockArmorItem;getRenderLayer(Lnet/minecraft/item/ItemStack;)Lnet/minecraft/client/render/RenderLayer;", cancellable = true)
+	/*@Inject(at = @At("HEAD"), method = "Lde/dafuqs/spectrum/items/armor/BedrockArmorItem;getRenderLayer(Lnet/minecraft/item/ItemStack;)Lnet/minecraft/client/render/RenderLayer;", cancellable = true)
 	private void spectral_decorations$modifyBedrockArmorRenderLayer(ItemStack stack, CallbackInfoReturnable<Identifier> cir) {
 		Optional<DyeColor> color = BedrockArmorColorizer.getColor(stack);
 		if (color.isPresent()) {
 			String colorString = color.get().asString();
 			cir.setReturnValue(SpectralDecorations.locate("textures/armor/bedrock_armor_main_" + colorString + ".png"));
 		}
-	}
+	}*/
 	
 }
