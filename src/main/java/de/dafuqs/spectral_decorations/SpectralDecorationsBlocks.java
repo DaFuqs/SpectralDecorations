@@ -19,8 +19,6 @@ public class SpectralDecorationsBlocks {
 	
 	public static final List<PropertyHolder> items = new ArrayList<>();
 	
-	;
-	
 	public static void register() {
 		for (VanillaWood wood : VanillaWood.values()) {
 			String name = wood.getName();
