@@ -1,18 +1,16 @@
 package de.dafuqs.spectral_decorations;
 
-import de.dafuqs.spectrum.*;
+import de.dafuqs.spectrum.api.interaction.*;
 import de.dafuqs.spectrum.entity.*;
+import de.dafuqs.spectrum.entity.variants.*;
 import de.dafuqs.spectrum.registries.color.*;
 import net.fabricmc.api.*;
 import net.fabricmc.fabric.api.client.item.v1.*;
 import net.fabricmc.fabric.api.event.lifecycle.v1.*;
 import net.fabricmc.fabric.api.resource.*;
 import net.fabricmc.loader.api.*;
-import net.minecraft.client.item.*;
-import net.minecraft.item.*;
 import net.minecraft.text.*;
 import net.minecraft.util.*;
-import oshi.util.tuples.*;
 
 import java.util.*;
 
@@ -25,12 +23,23 @@ public class SpectralDecorations implements ModInitializer {
 		SpectralDecorationsBlocks.register();
 		SpectralDecorationsItemGroups.register();
 		SpectralDecorationsRecipeTypes.registerRecipeSerializers();
-		//SpectralDecorationsKindlingVariants.register();
+		SpectralDecorationsKindlingVariants.register();
 		
 		ServerLifecycleEvents.SERVER_STARTED.register(server -> {
 			for (SpectralDecorationsBlocks.PropertyHolder entry : SpectralDecorationsBlocks.items) {
 				ItemColors.ITEM_COLORS.registerColorMapping(entry.item(), entry.color());
 			}
+
+			// Register only after server is started to not cause weird load order behavior
+			// Server side is enough, so we are doing it here
+			EntityColorProcessorRegistry.register(SpectrumEntityTypes.KINDLING, (entity, dyeColor) -> {
+				KindlingVariant coloredVariant = SpectralDecorationsKindlingVariants.getColoredVariant(dyeColor);
+				if (entity.getKindlingVariant() == coloredVariant) {
+					return false;
+				}
+				entity.setKindlingVariant(coloredVariant);
+				return true;
+			});
 		});
 		
 		ItemTooltipCallback.EVENT.register((stack, context, lines) -> {
@@ -46,17 +55,7 @@ public class SpectralDecorations implements ModInitializer {
 		
 		// Builtin Resource Packs
 		Optional<ModContainer> modContainer = FabricLoader.getInstance().getModContainer(MOD_ID);
-		if (modContainer.isPresent()) {
-			ResourceManagerHelper.registerBuiltinResourcePack(locate("spectral_decorations"), modContainer.get(), Text.of("Spectral Decorations Overrides"), ResourcePackActivationType.DEFAULT_ENABLED);
-		}
-		
-		/*EntityColorProcessorRegistry.register(SpectrumEntityTypes.KINDLING, (entity, dyeColor) -> {
-			if (entity.getVariant() == dyeColor) {
-				return false;
-			}
-			entity.setVariant(dyeColor);
-			return true;
-		});*/
+		modContainer.ifPresent(container -> ResourceManagerHelper.registerBuiltinResourcePack(locate("spectral_decorations"), container, Text.of("Spectral Decorations Overrides"), ResourcePackActivationType.DEFAULT_ENABLED));
 	}
 	
 	public static Identifier locate(String name) {

@@ -2,6 +2,7 @@ package de.dafuqs.spectral_decorations.mixin;
 
 import de.dafuqs.spectral_decorations.*;
 import de.dafuqs.spectrum.items.armor.*;
+import net.minecraft.client.render.*;
 import net.minecraft.entity.*;
 import net.minecraft.item.*;
 import net.minecraft.util.*;
@@ -26,13 +27,14 @@ public abstract class BedrockArmorItemMixin {
 		}
 	}
 	
-	/*@Inject(at = @At("HEAD"), method = "Lde/dafuqs/spectrum/items/armor/BedrockArmorItem;getRenderLayer(Lnet/minecraft/item/ItemStack;)Lnet/minecraft/client/render/RenderLayer;", cancellable = true)
-	private void spectral_decorations$modifyBedrockArmorRenderLayer(ItemStack stack, CallbackInfoReturnable<Identifier> cir) {
+	@Inject(at = @At("HEAD"), method = "getRenderLayer(Lnet/minecraft/item/ItemStack;)Lnet/minecraft/client/render/RenderLayer;", cancellable = true)
+	private void spectral_decorations$modifyBedrockArmorRenderLayer(ItemStack stack, CallbackInfoReturnable<RenderLayer> cir) {
 		Optional<DyeColor> color = BedrockArmorColorizer.getColor(stack);
 		if (color.isPresent()) {
 			String colorString = color.get().asString();
-			cir.setReturnValue(SpectralDecorations.locate("textures/armor/bedrock_armor_main_" + colorString + ".png"));
+			Identifier renderLayerId = SpectralDecorations.locate("textures/armor/bedrock_armor_main_" + colorString + ".png");
+			cir.setReturnValue(RenderLayer.getEntitySolid(renderLayerId));
 		}
-	}*/
+	}
 	
 }
