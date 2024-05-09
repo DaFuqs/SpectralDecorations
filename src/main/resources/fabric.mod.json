@@ -3,7 +3,7 @@
   "id": "spectral-decorations",
   "version": "${version}",
   "name": "Spectral Decorations",
-  "description": "A Spectrum addon adding more colorful, decorative blocks",
+  "description": "Dipping the entirety of Spectrum into a rainbowy paint bucket",
   "authors": [
     "brothers_trouble",
     "Garbage Data",
@@ -32,6 +32,6 @@
     "minecraft": ">=${minecraft_version}",
     "fabricloader": "*",
     "fabric": "*",
-    "spectrum": ">=1.7.8"
+    "spectrum": ">=1.7.10"
   }
 }
