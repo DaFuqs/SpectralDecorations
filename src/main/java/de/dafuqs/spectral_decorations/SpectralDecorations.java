@@ -21,6 +21,7 @@ public class SpectralDecorations implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		SpectralDecorationsBlocks.register();
+		SpectralDecorationsItems.register();
 		SpectralDecorationsItemGroups.register();
 		SpectralDecorationsRecipeTypes.registerRecipeSerializers();
 		SpectralDecorationsKindlingVariants.register();

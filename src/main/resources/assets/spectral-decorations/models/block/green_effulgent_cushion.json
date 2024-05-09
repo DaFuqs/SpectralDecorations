@@ -1,0 +1,8 @@
+{
+  "parent": "spectrum:templates/cushion",
+  "textures": {
+    "top": "spectral-decorations:block/colored_effulgent_cushions/green_top",
+    "side": "spectral-decorations:block/colored_effulgent_cushions/green_side",
+    "bottom": "spectral-decorations:block/colored_effulgent_cushions/green_bottom"
+  }
+}

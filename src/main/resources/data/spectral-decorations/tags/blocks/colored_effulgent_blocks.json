@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "spectral-decorations:black_effulgent_block",
+    "spectral-decorations:blue_effulgent_block",
+    "spectral-decorations:brown_effulgent_block",
+    "spectral-decorations:cyan_effulgent_block",
+    "spectral-decorations:gray_effulgent_block",
+    "spectral-decorations:green_effulgent_block",
+    "spectral-decorations:light_blue_effulgent_block",
+    "spectral-decorations:light_gray_effulgent_block",
+    "spectral-decorations:lime_effulgent_block",
+    "spectral-decorations:magenta_effulgent_block",
+    "spectral-decorations:orange_effulgent_block",
+    "spectral-decorations:pink_effulgent_block",
+    "spectral-decorations:purple_effulgent_block",
+    "spectral-decorations:red_effulgent_block",
+    "spectral-decorations:white_effulgent_block",
+    "spectral-decorations:yellow_effulgent_block"
+  ]
+}

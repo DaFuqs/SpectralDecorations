@@ -3,6 +3,7 @@ package de.dafuqs.spectral_decorations;
 import de.dafuqs.fractal.api.*;
 import de.dafuqs.spectrum.blocks.amphora.*;
 import de.dafuqs.spectrum.blocks.conditional.colored_tree.*;
+import de.dafuqs.spectrum.blocks.decoration.*;
 import de.dafuqs.spectrum.blocks.furniture.*;
 import de.dafuqs.spectrum.registries.*;
 import net.fabricmc.fabric.api.item.v1.*;
@@ -39,6 +40,10 @@ public class SpectralDecorationsBlocks {
 			registerBlockWithItem(SpectrumItemGroups.COLORED_WOOD, colorString + "_amphora", new AmphoraBlock(AbstractBlock.Settings.create().mapColor(color).sounds(BlockSoundGroup.WOOD)), new FabricItemSettings(), Type.AMPHORA, color, 0, 0);
 			registerBlockWithItem(SpectrumItemGroups.COLORED_WOOD, colorString + "_lantern", new FlexLanternBlock(AbstractBlock.Settings.create().mapColor(color).sounds(BlockSoundGroup.WOOD).luminance(state -> 13)), new FabricItemSettings(), Type.LANTERN, color, 0, 0);
 			registerBlockWithItem(SpectrumItemGroups.COLORED_WOOD, colorString + "_light", new PillarBlock(AbstractBlock.Settings.create().mapColor(color).sounds(BlockSoundGroup.WOOD).luminance(state -> 15)), new FabricItemSettings(), Type.LIGHT, color, 5, 20);
+
+			registerBlockWithItem(SpectrumItemGroups.DECORATION, colorString + "_effulgent_block", new CushionedFacingBlock(AbstractBlock.Settings.copy(Blocks.RED_WOOL)), new FabricItemSettings(), Type.EFFULGENT_BLOCK, color, 0, 0);
+			registerBlockWithItem(SpectrumItemGroups.DECORATION, colorString + "_effulgent_cushion", new CushionBlock(AbstractBlock.Settings.copy(Blocks.RED_WOOL).nonOpaque().allowsSpawning((state, world, pos, type) -> false)), new FabricItemSettings(), Type.EFFULGENT_CUSHION, color, 0, 0);
+			registerBlockWithItem(SpectrumItemGroups.DECORATION, colorString + "_effulgent_carpet", new CushionedCarpetBlock(AbstractBlock.Settings.copy(Blocks.RED_CARPET)), new FabricItemSettings(), Type.EFFULGENT_CARPET, color, 0, 0);
 		}
 	}
 	
@@ -102,7 +107,10 @@ public class SpectralDecorationsBlocks {
 		BEAM,
 		AMPHORA,
 		LANTERN,
-		LIGHT
+		LIGHT,
+		EFFULGENT_BLOCK,
+		EFFULGENT_CUSHION,
+		EFFULGENT_CARPET
 	}
 	
 	public record PropertyHolder(Item item, ItemSubGroup subGroup, Type type, DyeColor color) {

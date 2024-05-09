@@ -23,6 +23,13 @@ public class SpectralDecorationsItemGroups {
 				}
 			}
 		});
+		ItemSubGroupEvents.modifyEntriesEvent(ItemGroupIDs.SUBTAB_RESOURCES).register(entries -> {
+			for (SpectralDecorationsItems.PropertyHolder item : SpectralDecorationsItems.items) {
+				if (item.subGroup().getIdentifier().equals(ItemGroupIDs.SUBTAB_RESOURCES)) {
+					entries.add(item.item().getDefaultStack());
+				}
+			}
+		});
 	}
 	
 }
