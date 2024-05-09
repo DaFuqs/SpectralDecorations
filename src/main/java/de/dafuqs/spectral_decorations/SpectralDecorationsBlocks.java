@@ -5,6 +5,7 @@ import de.dafuqs.spectrum.blocks.amphora.*;
 import de.dafuqs.spectrum.blocks.conditional.colored_tree.*;
 import de.dafuqs.spectrum.blocks.decoration.*;
 import de.dafuqs.spectrum.blocks.furniture.*;
+import de.dafuqs.spectrum.helpers.*;
 import de.dafuqs.spectrum.registries.*;
 import net.fabricmc.fabric.api.item.v1.*;
 import net.fabricmc.fabric.api.registry.*;
@@ -29,12 +30,8 @@ public class SpectralDecorationsBlocks {
 			registerBlockWithItem(SpectrumItemGroups.DECORATION, name + "_beam", new PillarBlock(AbstractBlock.Settings.create().mapColor(mapColor).sounds(blockSoundGroup)), new FabricItemSettings(), Type.BEAM, DyeColor.LIME, isFireResistant ? 0 : 5, isFireResistant ? 0 : 20);
 			registerBlockWithItem(SpectrumItemGroups.DECORATION, name + "_amphora", new AmphoraBlock(AbstractBlock.Settings.create().mapColor(mapColor).sounds(blockSoundGroup)), new FabricItemSettings(), Type.AMPHORA, DyeColor.LIME, 0, 0);
 		}
-		
-		for(DyeColor color : DyeColor.values()) {
-			if (color.getId() > 15) {
-				break;
-			}
-			
+
+		for (DyeColor color : ColorHelper.VANILLA_DYE_COLORS) {
 			String colorString = color.asString();
 			registerBlockWithItem(SpectrumItemGroups.COLORED_WOOD, colorString + "_beam", new PillarBlock(AbstractBlock.Settings.create().mapColor(color).sounds(BlockSoundGroup.WOOD)), new FabricItemSettings(), Type.BEAM, color, 5, 20);
 			registerBlockWithItem(SpectrumItemGroups.COLORED_WOOD, colorString + "_amphora", new AmphoraBlock(AbstractBlock.Settings.create().mapColor(color).sounds(BlockSoundGroup.WOOD)), new FabricItemSettings(), Type.AMPHORA, color, 0, 0);
@@ -46,8 +43,8 @@ public class SpectralDecorationsBlocks {
 			registerBlockWithItem(SpectrumItemGroups.DECORATION, colorString + "_effulgent_carpet", new CushionedCarpetBlock(AbstractBlock.Settings.copy(Blocks.RED_CARPET)), new FabricItemSettings(), Type.EFFULGENT_CARPET, color, 0, 0);
 		}
 	}
-	
-	public static Item registerBlockWithItem(ItemSubGroup subGroup, String name, Block block, FabricItemSettings itemSettings, Type type, DyeColor dyeColor, int fireBurn, int fireSpread) {
+
+	public static void registerBlockWithItem(ItemSubGroup subGroup, String name, Block block, FabricItemSettings itemSettings, Type type, DyeColor dyeColor, int fireBurn, int fireSpread) {
 		Registry.register(Registries.BLOCK, SpectralDecorations.locate(name), block);
 		BlockItem blockItem = new BlockItem(block, itemSettings);
 		Registry.register(Registries.ITEM, SpectralDecorations.locate(name), blockItem);
@@ -57,8 +54,6 @@ public class SpectralDecorationsBlocks {
 		if(fireBurn > 0 && fireSpread > 0) {
 			FlammableBlockRegistry.getDefaultInstance().add(ColoredLogBlock.byColor(dyeColor), fireBurn, fireSpread);
 		}
-		
-		return blockItem;
 	}
 	
 	public enum VanillaWood {

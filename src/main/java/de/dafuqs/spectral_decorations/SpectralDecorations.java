@@ -15,7 +15,7 @@ import net.minecraft.util.*;
 import java.util.*;
 
 public class SpectralDecorations implements ModInitializer {
-	
+
 	public static final String MOD_ID = "spectral-decorations";
 
 	@Override
@@ -25,7 +25,7 @@ public class SpectralDecorations implements ModInitializer {
 		SpectralDecorationsItemGroups.register();
 		SpectralDecorationsRecipeTypes.registerRecipeSerializers();
 		SpectralDecorationsKindlingVariants.register();
-		
+
 		ServerLifecycleEvents.SERVER_STARTED.register(server -> {
 			for (SpectralDecorationsBlocks.PropertyHolder entry : SpectralDecorationsBlocks.items) {
 				ItemColors.ITEM_COLORS.registerColorMapping(entry.item(), entry.color());
@@ -42,7 +42,7 @@ public class SpectralDecorations implements ModInitializer {
 				return true;
 			});
 		});
-		
+
 		ItemTooltipCallback.EVENT.register((stack, context, lines) -> {
 			if (stack.isIn(SpectralDecorationsItemTags.BEDROCK_ARMOR)) {
 				Optional<DyeColor> optionalColor = BedrockArmorColorizer.getColor(stack);
@@ -53,14 +53,14 @@ public class SpectralDecorations implements ModInitializer {
 				}
 			}
 		});
-		
+
 		// Builtin Resource Packs
 		Optional<ModContainer> modContainer = FabricLoader.getInstance().getModContainer(MOD_ID);
 		modContainer.ifPresent(container -> ResourceManagerHelper.registerBuiltinResourcePack(locate("spectral_decorations"), container, Text.of("Spectral Decorations Overrides"), ResourcePackActivationType.DEFAULT_ENABLED));
 	}
-	
+
 	public static Identifier locate(String name) {
 		return new Identifier(MOD_ID, name);
 	}
-	
+
 }

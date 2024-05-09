@@ -8,8 +8,11 @@
   "recipeGroup.spectral-decorations.vanilla_wood_beams": "Wooden Beams",
   "recipeGroup.spectral-decorations.vanilla_wood_amphoras": "Wooden Amphoras",
   "recipeGroup.spectral-decorations.colored_effulgent_deco": "Colored Effulgent Deco",
+  "tag.spectral-decorations.colored_effulgent_feathers": "Colored Effulgent Feathers",
 
   "tooltip.spectral-decorations.colored": "Colored ",
+  "advancements.spectral-decorations.pluck_colored_effulgent_feather.title": "Hue Hue Hue",
+  "advancements.spectral-decorations.pluck_colored_effulgent_feather.description": "Use your Paintbrush to color a Kindling and pluck a Colored Feather from it",
 
   "block.spectral-decorations.black_amphora": "Black Amphora",
   "block.spectral-decorations.black_lantern": "Black Lantern",

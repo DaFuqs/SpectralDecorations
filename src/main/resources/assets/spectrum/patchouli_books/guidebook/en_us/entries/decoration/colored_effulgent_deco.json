@@ -1,8 +1,9 @@
 {
-  "name": "Colored Effulgent Deco",
-  "icon": "spectral-decorations:green_effulgent_cushion",
-  "advancement": "spectrum:lategame/pluck_effulgent_feather",
+  "name": "Kindling Coloring",
+  "icon": "spectrum:kindling_head",
+  "advancement": "spectrum:lategame/remember_kindling",
   "category": "spectrum:decoration_category",
+  "turnin": "spectral-decorations:lategame/pluck_colored_effulgent_feather",
   "extra_recipe_mappings": {
     "spectral-decorations:black_effulgent_feather": 0,
     "spectral-decorations:blue_effulgent_feather": 0,
@@ -74,8 +75,15 @@
   },
   "pages": [
     {
+      "type": "patchouli:spotlight",
+      "title": "Kindling Coloring",
+      "item": "spectrum:paintbrush",
+      "text": "The Paintbrush is able to dye both blocks and dye creatures like Sheep.$(br)Now for an inherently magical creature like the Kindling..."
+    },
+    {
       "type": "spectrum:collection",
-      "title": "Colored Effulgent Deco",
+      "advancement": "spectral-decorations:lategame/pluck_colored_effulgent_feather",
+      "title": "Colored Feathers",
       "items": [
         "spectral-decorations:black_effulgent_feather",
         "spectral-decorations:blue_effulgent_feather",
@@ -94,17 +102,32 @@
         "spectral-decorations:white_effulgent_feather",
         "spectral-decorations:yellow_effulgent_feather"
       ],
-      "text": ""
+      "text": "Your Kindlings soaked up the magical paint like a sponge, saturating the entire plumage with a single brushstroke - unlike Sheep with only superficially coloured wool. Matching feathers were a logical consequence."
     },
     {
-      "type": "patchouli:spotlight",
-      "title": "Kindling Coloring",
-      "item": "spectrum:paintbrush",
-      "text": ""
+      "type": "spectrum:pedestal_crafting",
+      "advancement": "spectral-decorations:lategame/pluck_colored_effulgent_feather",
+      "title": "Effulgent Blocks",
+      "recipe": "spectral-decorations:colored_effulgent/cyan_block",
+      "text": "$(italic)Super fluffy.$()"
+    },
+    {
+      "type": "spectrum:pedestal_crafting",
+      "advancement": "spectral-decorations:lategame/pluck_colored_effulgent_feather",
+      "title": "Effulgent Cushions",
+      "recipe": "spectral-decorations:colored_effulgent/magenta_cushion",
+      "text": "$(italic)Super soft to sit on.$()"
+    },
+    {
+      "type": "spectrum:pedestal_crafting",
+      "advancement": "spectral-decorations:lategame/pluck_colored_effulgent_feather",
+      "title": "Effulgent Carpets",
+      "recipe": "spectral-decorations:colored_effulgent/yellow_carpet_from_blocks",
+      "text": "$(italic)And super soft to walk on, too!$()"
     },
     {
       "type": "spectrum:collection",
-      "title": "Colored Effulgent Deco",
+      "advancement": "spectral-decorations:lategame/pluck_colored_effulgent_feather",
       "items": [
         "spectral-decorations:black_effulgent_block",
         "spectral-decorations:blue_effulgent_block",
@@ -122,7 +145,6 @@
         "spectral-decorations:red_effulgent_block",
         "spectral-decorations:white_effulgent_block",
         "spectral-decorations:yellow_effulgent_block",
-
         "spectral-decorations:black_effulgent_cushion",
         "spectral-decorations:blue_effulgent_cushion",
         "spectral-decorations:brown_effulgent_cushion",
@@ -139,7 +161,6 @@
         "spectral-decorations:red_effulgent_cushion",
         "spectral-decorations:white_effulgent_cushion",
         "spectral-decorations:yellow_effulgent_cushion",
-
         "spectral-decorations:black_effulgent_carpet",
         "spectral-decorations:blue_effulgent_carpet",
         "spectral-decorations:brown_effulgent_carpet",
@@ -157,24 +178,6 @@
         "spectral-decorations:white_effulgent_carpet",
         "spectral-decorations:yellow_effulgent_carpet"
       ],
-      "text": ""
-    },
-    {
-      "type": "spectrum:pedestal_crafting",
-      "title": "Effulgent Blocks",
-      "recipe": "spectral-decorations:colored_effulgent/cyan_block",
-      "text": ""
-    },
-    {
-      "type": "spectrum:pedestal_crafting",
-      "title": "Effulgent Cushions",
-      "recipe": "spectral-decorations:colored_effulgent/magenta_cushion",
-      "text": ""
-    },
-    {
-      "type": "spectrum:pedestal_crafting",
-      "title": "Effulgent Carpets",
-      "recipe": "spectral-decorations:colored_effulgent/yellow_carpet_from_blocks",
       "text": ""
     }
   ]
