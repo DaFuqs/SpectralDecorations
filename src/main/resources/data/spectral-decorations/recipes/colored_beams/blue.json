@@ -19,7 +19,7 @@
       "item": "spectrum:blue_planks"
     },
     "L": {
-      "item": "spectrum:blue_log"
+      "tag": "spectrum:blue_logs"
     }
   },
   "result": {

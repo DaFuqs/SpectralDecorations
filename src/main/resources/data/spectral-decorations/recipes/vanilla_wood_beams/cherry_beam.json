@@ -19,7 +19,7 @@
       "item": "minecraft:cherry_planks"
     },
     "L": {
-      "item": "minecraft:cherry_log"
+      "tag": "minecraft:cherry_logs"
     }
   },
   "result": {

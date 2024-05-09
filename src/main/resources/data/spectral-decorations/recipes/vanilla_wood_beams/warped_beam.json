@@ -19,7 +19,7 @@
       "item": "minecraft:warped_planks"
     },
     "L": {
-      "item": "minecraft:warped_stem"
+      "tag": "minecraft:warped_stems"
     }
   },
   "result": {

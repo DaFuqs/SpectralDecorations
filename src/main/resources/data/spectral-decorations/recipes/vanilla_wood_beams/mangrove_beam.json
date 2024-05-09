@@ -19,7 +19,7 @@
       "item": "minecraft:mangrove_planks"
     },
     "L": {
-      "item": "minecraft:mangrove_log"
+      "tag": "minecraft:mangrove_logs"
     }
   },
   "result": {

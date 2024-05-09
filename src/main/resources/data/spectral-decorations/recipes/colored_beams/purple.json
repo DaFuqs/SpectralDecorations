@@ -19,7 +19,7 @@
       "item": "spectrum:purple_planks"
     },
     "L": {
-      "item": "spectrum:purple_log"
+      "tag": "spectrum:purple_logs"
     }
   },
   "result": {

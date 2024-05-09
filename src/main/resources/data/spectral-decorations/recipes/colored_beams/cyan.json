@@ -19,7 +19,7 @@
       "item": "spectrum:cyan_planks"
     },
     "L": {
-      "item": "spectrum:cyan_log"
+      "tag": "spectrum:cyan_logs"
     }
   },
   "result": {

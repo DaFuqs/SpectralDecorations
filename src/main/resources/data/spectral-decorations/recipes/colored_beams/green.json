@@ -19,7 +19,7 @@
       "item": "spectrum:green_planks"
     },
     "L": {
-      "item": "spectrum:green_log"
+      "tag": "spectrum:green_logs"
     }
   },
   "result": {

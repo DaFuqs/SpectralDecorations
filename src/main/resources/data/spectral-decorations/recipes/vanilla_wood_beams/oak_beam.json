@@ -19,7 +19,7 @@
       "item": "minecraft:oak_planks"
     },
     "L": {
-      "item": "minecraft:oak_log"
+      "tag": "minecraft:oak_logs"
     }
   },
   "result": {

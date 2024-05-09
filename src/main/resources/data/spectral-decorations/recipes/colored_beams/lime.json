@@ -19,7 +19,7 @@
       "item": "spectrum:lime_planks"
     },
     "L": {
-      "item": "spectrum:lime_log"
+      "tag": "spectrum:lime_logs"
     }
   },
   "result": {

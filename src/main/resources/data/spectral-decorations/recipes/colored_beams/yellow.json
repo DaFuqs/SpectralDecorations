@@ -19,7 +19,7 @@
       "item": "spectrum:yellow_planks"
     },
     "L": {
-      "item": "spectrum:yellow_log"
+      "tag": "spectrum:yellow_logs"
     }
   },
   "result": {

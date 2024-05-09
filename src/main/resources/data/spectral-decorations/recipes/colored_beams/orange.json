@@ -19,7 +19,7 @@
       "item": "spectrum:orange_planks"
     },
     "L": {
-      "item": "spectrum:orange_log"
+      "tag": "spectrum:orange_logs"
     }
   },
   "result": {

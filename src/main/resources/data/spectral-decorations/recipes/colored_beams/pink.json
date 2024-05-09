@@ -19,7 +19,7 @@
       "item": "spectrum:pink_planks"
     },
     "L": {
-      "item": "spectrum:pink_log"
+      "tag": "spectrum:pink_logs"
     }
   },
   "result": {

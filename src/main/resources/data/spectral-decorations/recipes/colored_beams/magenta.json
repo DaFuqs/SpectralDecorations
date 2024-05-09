@@ -19,7 +19,7 @@
       "item": "spectrum:magenta_planks"
     },
     "L": {
-      "item": "spectrum:magenta_log"
+      "tag": "spectrum:magenta_logs"
     }
   },
   "result": {
