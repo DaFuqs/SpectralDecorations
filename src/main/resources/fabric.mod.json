@@ -33,6 +33,6 @@
     "minecraft": ">=${minecraft_version}",
     "fabricloader": "*",
     "fabric": "*",
-    "spectrum": ">=1.7.10"
+    "spectrum": ">=1.7.11"
   }
 }
