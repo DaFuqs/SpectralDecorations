@@ -48,7 +48,7 @@
     {
       "type": "spectrum:pedestal_crafting",
       "title": "Pedestal Recipe",
-      "recipe": "spectral-decorations:lanterns/cyan",
+      "recipe": "spectral-decorations:colored_lanterns/cyan",
       "text": "Come in all 16 colors."
     }
   ]

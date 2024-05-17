@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/carpet",
+  "textures": {
+    "wool": "spectral-decorations:block/colored_effulgent_carpet/gray"
+  }
+}

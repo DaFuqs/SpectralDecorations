@@ -1,0 +1,30 @@
+{
+  "type": "spectrum:pedestal",
+  "group": "vanilla_wood_beams",
+  "time": 40,
+  "tier": "basic",
+  "cyan": 0,
+  "magenta": 0,
+  "yellow": 0,
+  "white": 0,
+  "black": 0,
+  "experience": 0.1,
+  "pattern": [
+    "PP",
+    "LL",
+    "PP"
+  ],
+  "key": {
+    "P": {
+      "item": "minecraft:warped_planks"
+    },
+    "L": {
+      "tag": "minecraft:warped_stems"
+    }
+  },
+  "result": {
+    "item": "spectral-decorations:warped_beam",
+    "count": 4
+  },
+  "required_advancement": "spectrum:place_pedestal"
+}

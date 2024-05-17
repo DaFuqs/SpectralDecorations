@@ -1,0 +1,30 @@
+{
+  "type": "spectrum:pedestal",
+  "group": "colored_beams",
+  "time": 40,
+  "tier": "basic",
+  "cyan": 0,
+  "magenta": 0,
+  "yellow": 0,
+  "white": 0,
+  "black": 0,
+  "experience": 0.1,
+  "pattern": [
+    "PP",
+    "LL",
+    "PP"
+  ],
+  "key": {
+    "P": {
+      "item": "spectrum:lime_planks"
+    },
+    "L": {
+      "tag": "spectrum:lime_logs"
+    }
+  },
+  "result": {
+    "item": "spectral-decorations:lime_beam",
+    "count": 4
+  },
+  "required_advancement": "spectrum:hidden/collect_pigment/collect_lime_pigment"
+}
