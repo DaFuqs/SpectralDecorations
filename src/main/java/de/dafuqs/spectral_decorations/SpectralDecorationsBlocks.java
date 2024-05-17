@@ -2,7 +2,6 @@ package de.dafuqs.spectral_decorations;
 
 import de.dafuqs.fractal.api.*;
 import de.dafuqs.spectrum.blocks.amphora.*;
-import de.dafuqs.spectrum.blocks.conditional.colored_tree.*;
 import de.dafuqs.spectrum.blocks.decoration.*;
 import de.dafuqs.spectrum.blocks.furniture.*;
 import de.dafuqs.spectrum.helpers.*;
@@ -52,7 +51,7 @@ public class SpectralDecorationsBlocks {
 		items.add(new PropertyHolder(blockItem, subGroup, type, dyeColor));
 		
 		if(fireBurn > 0 && fireSpread > 0) {
-			FlammableBlockRegistry.getDefaultInstance().add(ColoredLogBlock.byColor(dyeColor), fireBurn, fireSpread);
+			FlammableBlockRegistry.getDefaultInstance().add(block, fireBurn, fireSpread);
 		}
 	}
 	
