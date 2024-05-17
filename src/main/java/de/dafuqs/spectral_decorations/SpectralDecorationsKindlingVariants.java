@@ -22,15 +22,25 @@ public class SpectralDecorationsKindlingVariants {
 					"textures/entity/kindling/" + s + "_angry.png",
 					"textures/entity/kindling/" + s + "_clipped.png",
 					"textures/entity/kindling/" + s + "_clipped_blinking.png",
-					"textures/entity/kindling/" + s + "_angry_clipped.png")
+							"textures/entity/kindling/" + s + "_angry_clipped.png",
+							"gameplay/kindling_clipping/" + s
+					)
 			);
 		}
 	}
 	
-	private static KindlingVariant register(String name, String defaultTexture, String blinkingTexture, String angryTexture, String clippedTexture, String blinkingClippedTexture, String angryClippedTexture) {
+	private static KindlingVariant register(String name, String defaultTexture, String blinkingTexture, String angryTexture, String clippedTexture, String blinkingClippedTexture, String angryClippedTexture, String lootTable) {
 		return Registry.register(SpectrumRegistries.KINDLING_VARIANT,
 				SpectralDecorations.locate(name),
-				new KindlingVariant(SpectralDecorations.locate(defaultTexture), SpectralDecorations.locate(blinkingTexture), SpectralDecorations.locate(angryTexture), SpectralDecorations.locate(clippedTexture), SpectralDecorations.locate(blinkingClippedTexture), SpectralDecorations.locate(angryClippedTexture))
+				new KindlingVariant(
+						SpectralDecorations.locate(defaultTexture),
+						SpectralDecorations.locate(blinkingTexture),
+						SpectralDecorations.locate(angryTexture),
+						SpectralDecorations.locate(clippedTexture),
+						SpectralDecorations.locate(blinkingClippedTexture),
+						SpectralDecorations.locate(angryClippedTexture),
+						SpectralDecorations.locate(lootTable)
+				)
 		);
 	}
 
