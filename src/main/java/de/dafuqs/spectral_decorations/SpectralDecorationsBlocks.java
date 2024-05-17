@@ -65,8 +65,8 @@ public class SpectralDecorationsBlocks {
 		BAMBOO("bamboo", MapColor.YELLOW, BlockSoundGroup.BAMBOO_WOOD, false),
 		MANGROVE("mangrove", MapColor.RED, BlockSoundGroup.WOOD, false),
 		CHERRY("cherry", MapColor.TERRACOTTA_WHITE, BlockSoundGroup.CHERRY_WOOD, false),
-		CRIMSON("crimson", MapColor.DULL_PINK, BlockSoundGroup.NETHER_WOOD, false),
-		WARPED("warped", MapColor.DARK_AQUA, BlockSoundGroup.NETHER_WOOD, false);
+		CRIMSON("crimson", MapColor.DULL_PINK, BlockSoundGroup.NETHER_WOOD, true),
+		WARPED("warped", MapColor.DARK_AQUA, BlockSoundGroup.NETHER_WOOD, true);
 		
 		private final String name;
 		private final MapColor mapColor;
