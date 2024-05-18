@@ -5,14 +5,8 @@ import de.dafuqs.spectrum.entity.*;
 import de.dafuqs.spectrum.entity.variants.*;
 import de.dafuqs.spectrum.registries.color.*;
 import net.fabricmc.api.*;
-import net.fabricmc.fabric.api.client.item.v1.*;
 import net.fabricmc.fabric.api.event.lifecycle.v1.*;
-import net.fabricmc.fabric.api.resource.*;
-import net.fabricmc.loader.api.*;
-import net.minecraft.text.*;
 import net.minecraft.util.*;
-
-import java.util.*;
 
 public class SpectralDecorations implements ModInitializer {
 
@@ -41,21 +35,6 @@ public class SpectralDecorations implements ModInitializer {
 				return true;
 			});
 		});
-
-		ItemTooltipCallback.EVENT.register((stack, context, lines) -> {
-			if (stack.isIn(SpectralDecorationsItemTags.BEDROCK_ARMOR)) {
-				Optional<DyeColor> optionalColor = BedrockArmorColorizer.getColor(stack);
-				if (optionalColor.isPresent()) {
-					DyeColor c = optionalColor.get();
-					Text t = Text.translatable("tooltip.spectral-decorations.colored").append(Text.translatable("color.minecraft." + c.asString()).styled(style -> style.withColor(c.getSignColor())));
-					lines.add(1, t);
-				}
-			}
-		});
-
-		// Builtin Resource Packs
-		Optional<ModContainer> modContainer = FabricLoader.getInstance().getModContainer(MOD_ID);
-		modContainer.ifPresent(container -> ResourceManagerHelper.registerBuiltinResourcePack(locate("spectral_decorations"), container, "Spectral Decorations Overrides", ResourcePackActivationType.DEFAULT_ENABLED));
 	}
 
 	public static Identifier locate(String name) {

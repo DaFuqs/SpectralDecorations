@@ -1,7 +1,8 @@
-package de.dafuqs.spectral_decorations.mixin;
+package de.dafuqs.spectral_decorations.mixin.client;
 
 import de.dafuqs.spectral_decorations.*;
 import de.dafuqs.spectrum.items.armor.*;
+import net.fabricmc.api.*;
 import net.minecraft.client.render.*;
 import net.minecraft.entity.*;
 import net.minecraft.item.*;
@@ -12,6 +13,7 @@ import org.spongepowered.asm.mixin.injection.callback.*;
 
 import java.util.*;
 
+@Environment(EnvType.CLIENT)
 @Mixin(BedrockArmorItem.class)
 public abstract class BedrockArmorItemMixin {
 	
