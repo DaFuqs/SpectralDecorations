@@ -3,8 +3,6 @@ package de.dafuqs.spectral_decorations;
 import de.dafuqs.fractal.api.*;
 import de.dafuqs.spectrum.api.item_group.*;
 import net.minecraft.item.*;
-import net.minecraft.util.*;
-import oshi.util.tuples.*;
 
 public class SpectralDecorationsItemGroups {
 

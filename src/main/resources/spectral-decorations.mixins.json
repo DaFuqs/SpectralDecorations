@@ -4,9 +4,11 @@
   "package": "de.dafuqs.spectral_decorations.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
-    "BedrockArmorItemMixin"
+
   ],
-  "client": [],
+  "client": [
+    "client.BedrockArmorItemMixin"
+  ],
   "injectors": {
     "defaultRequire": 1
   }
