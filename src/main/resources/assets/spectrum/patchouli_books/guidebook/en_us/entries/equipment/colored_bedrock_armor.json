@@ -1,0 +1,25 @@
+{
+  "name": "Colored Bedrock Armor",
+  "icon": "spectrum:bedrock_chestplate{Color:\"red\"}",
+  "advancement": "spectrum:unlocks/equipment/bedrock_tools",
+  "category": "spectrum:equipment_category",
+  "pages": [
+    {
+      "type": "spectrum:collection",
+      "title": "Colored Bedrock Armor",
+      "items": [
+        "spectrum:bedrock_helmet{Color:\"green\"}",
+        "spectrum:bedrock_chestplate{Color:\"orange\"}",
+        "spectrum:bedrock_leggings{Color:\"pink\"}",
+        "spectrum:bedrock_boots{Color:\"yellow\"}"
+      ],
+      "text": "Bedrock Armor looks remarkably fancy. What couldn't hurt, however, would be a little more colour choice for your wardrobe. No problem!"
+    },
+    {
+      "type": "spectrum:pedestal_crafting",
+      "title": "Pedestal Recipe",
+      "recipe": "spectral-decorations:bedrock_armor_coloring",
+      "text": "Combine any piece of Bedrock Armor with Pigment to dye it."
+    }
+  ]
+}
