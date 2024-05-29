@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:block/cube_bottom_top",
   "textures": {
-    "bottom": "spectral-decorations:block/vanilla_wood_amphoras/warped_top",
+    "bottom": "spectral-decorations:block/vanilla_wood_amphoras/warped_bottom",
     "side": "spectral-decorations:block/vanilla_wood_amphoras/warped",
     "top": "spectral-decorations:block/vanilla_wood_amphoras/warped_top"
   }

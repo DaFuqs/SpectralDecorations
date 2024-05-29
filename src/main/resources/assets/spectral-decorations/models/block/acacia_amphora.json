@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:block/cube_bottom_top",
   "textures": {
-    "bottom": "spectral-decorations:block/vanilla_wood_amphoras/acacia_top",
+    "bottom": "spectral-decorations:block/vanilla_wood_amphoras/acacia_bottom",
     "side": "spectral-decorations:block/vanilla_wood_amphoras/acacia",
     "top": "spectral-decorations:block/vanilla_wood_amphoras/acacia_top"
   }
