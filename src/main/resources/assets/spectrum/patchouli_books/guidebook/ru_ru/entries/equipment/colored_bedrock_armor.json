@@ -1,5 +1,5 @@
 {
-  "name": "Цветная Бедроковая Броня",
+  "name": "Цветная Бедрок Броня",
   "icon": "spectrum:bedrock_chestplate{Color:\"red\"}",
   "advancement": "spectrum:unlocks/equipment/bedrock_tools",
   "category": "spectrum:equipment_category",

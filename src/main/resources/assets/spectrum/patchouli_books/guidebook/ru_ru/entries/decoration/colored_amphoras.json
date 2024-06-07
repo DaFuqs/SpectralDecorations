@@ -24,7 +24,7 @@
   "pages": [
     {
       "type": "spectrum:collection",
-      "title": "Colored Amphoras",
+      "title": "Цветные Амфоры",
       "items": [
         "spectral-decorations:black_amphora",
         "spectral-decorations:blue_amphora",
@@ -47,7 +47,7 @@
     },
     {
       "type": "spectrum:pedestal_crafting",
-      "title": "Pedestal Recipe",
+      "title": "Пьедестальный Рецепт",
       "recipe": "spectral-decorations:colored_amphoras/yellow",
       "text": "Почти как бочка, но гораздо вместительнее: их объем соответствует двойному сундуку.$(br)В комплекте все 16 цветов. Пора добавить цветовой код в ваш склад?"
     }

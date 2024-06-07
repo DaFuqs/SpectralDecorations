@@ -47,7 +47,7 @@
     },
     {
       "type": "spectrum:pedestal_crafting",
-      "title": "Pedestal Recipe",
+      "title": "Пьедестальный Рецепт",
       "recipe": "spectral-decorations:colored_lights/magenta",
       "text": "Выпускаются во всех 16 цветах."
     }
