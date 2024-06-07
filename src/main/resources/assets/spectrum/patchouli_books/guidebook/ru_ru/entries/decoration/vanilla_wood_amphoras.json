@@ -18,7 +18,7 @@
   "pages": [
     {
       "type": "spectrum:collection",
-      "title": "Деревянный Амфоры",
+      "title": "Деревянные Амфоры",
       "items": [
         "spectral-decorations:oak_amphora",
         "spectral-decorations:spruce_amphora",
@@ -35,7 +35,7 @@
     },
     {
       "type": "spectrum:pedestal_crafting",
-      "title": "Деревянный Амфоры",
+      "title": "Деревянные Амфоры",
       "recipe": "spectral-decorations:vanilla_wood_amphoras/oak_amphora",
       "text": "Почти как бочка, но гораздо вместительнее: их объем соответствует двойному сундуку."
     }
