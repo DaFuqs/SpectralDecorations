@@ -1,0 +1,55 @@
+{
+  "name": "Цветные Тёмносветы",
+  "icon": "spectral-decorations:magenta_light",
+  "advancement": "spectrum:collect_pigment",
+  "category": "spectrum:decoration_category",
+  "extra_recipe_mappings": {
+    "spectral-decorations:black_light": 0,
+    "spectral-decorations:blue_light": 0,
+    "spectral-decorations:brown_light": 0,
+    "spectral-decorations:cyan_light": 0,
+    "spectral-decorations:gray_light": 0,
+    "spectral-decorations:green_light": 0,
+    "spectral-decorations:light_blue_light": 0,
+    "spectral-decorations:light_gray_light": 0,
+    "spectral-decorations:lime_light": 0,
+    "spectral-decorations:magenta_light": 0,
+    "spectral-decorations:orange_light": 0,
+    "spectral-decorations:pink_light": 0,
+    "spectral-decorations:purple_light": 0,
+    "spectral-decorations:red_light": 0,
+    "spectral-decorations:white_light": 0,
+    "spectral-decorations:yellow_light": 0
+  },
+  "pages": [
+    {
+      "type": "spectrum:collection",
+      "title": "Цветные Тёмносветы",
+      "items": [
+        "spectral-decorations:black_light",
+        "spectral-decorations:blue_light",
+        "spectral-decorations:brown_light",
+        "spectral-decorations:cyan_light",
+        "spectral-decorations:gray_light",
+        "spectral-decorations:green_light",
+        "spectral-decorations:light_blue_light",
+        "spectral-decorations:light_gray_light",
+        "spectral-decorations:lime_light",
+        "spectral-decorations:magenta_light",
+        "spectral-decorations:orange_light",
+        "spectral-decorations:pink_light",
+        "spectral-decorations:purple_light",
+        "spectral-decorations:red_light",
+        "spectral-decorations:white_light",
+        "spectral-decorations:yellow_light"
+      ],
+      "text": "Декоративные блоки, которые привнесут цвет и свет в ваши проекты."
+    },
+    {
+      "type": "spectrum:pedestal_crafting",
+      "title": "Pedestal Recipe",
+      "recipe": "spectral-decorations:colored_lights/magenta",
+      "text": "Выпускаются во всех 16 цветах."
+    }
+  ]
+}

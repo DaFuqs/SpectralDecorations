@@ -1,0 +1,55 @@
+{
+  "name": "Цветной Брус",
+  "icon": "spectral-decorations:orange_beam",
+  "advancement": "spectrum:collect_pigment",
+  "category": "spectrum:decoration_category",
+  "extra_recipe_mappings": {
+    "spectral-decorations:black_beam": 0,
+    "spectral-decorations:blue_beam": 0,
+    "spectral-decorations:brown_beam": 0,
+    "spectral-decorations:cyan_beam": 0,
+    "spectral-decorations:gray_beam": 0,
+    "spectral-decorations:green_beam": 0,
+    "spectral-decorations:light_blue_beam": 0,
+    "spectral-decorations:light_gray_beam": 0,
+    "spectral-decorations:lime_beam": 0,
+    "spectral-decorations:magenta_beam": 0,
+    "spectral-decorations:orange_beam": 0,
+    "spectral-decorations:pink_beam": 0,
+    "spectral-decorations:purple_beam": 0,
+    "spectral-decorations:red_beam": 0,
+    "spectral-decorations:white_beam": 0,
+    "spectral-decorations:yellow_beam": 0
+  },
+  "pages": [
+    {
+      "type": "spectrum:collection",
+      "title": "Цветной Брус",
+      "items": [
+        "spectral-decorations:black_beam",
+        "spectral-decorations:blue_beam",
+        "spectral-decorations:brown_beam",
+        "spectral-decorations:cyan_beam",
+        "spectral-decorations:gray_beam",
+        "spectral-decorations:green_beam",
+        "spectral-decorations:light_blue_beam",
+        "spectral-decorations:light_gray_beam",
+        "spectral-decorations:lime_beam",
+        "spectral-decorations:magenta_beam",
+        "spectral-decorations:orange_beam",
+        "spectral-decorations:pink_beam",
+        "spectral-decorations:purple_beam",
+        "spectral-decorations:red_beam",
+        "spectral-decorations:white_beam",
+        "spectral-decorations:yellow_beam"
+      ],
+      "text": "Яркие цвета этого нового вида древесины заставляют вас задуматься о творчестве. Простые бревна и доски не подойдут для некоторых зданий. Вы придумали, как сделать привлекательные опоры любого цвета."
+    },
+    {
+      "type": "spectrum:pedestal_crafting",
+      "title": "Цветной Брус",
+      "recipe": "spectral-decorations:colored_beams/orange",
+      "text": "Выпускаются во всех 16 цветах."
+    }
+  ]
+}

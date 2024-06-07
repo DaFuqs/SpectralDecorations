@@ -1,0 +1,43 @@
+{
+  "name": "Деревянный Амфоры",
+  "icon": "spectral-decorations:oak_amphora",
+  "advancement": "spectrum:lategame/collect_noxwood",
+  "category": "spectrum:decoration_category",
+  "extra_recipe_mappings": {
+    "spectral-decorations:oak_amphora": 0,
+    "spectral-decorations:spruce_amphora": 0,
+    "spectral-decorations:birch_amphora": 0,
+    "spectral-decorations:dark_oak_amphora": 0,
+    "spectral-decorations:jungle_amphora": 0,
+    "spectral-decorations:acacia_amphora": 0,
+    "spectral-decorations:bamboo_amphora": 0,
+    "spectral-decorations:mangrove_amphora": 0,
+    "spectral-decorations:crimson_amphora": 0,
+    "spectral-decorations:warped_amphora": 0
+  },
+  "pages": [
+    {
+      "type": "spectrum:collection",
+      "title": "Деревянный Амфоры",
+      "items": [
+        "spectral-decorations:oak_amphora",
+        "spectral-decorations:spruce_amphora",
+        "spectral-decorations:birch_amphora",
+        "spectral-decorations:dark_oak_amphora",
+        "spectral-decorations:jungle_amphora",
+        "spectral-decorations:acacia_amphora",
+        "spectral-decorations:bamboo_amphora",
+        "spectral-decorations:mangrove_amphora",
+        "spectral-decorations:crimson_amphora",
+        "spectral-decorations:warped_amphora"
+      ],
+      "text": "Раз уж у вас есть целая солянка различных саженцев, почему бы не сделать из них уникальные амфоры?"
+    },
+    {
+      "type": "spectrum:pedestal_crafting",
+      "title": "Деревянный Амфоры",
+      "recipe": "spectral-decorations:vanilla_wood_amphoras/oak_amphora",
+      "text": "Почти как бочка, но гораздо вместительнее: их объем соответствует двойному сундуку."
+    }
+  ]
+}

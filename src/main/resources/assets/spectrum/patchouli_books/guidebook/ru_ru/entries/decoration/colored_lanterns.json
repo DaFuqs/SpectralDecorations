@@ -1,0 +1,55 @@
+{
+  "name": "Цветные Лампы",
+  "icon": "spectral-decorations:cyan_lantern",
+  "advancement": "spectrum:collect_pigment",
+  "category": "spectrum:decoration_category",
+  "extra_recipe_mappings": {
+    "spectral-decorations:black_lantern": 0,
+    "spectral-decorations:blue_lantern": 0,
+    "spectral-decorations:brown_lantern": 0,
+    "spectral-decorations:cyan_lantern": 0,
+    "spectral-decorations:gray_lantern": 0,
+    "spectral-decorations:green_lantern": 0,
+    "spectral-decorations:light_blue_lantern": 0,
+    "spectral-decorations:light_gray_lantern": 0,
+    "spectral-decorations:lime_lantern": 0,
+    "spectral-decorations:magenta_lantern": 0,
+    "spectral-decorations:orange_lantern": 0,
+    "spectral-decorations:pink_lantern": 0,
+    "spectral-decorations:purple_lantern": 0,
+    "spectral-decorations:red_lantern": 0,
+    "spectral-decorations:white_lantern": 0,
+    "spectral-decorations:yellow_lantern": 0
+  },
+  "pages": [
+    {
+      "type": "spectrum:collection",
+      "title": "Цветные Лампы",
+      "items": [
+        "spectral-decorations:black_lantern",
+        "spectral-decorations:blue_lantern",
+        "spectral-decorations:brown_lantern",
+        "spectral-decorations:cyan_lantern",
+        "spectral-decorations:gray_lantern",
+        "spectral-decorations:green_lantern",
+        "spectral-decorations:light_blue_lantern",
+        "spectral-decorations:light_gray_lantern",
+        "spectral-decorations:lime_lantern",
+        "spectral-decorations:magenta_lantern",
+        "spectral-decorations:orange_lantern",
+        "spectral-decorations:pink_lantern",
+        "spectral-decorations:purple_lantern",
+        "spectral-decorations:red_lantern",
+        "spectral-decorations:white_lantern",
+        "spectral-decorations:yellow_lantern"
+      ],
+      "text": "Небольшие декоративные лампы. Можно разместить на полу или потолке, прямо или крест-накрест.$(br)При размещении альтернативной формы выдвигается."
+    },
+    {
+      "type": "spectrum:pedestal_crafting",
+      "title": "Пьедестальный Рецепт",
+      "recipe": "spectral-decorations:colored_lanterns/cyan",
+      "text": "Выпускаются во всех 16 цветах."
+    }
+  ]
+}

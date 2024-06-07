@@ -1,0 +1,55 @@
+{
+  "name": "Цветные Амфоры",
+  "icon": "spectral-decorations:yellow_amphora",
+  "advancement": "spectrum:lategame/collect_noxwood",
+  "category": "spectrum:decoration_category",
+  "extra_recipe_mappings": {
+    "spectral-decorations:black_amphora": 0,
+    "spectral-decorations:blue_amphora": 0,
+    "spectral-decorations:brown_amphora": 0,
+    "spectral-decorations:cyan_amphora": 0,
+    "spectral-decorations:gray_amphora": 0,
+    "spectral-decorations:green_amphora": 0,
+    "spectral-decorations:light_blue_amphora": 0,
+    "spectral-decorations:light_gray_amphora": 0,
+    "spectral-decorations:lime_amphora": 0,
+    "spectral-decorations:magenta_amphora": 0,
+    "spectral-decorations:orange_amphora": 0,
+    "spectral-decorations:pink_amphora": 0,
+    "spectral-decorations:purple_amphora": 0,
+    "spectral-decorations:red_amphora": 0,
+    "spectral-decorations:white_amphora": 0,
+    "spectral-decorations:yellow_amphora": 0
+  },
+  "pages": [
+    {
+      "type": "spectrum:collection",
+      "title": "Colored Amphoras",
+      "items": [
+        "spectral-decorations:black_amphora",
+        "spectral-decorations:blue_amphora",
+        "spectral-decorations:brown_amphora",
+        "spectral-decorations:cyan_amphora",
+        "spectral-decorations:gray_amphora",
+        "spectral-decorations:green_amphora",
+        "spectral-decorations:light_blue_amphora",
+        "spectral-decorations:light_gray_amphora",
+        "spectral-decorations:lime_amphora",
+        "spectral-decorations:magenta_amphora",
+        "spectral-decorations:orange_amphora",
+        "spectral-decorations:pink_amphora",
+        "spectral-decorations:purple_amphora",
+        "spectral-decorations:red_amphora",
+        "spectral-decorations:white_amphora",
+        "spectral-decorations:yellow_amphora"
+      ],
+      "text": "Мракодеерво - это, конечно, круто, но почему бы не сделать уникальные амфоры из разноцветных деревьев, которые попадались вам на пути?"
+    },
+    {
+      "type": "spectrum:pedestal_crafting",
+      "title": "Pedestal Recipe",
+      "recipe": "spectral-decorations:colored_amphoras/yellow",
+      "text": "Почти как бочка, но гораздо вместительнее: их объем соответствует двойному сундуку.$(br)В комплекте все 16 цветов. Пора добавить цветовой код в ваш склад?"
+    }
+  ]
+}
