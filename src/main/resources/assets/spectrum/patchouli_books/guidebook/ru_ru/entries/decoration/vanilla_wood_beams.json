@@ -1,0 +1,43 @@
+{
+  "name": "Деревянный Брус",
+  "icon": "spectral-decorations:oak_beam",
+  "advancement": "spectrum:place_pedestal",
+  "category": "spectrum:decoration_category",
+  "extra_recipe_mappings": {
+    "spectral-decorations:oak_beam": 0,
+    "spectral-decorations:spruce_beam": 0,
+    "spectral-decorations:birch_beam": 0,
+    "spectral-decorations:dark_oak_beam": 0,
+    "spectral-decorations:jungle_beam": 0,
+    "spectral-decorations:acacia_beam": 0,
+    "spectral-decorations:bamboo_beam": 0,
+    "spectral-decorations:mangrove_beam": 0,
+    "spectral-decorations:crimson_beam": 0,
+    "spectral-decorations:warped_beam": 0
+  },
+  "pages": [
+    {
+      "type": "spectrum:collection",
+      "title": "Деревянный Брус",
+      "items": [
+        "spectral-decorations:oak_beam",
+        "spectral-decorations:spruce_beam",
+        "spectral-decorations:birch_beam",
+        "spectral-decorations:dark_oak_beam",
+        "spectral-decorations:jungle_beam",
+        "spectral-decorations:acacia_beam",
+        "spectral-decorations:bamboo_beam",
+        "spectral-decorations:mangrove_beam",
+        "spectral-decorations:crimson_beam",
+        "spectral-decorations:warped_beam"
+      ],
+      "text": "Есть одна вещь, которая никогда не отпускала ваш свободный дух: Творчество. Ваша голова регулярно наполняется новыми идеями о том, как можно украсить свой дом. Как насчет декоративного деревянного бруса? Лучше, чем булыжник 9 на 9, это точно."
+    },
+    {
+      "type": "spectrum:pedestal_crafting",
+      "title": "Деревянный Брус",
+      "recipe": "spectral-decorations:vanilla_wood_beams/oak_beam",
+      "text": "В варианте с бамбуком вместо бревна используется бамбуковый блок."
+    }
+  ]
+}
