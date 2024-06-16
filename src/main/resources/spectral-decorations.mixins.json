@@ -4,6 +4,7 @@
   "package": "de.dafuqs.spectral_decorations.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
+    "client.KindlingEntityMixin"
 
   ],
   "client": [

@@ -123,7 +123,7 @@
       "advancement": "spectral-decorations:lategame/pluck_colored_effulgent_feather",
       "title": "Effulgent Carpets",
       "recipe": "spectral-decorations:colored_effulgent/yellow_carpet_from_blocks",
-      "text": "$(italic)And super soft to walk on, too!$()"
+      "text": "$(italic)And super soft to walk on, too!$()$(br2)You can uncolor Kindlings again by bathing them in $(item)Liquid Crystal$()."
     },
     {
       "type": "spectrum:collection",
