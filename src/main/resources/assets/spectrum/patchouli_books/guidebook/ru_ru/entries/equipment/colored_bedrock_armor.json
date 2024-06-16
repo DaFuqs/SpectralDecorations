@@ -1,0 +1,25 @@
+{
+  "name": "Цветная Бедрок Броня",
+  "icon": "spectrum:bedrock_chestplate{Color:\"red\"}",
+  "advancement": "spectrum:unlocks/equipment/bedrock_tools",
+  "category": "spectrum:equipment_category",
+  "pages": [
+    {
+      "type": "spectrum:collection",
+      "title": "Цветная Бедроковая Броня",
+      "items": [
+        "spectrum:bedrock_helmet{Color:\"green\"}",
+        "spectrum:bedrock_chestplate{Color:\"orange\"}",
+        "spectrum:bedrock_leggings{Color:\"pink\"}",
+        "spectrum:bedrock_boots{Color:\"yellow\"}"
+      ],
+      "text": "Бедрок Броня выглядит очень стильно. Однако не помешало бы немного больше выбора цветов для вашего гардероба. Нет проблем!"
+    },
+    {
+      "type": "spectrum:pedestal_crafting",
+      "title": "Пьедестальный Рецепт",
+      "recipe": "spectral-decorations:bedrock_armor_coloring",
+      "text": "Соедините любую часть Бедрок Брони с пигментом, чтобы перекрасить его."
+    }
+  ]
+}
