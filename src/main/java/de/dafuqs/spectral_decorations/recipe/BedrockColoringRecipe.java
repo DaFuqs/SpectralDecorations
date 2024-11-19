@@ -18,7 +18,7 @@ import java.util.*;
 
 public class BedrockColoringRecipe extends ShapelessPedestalRecipe {
 	
-	public static final Identifier UNLOCK_IDENTIFIER = SpectrumCommon.locate("unlocks/food/star_candy");
+	public static final Identifier UNLOCK_IDENTIFIER = SpectrumCommon.locate("unlocks/equipment/bedrock_tools");
 	public static final RecipeSerializer<BedrockColoringRecipe> SERIALIZER = new EmptyRecipeSerializer<>(BedrockColoringRecipe::new);
 	
 	public BedrockColoringRecipe(Identifier id) {
