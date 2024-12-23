@@ -12,6 +12,7 @@ public class SpectralDecorationsRecipeTypes {
 	
 	public static void registerRecipeSerializers() {
 		register(BedrockColoringRecipe.SERIALIZER, "bedrock_armor_coloring");
+		register(BottomlessBundleColoringRecipe.SERIALIZER, "bottomless_bundle_coloring");
 	}
 
 }

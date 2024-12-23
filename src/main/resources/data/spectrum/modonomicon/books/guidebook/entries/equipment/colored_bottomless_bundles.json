@@ -1,0 +1,43 @@
+{
+  "name": "book.spectral-decorations.guidebook.colored_bottomless_bundles.name",
+  "condition": {
+    "type": "modonomicon:advancement",
+    "advancement_id": "spectrum:unlocks/items/bottomless_bundle"
+  },
+  "icon": {
+    "item": "spectrum:bottomless_bundle",
+    "nbt": {
+      "Color": "blue"
+    }
+  },
+  "category": "spectrum:equipment",
+  "hide_while_locked": true,
+  "parents": [
+    {
+      "entry": "spectrum:equipment/bottomless_bundle"
+    }
+  ],
+  "background_u_index": 0,
+  "background_v_index": 0,
+  "x": 3,
+  "y": 4,
+  "pages": [
+    {
+      "type": "spectrum:collection",
+      "title": "book.spectral-decorations.guidebook.colored_bottomless_bundles.name",
+      "items": [
+        "spectrum:bottomless_bundle{Color:\"green\"}",
+        "spectrum:bottomless_bundle{Color:\"orange\"}",
+        "spectrum:bottomless_bundle{Color:\"pink\"}",
+        "spectrum:bottomless_bundle{Color:\"yellow\"}"
+      ],
+      "text": "book.spectral-decorations.guidebook.colored_bottomless_bundles.page0.text"
+    },
+    {
+      "type": "spectrum:pedestal_crafting",
+      "title": "container.spectrum.rei.pedestal_recipe",
+      "recipe_id": "spectral-decorations:pedestal/tier1/bottomless_bundle_coloring",
+      "text": "book.spectral-decorations.guidebook.colored_bottomless_bundles.page1.text"
+    }
+  ]
+}

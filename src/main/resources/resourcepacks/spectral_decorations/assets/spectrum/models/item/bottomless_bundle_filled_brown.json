@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "spectrum:item/colored_bottomless_bundle/brown_filled"
+  }
+}
