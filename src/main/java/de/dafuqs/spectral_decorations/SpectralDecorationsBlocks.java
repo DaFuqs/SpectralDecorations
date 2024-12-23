@@ -36,9 +36,10 @@ public class SpectralDecorationsBlocks {
 			registerBlockWithItem(SpectrumItemGroups.COLORED_WOOD, colorString + "_lantern", new FlexLanternBlock(AbstractBlock.Settings.create().strength(4.0F).mapColor(color).sounds(BlockSoundGroup.WOOD).luminance(state -> 13)), new FabricItemSettings(), Type.LANTERN, color, 0, 0);
 			registerBlockWithItem(SpectrumItemGroups.COLORED_WOOD, colorString + "_light", new PillarBlock(AbstractBlock.Settings.create().strength(4.0F).mapColor(color).sounds(BlockSoundGroup.WOOD).luminance(state -> 15)), new FabricItemSettings(), Type.LIGHT, color, 5, 20);
 			
-			registerBlockWithItem(SpectrumItemGroups.DECORATION, colorString + "_effulgent_block", new CushionedFacingBlock(AbstractBlock.Settings.copy(Blocks.RED_WOOL).mapColor(color)), new FabricItemSettings(), Type.EFFULGENT_BLOCK, color, 0, 0);
-			registerBlockWithItem(SpectrumItemGroups.DECORATION, colorString + "_effulgent_cushion", new CushionBlock(AbstractBlock.Settings.copy(Blocks.RED_WOOL).mapColor(color).nonOpaque().allowsSpawning((state, world, pos, type) -> false)), new FabricItemSettings(), Type.EFFULGENT_CUSHION, color, 0, 0);
-			registerBlockWithItem(SpectrumItemGroups.DECORATION, colorString + "_effulgent_carpet", new CushionedCarpetBlock(AbstractBlock.Settings.copy(Blocks.RED_CARPET).mapColor(color)), new FabricItemSettings(), Type.EFFULGENT_CARPET, color, 0, 0);
+			registerBlockWithItem(SpectrumItemGroups.DECORATION, colorString + "_effulgent_block", new CushionedFacingBlock(AbstractBlock.Settings.copy(Blocks.RED_WOOL).mapColor(color)), new FabricItemSettings().rarity(Rarity.UNCOMMON), Type.EFFULGENT_BLOCK, color, 0, 0);
+			registerBlockWithItem(SpectrumItemGroups.DECORATION, colorString + "_effulgent_cushion", new CushionBlock(AbstractBlock.Settings.copy(Blocks.RED_WOOL).mapColor(color).nonOpaque().allowsSpawning((state, world, pos, type) -> false)), new FabricItemSettings().rarity(Rarity.UNCOMMON), Type.EFFULGENT_CUSHION, color, 0, 0);
+			registerBlockWithItem(SpectrumItemGroups.DECORATION, colorString + "_effulgent_carpet", new CushionedCarpetBlock(AbstractBlock.Settings.copy(Blocks.RED_CARPET).mapColor(color)), new FabricItemSettings().rarity(Rarity.UNCOMMON), Type.EFFULGENT_CARPET, color, 0, 0);
+			registerBlockWithItem(SpectrumItemGroups.DECORATION, colorString + "_effulgent_bed", new SpectrumBedBlock(DyeColor.RED, AbstractBlock.Settings.copy(Blocks.RED_BED).mapColor(color)), new FabricItemSettings().maxCount(1).rarity(Rarity.UNCOMMON), Type.EFFULGENT_BED, color, 0, 0);
 		}
 	}
 
@@ -103,7 +104,8 @@ public class SpectralDecorationsBlocks {
 		LIGHT,
 		EFFULGENT_BLOCK,
 		EFFULGENT_CUSHION,
-		EFFULGENT_CARPET
+		EFFULGENT_CARPET,
+		EFFULGENT_BED
 	}
 	
 	public record PropertyHolder(Item item, ItemSubGroup subGroup, Type type, DyeColor color) {

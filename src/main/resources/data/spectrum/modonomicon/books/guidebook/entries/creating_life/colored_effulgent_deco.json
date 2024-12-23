@@ -2,19 +2,19 @@
   "name": "book.spectral-decorations.guidebook.colored_effulgent_deco.name",
   "condition": {
     "type": "modonomicon:advancement",
-    "advancement_id": "spectrum:remember_kindling"
+    "advancement_id": "spectrum:pluck_effulgent_feather"
   },
-  "icon": "spectrum:kindling_head",
+  "icon": "spectral-decorations:green_effulgent_feather",
   "category": "spectrum:creating_life",
   "parents": [
     {
-      "entry": "spectrum:creating_life/kindlings"
+      "entry": "spectrum:creating_life/effulgent_feathers"
     }
   ],
   "background_u_index": 0,
   "background_v_index": 0,
   "x": 7,
-  "y": 2,
+  "y": 4,
   "pages": [
     {
       "type": "modonomicon:spotlight",
@@ -72,6 +72,30 @@
     {
       "type": "spectrum:collection",
       "advancement": "spectral-decorations:pluck_colored_effulgent_feather",
+      "title": "book.spectral-decorations.guidebook.colored_effulgent_deco.effulgent_beds.title",
+      "items": [
+        "spectral-decorations:black_effulgent_bed",
+        "spectral-decorations:blue_effulgent_bed",
+        "spectral-decorations:brown_effulgent_bed",
+        "spectral-decorations:cyan_effulgent_bed",
+        "spectral-decorations:gray_effulgent_bed",
+        "spectral-decorations:green_effulgent_bed",
+        "spectral-decorations:light_blue_effulgent_bed",
+        "spectral-decorations:light_gray_effulgent_bed",
+        "spectral-decorations:lime_effulgent_bed",
+        "spectral-decorations:magenta_effulgent_bed",
+        "spectral-decorations:orange_effulgent_bed",
+        "spectral-decorations:pink_effulgent_bed",
+        "spectral-decorations:purple_effulgent_bed",
+        "spectral-decorations:red_effulgent_bed",
+        "spectral-decorations:white_effulgent_bed",
+        "spectral-decorations:yellow_effulgent_bed"
+      ],
+      "text": "book.spectral-decorations.guidebook.colored_effulgent_deco.effulgent_beds.text"
+    },
+    {
+      "type": "spectrum:collection",
+      "advancement": "spectral-decorations:pluck_colored_effulgent_feather",
       "items": [
         "spectral-decorations:black_effulgent_block",
         "spectral-decorations:blue_effulgent_block",
@@ -89,6 +113,7 @@
         "spectral-decorations:red_effulgent_block",
         "spectral-decorations:white_effulgent_block",
         "spectral-decorations:yellow_effulgent_block",
+
         "spectral-decorations:black_effulgent_cushion",
         "spectral-decorations:blue_effulgent_cushion",
         "spectral-decorations:brown_effulgent_cushion",
@@ -105,6 +130,7 @@
         "spectral-decorations:red_effulgent_cushion",
         "spectral-decorations:white_effulgent_cushion",
         "spectral-decorations:yellow_effulgent_cushion",
+
         "spectral-decorations:black_effulgent_carpet",
         "spectral-decorations:blue_effulgent_carpet",
         "spectral-decorations:brown_effulgent_carpet",

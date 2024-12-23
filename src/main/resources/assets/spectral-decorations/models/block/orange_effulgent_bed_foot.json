@@ -1,0 +1,7 @@
+{
+  "parent": "spectrum:block/effulgent_bed_foot",
+  "textures": {
+    "0": "spectral-decorations:block/colored_effulgent_beds/orange",
+    "particle": "spectral-decorations:block/colored_effulgent_beds/orange_particle"
+  }
+}
