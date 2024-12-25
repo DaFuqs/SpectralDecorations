@@ -40,7 +40,7 @@ public class SpectralDecorationsClient implements ClientModInitializer {
 		}
 		
 		ItemTooltipCallback.EVENT.register((stack, context, lines) -> {
-			if (stack.isIn(SpectralDecorationsItemTags.BEDROCK_ARMOR)) {
+			if (stack.isIn(SpectralDecorationsItemTags.BEDROCK_ARMOR) || stack.isOf(SpectrumItems.BOTTOMLESS_BUNDLE)) {
 				Optional<DyeColor> optionalColor = BedrockArmorColorizer.getColor(stack);
 				if (optionalColor.isPresent()) {
 					DyeColor c = optionalColor.get();
@@ -54,6 +54,8 @@ public class SpectralDecorationsClient implements ClientModInitializer {
 		registerColorPredicate(SpectrumItems.BEDROCK_CHESTPLATE);
 		registerColorPredicate(SpectrumItems.BEDROCK_LEGGINGS);
 		registerColorPredicate(SpectrumItems.BEDROCK_BOOTS);
+		
+		registerColorPredicate(SpectrumItems.BOTTOMLESS_BUNDLE);
 		
 		// Builtin Resource Packs
 		Optional<ModContainer> modContainer = FabricLoader.getInstance().getModContainer(SpectralDecorations.MOD_ID);
