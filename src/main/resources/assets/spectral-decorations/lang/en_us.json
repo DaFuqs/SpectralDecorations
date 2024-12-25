@@ -204,7 +204,7 @@
 
   "book.spectral-decorations.guidebook.colored_bedrock_armor.name": "Colored Bedrock Armor",
   "book.spectral-decorations.guidebook.colored_bedrock_armor.page0.text": "Bedrock Armor looks remarkably fancy. What couldn't hurt, however, would be a little more colour choice for my wardrobe. No problem!",
-  "book.spectral-decorations.guidebook.colored_bedrock_armor.page1.text": "I can combine any piece of Bedrock Armor with Pigment to dye it.",
+  "book.spectral-decorations.guidebook.colored_bedrock_armor.page1.text": "I can combine any piece of Bedrock Armor with any Pigment to dye it.",
 
   "book.spectral-decorations.guidebook.colored_amphoras.page0.text": "Noxwood is cool and all, but why not make unique Amphoras out of the colorful trees I have come across throughout my journey?",
   "book.spectral-decorations.guidebook.colored_amphoras.page1.text": "Almost like a Barrel, but much more spacious: their capacity matches a double chest.$(br)Come in all 16 colors. Time to add color coding to my storage room!",
@@ -217,5 +217,9 @@
   "book.spectral-decorations.guidebook.vanilla_wood_amphoras.page0.text": "Since I have a whole hodgepodge of different seedlings now, why not make unique Amphoras out of these, too?",
   "book.spectral-decorations.guidebook.vanilla_wood_amphoras.page1.text": "Almost like a Barrel, but much more spacious: their capacity matches a double chest.",
   "book.spectral-decorations.guidebook.vanilla_wood_beams.page0.text": "There is one thing that has never let go of my free spirit: Creativity. My head regularly fills with new ideas about how I can beautify my home. How about decorative wooden beams? Better than a 9 by 9 Cobblestone block, that's for sure.",
-  "book.spectral-decorations.guidebook.vanilla_wood_beams.page1.text": "The Bamboo variant uses a Bamboo Block instead of a log."
+  "book.spectral-decorations.guidebook.vanilla_wood_beams.page1.text": "The Bamboo variant uses a Bamboo Block instead of a log.",
+
+  "book.spectral-decorations.guidebook.colored_bottomless_bundles.name": "Bottomless Bundle Coloring",
+  "book.spectral-decorations.guidebook.colored_bottomless_bundles.page0.text": "Bottomless bundles very quickly became an indispensable item when it comes to cave adventures. However, I sometimes found it difficult to tell the individual bundles with the different types of stone apart.\\\n\\\nLet's add a bit of colour to fix that!",
+  "book.spectral-decorations.guidebook.colored_bottomless_bundles.page1.text": "I can combine a Bottomless Bundle with Pigment any to dye it."
 }
