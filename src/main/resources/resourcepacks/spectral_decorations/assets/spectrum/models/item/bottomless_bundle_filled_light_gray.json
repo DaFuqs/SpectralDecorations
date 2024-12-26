@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/handheld",
   "textures": {
-    "layer0": "spectrum:item/colored_bottomless_bundle/light_gray_filled"
+    "layer0": "spectrum:item/half_colored_bottomless_bundle/light_gray_filled"
   }
 }
