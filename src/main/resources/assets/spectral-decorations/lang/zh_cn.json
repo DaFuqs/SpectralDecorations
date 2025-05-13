@@ -171,6 +171,23 @@
     "block.spectral-decorations.yellow_effulgent_block": "黄色龙翎块",
     "block.spectral-decorations.yellow_effulgent_cushion": "黄色龙翎垫子",
     "block.spectral-decorations.yellow_effulgent_carpet": "黄色龙翎地毯",
+
+    "block.spectral-decorations.black_effulgent_bed": "黑色龙翎床",
+    "block.spectral-decorations.blue_effulgent_bed": "蓝色龙翎床",
+    "block.spectral-decorations.brown_effulgent_bed": "棕色龙翎床",
+    "block.spectral-decorations.cyan_effulgent_bed": "青色龙翎床",
+    "block.spectral-decorations.gray_effulgent_bed": "灰色龙翎床",
+    "block.spectral-decorations.green_effulgent_bed": "绿色龙翎床",
+    "block.spectral-decorations.light_blue_effulgent_bed": "淡蓝色龙翎床",
+    "block.spectral-decorations.light_gray_effulgent_bed": "淡灰色龙翎床",
+    "block.spectral-decorations.lime_effulgent_bed": "黄绿色龙翎床",
+    "block.spectral-decorations.magenta_effulgent_bed": "品红色龙翎床",
+    "block.spectral-decorations.orange_effulgent_bed": "Orange龙翎床",
+    "block.spectral-decorations.pink_effulgent_bed": "Pink龙翎床",
+    "block.spectral-decorations.purple_effulgent_bed": "紫色龙翎床",
+    "block.spectral-decorations.red_effulgent_bed": "红石龙翎床",
+    "block.spectral-decorations.white_effulgent_bed": "白色龙翎床",
+    "block.spectral-decorations.yellow_effulgent_bed": "黄色龙翎床",
   
     "book.spectral-decorations.guidebook.colored_effulgent_deco.name": "小火龙染色",
     "book.spectral-decorations.guidebook.colored_effulgent_deco.kindling_coloring.text": "画笔可以给方块染色，也可以给绵羊这样的生物染色。\\\n那对于小火龙这样，本质上属于魔法造物的……\\\n\\\n你可以让小火龙在[液体水晶](entry://general/liquid_crystal)中洗澡来去色。",
@@ -182,6 +199,8 @@
     "book.spectral-decorations.guidebook.colored_effulgent_deco.effulgent_cushions.text": "*坐起来软软的~*",
     "book.spectral-decorations.guidebook.colored_effulgent_deco.effulgent_carpets.title": "龙翎垫子",
     "book.spectral-decorations.guidebook.colored_effulgent_deco.effulgent_carpets.text": "*走上去也软软的~！*",
+    "book.spectral-decorations.guidebook.colored_effulgent_deco.effulgent_beds.title": "龙翎床",
+    "book.spectral-decorations.guidebook.colored_effulgent_deco.effulgent_beds.text": "*睡在上面也软软的~！*",
   
     "book.spectral-decorations.guidebook.colored_bedrock_armor.name": "彩色的基岩护甲",
     "book.spectral-decorations.guidebook.colored_bedrock_armor.page0.text": "基岩护甲看起来非常精美。不过想要有更多的颜色选择，也是没有问题的！",
@@ -199,4 +218,8 @@
     "book.spectral-decorations.guidebook.vanilla_wood_amphoras.page1.text": "和木桶一样，但是空间大得多，有相当于一个大箱子的容量。",
     "book.spectral-decorations.guidebook.vanilla_wood_beams.page0.text": "创造力一直都活跃于你的灵魂。你总有些美化家园的想法，试试用这些装饰用木梁怎么样？肯定比9*9的圆石好得多。",
     "book.spectral-decorations.guidebook.vanilla_wood_beams.page1.text": "竹梁需要用竹块来代替原木。"
+
+    "book.spectral-decorations.guidebook.colored_bottomless_bundles.name": "无底袋染色",
+    "book.spectral-decorations.guidebook.colored_bottomless_bundles.page0.text": "无底袋很快成为我在洞穴探险时不可或缺的一份子了。 然而，我有时发现很难将装有不同类型石材的袋子区分开来。\\\n\\\n让我们给它点“颜色”看看！",
+    "book.spectral-decorations.guidebook.colored_bottomless_bundles.page1.text": "我可以将无底袋与任何颜料合成来进行标记。"
   }
