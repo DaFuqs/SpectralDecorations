@@ -1,5 +1,5 @@
 plugins {
-    id 'fabric-loom' version '1.6-SNAPSHOT'
+    id 'fabric-loom' version '1.10-SNAPSHOT'
     id 'maven-publish'
 }
 
@@ -24,7 +24,7 @@ dependencies {
     minecraft "com.mojang:minecraft:${project.minecraft_version}"
     mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
     modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
-    modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
+    modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
 
     modImplementation("de.dafuqs:spectrum:${project.spectrum_version}") {
         exclude(group: "com.unascribed:ears-api")
@@ -32,17 +32,14 @@ dependencies {
     }
 
     modImplementation("maven.modrinth:exclusions-lib:${project.exclusionslib_version}")
-    modImplementation("maven.modrinth:Revelationary:${project.revelationary_version}")
-    modImplementation include("maven.modrinth:AdditionalEntityAttributes:${project.additional_entity_attributes_version}")
-    modImplementation include("com.github.DaFuqs:Arrowhead:${project.arrowhead_version}")
-    modImplementation include("com.github.DaFuqs:DimensionalReverb:${project.dimensional_reverb_version}")
-    modImplementation include("maven.modrinth:fractal-lib:${project.fractal_version}")
-    modImplementation include("de.dafuqs:Matchbooks:${project.matchbooks_version}")
+    modImplementation("de.dafuqs:revelationary:${project.revelationary_version}")
+    modImplementation("de.dafuqs:additionalentityattributes:${project.additional_entity_attributes_version}")
+    modImplementation("de.dafuqs:arrowhead:${project.arrowhead_version}")
+    modImplementation("de.dafuqs:reverb:${project.dimensional_reverb_version}")
+    modImplementation("de.dafuqs:fractal:${project.fractal_version}")
 
     modImplementation("com.klikli_dev:modonomicon-${project.minecraft_version}-fabric:${project.modonomicon_version}") { exclude(group: "com.klikli_dev") }
     modImplementation("dev.emi:trinkets:${project.trinkets_version}")
-    modImplementation("com.github.emilyploszaj:step-height-entity-attribute:${project.step_height_attribute_version}")
-    modImplementation("com.jamieswhiteshirt:reach-entity-attributes:${project.reach_entity_attributes_version}")
     modImplementation("dev.onyxstudios.cardinal-components-api:cardinal-components-base:${project.cca_version}")
     modImplementation("dev.onyxstudios.cardinal-components-api:cardinal-components-entity:${project.cca_version}")
     modImplementation("dev.onyxstudios.cardinal-components-api:cardinal-components-item:${project.cca_version}")
@@ -70,7 +67,7 @@ processResources {
     inputs.property "version", project.version
     inputs.property "minecraft_version", project.minecraft_version
     inputs.property "loader_version", project.loader_version
-    filteringCharset "UTF-8"
+    filteringCharset = "UTF-8"
 
     filesMatching("fabric.mod.json") {
         expand "version": project.version,
@@ -79,28 +76,17 @@ processResources {
     }
 }
 
-def targetJavaVersion = 17
 tasks.withType(JavaCompile).configureEach {
-    // ensure that the encoding is set to UTF-8, no matter what the system default is
-    // this fixes some edge cases with special characters not displaying correctly
-    // see http://yodaconditions.net/blog/fix-for-java-file-encoding-problems-with-gradle.html
-    // If Javadoc is generated, this must be specified in that task too.
-    it.options.encoding = "UTF-8"
-    if (targetJavaVersion >= 10 || JavaVersion.current().isJava10Compatible()) {
-        it.options.release = targetJavaVersion
-    }
+    it.options.release = 21
 }
 
 java {
-    def javaVersion = JavaVersion.toVersion(targetJavaVersion)
-    if (JavaVersion.current() < javaVersion) {
-        toolchain.languageVersion = JavaLanguageVersion.of(targetJavaVersion)
-    }
-    archivesBaseName = project.archives_base_name
-    // Loom will automatically attach sourcesJar to a RemapSourcesJar task and to the "build" task
-    // if it is present.
+    // Loom will automatically attach sourcesJar to a RemapSourcesJar task and to the "build" task if it is present.
     // If you remove this line, sources will not be generated.
     withSourcesJar()
+
+    sourceCompatibility = JavaVersion.VERSION_21
+    targetCompatibility = JavaVersion.VERSION_21
 }
 
 jar {
@@ -112,16 +98,21 @@ jar {
 // configure the maven publication
 publishing {
     publications {
-        mavenJava(MavenPublication) {
+        create("mavenJava", MavenPublication) {
+            artifactId = project.archives_base_name
             from components.java
         }
     }
 
     // See https://docs.gradle.org/current/userguide/publishing_maven.html for information on how to set up publishing.
     repositories {
-        // Add repositories to publish to here.
-        // Notice: This block does NOT have the same function as the block in the top level.
-        // The repositories here will be used for publishing your artifact, not for
-        // retrieving dependencies.
+        maven {
+            name = "sapphoCompany"
+            url = "https://maven.is-immensely.gay/releases"
+            credentials {
+                username = "dafuqs"
+                password = System.getenv("MAVEN_PASS")
+            }
+        }
     }
 }
