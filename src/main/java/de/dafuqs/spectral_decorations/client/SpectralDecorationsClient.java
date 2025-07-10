@@ -7,19 +7,19 @@ import net.fabricmc.fabric.api.blockrenderlayer.v1.*;
 import net.fabricmc.fabric.api.client.item.v1.*;
 import net.fabricmc.fabric.api.resource.*;
 import net.fabricmc.loader.api.*;
-import net.minecraft.block.*;
-import net.minecraft.client.item.*;
-import net.minecraft.client.render.*;
-import net.minecraft.item.*;
-import net.minecraft.text.*;
-import net.minecraft.util.*;
+import net.minecraft.client.renderer.*;
+import net.minecraft.client.renderer.item.*;
+import net.minecraft.network.chat.*;
+import net.minecraft.resources.*;
+import net.minecraft.world.item.*;
+import net.minecraft.world.level.block.*;
 
 import java.util.*;
 
 public class SpectralDecorationsClient implements ClientModInitializer {
 	
 	private static void registerColorPredicate(Item item) {
-		ModelPredicateProviderRegistry.register(item, new Identifier("color"), (itemStack, clientWorld, livingEntity, i) -> {
+		ItemProperties.register(item, ResourceLocation.fromNamespaceAndPath(SpectralDecorations.MOD_ID, "color"), (itemStack, clientWorld, livingEntity, i) -> {
 			Optional<DyeColor> color = BedrockArmorColorizer.getColor(itemStack);
 			return color.map(dyeColor -> (1F + dyeColor.getId()) / 100F).orElse(0F);
 		});
@@ -31,21 +31,25 @@ public class SpectralDecorationsClient implements ClientModInitializer {
 			Block block = ((BlockItem) entry.item()).getBlock();
 			switch (entry.type()) {
 				case LANTERN -> {
-					BlockRenderLayerMap.INSTANCE.putBlock(block, RenderLayer.getCutout());
+					BlockRenderLayerMap.INSTANCE.putBlock(block, RenderType.cutout());
 				}
 				case LIGHT -> {
-					BlockRenderLayerMap.INSTANCE.putBlock(block, RenderLayer.getTranslucent());
+					BlockRenderLayerMap.INSTANCE.putBlock(block, RenderType.translucent());
 				}
 			}
 		}
 		
-		ItemTooltipCallback.EVENT.register((stack, context, lines) -> {
-			if (stack.isIn(SpectralDecorationsItemTags.BEDROCK_ARMOR) || stack.isOf(SpectrumItems.BOTTOMLESS_BUNDLE)) {
-				Optional<DyeColor> optionalColor = BedrockArmorColorizer.getColor(stack);
-				if (optionalColor.isPresent()) {
-					DyeColor c = optionalColor.get();
-					Text t = Text.translatable("tooltip.spectral-decorations.colored").append(Text.translatable("color.minecraft." + c.asString()).styled(style -> style.withColor(c.getSignColor())));
-					lines.add(1, t);
+		ItemTooltipCallback.EVENT.register(new ItemTooltipCallback() {
+			@Override
+			public void getTooltip(ItemStack stack, Item.TooltipContext tooltipContext, TooltipFlag tooltipFlag, List<Component> list) {
+				if (stack.is(SpectralDecorationsItemTags.BEDROCK_ARMOR) || stack.is(SpectrumBlocks.BOTTOMLESS_BUNDLE.asItem())) {
+					Optional<DyeColor> optionalColor = BedrockArmorColorizer.getColor(stack);
+					if (optionalColor.isPresent()) {
+						DyeColor c = optionalColor.get();
+						Component t = Component.translatable("tooltip.spectral-decorations.colored")
+								.append(Component.translatable("color.minecraft." + c.getName()).withStyle((style -> style.withColor(c.getTextColor()))));
+						list.add(1, t);
+					}
 				}
 			}
 		});
@@ -55,11 +59,11 @@ public class SpectralDecorationsClient implements ClientModInitializer {
 		registerColorPredicate(SpectrumItems.BEDROCK_LEGGINGS);
 		registerColorPredicate(SpectrumItems.BEDROCK_BOOTS);
 		
-		registerColorPredicate(SpectrumItems.BOTTOMLESS_BUNDLE);
+		registerColorPredicate(SpectrumBlocks.BOTTOMLESS_BUNDLE.asItem());
 		
 		// Builtin Resource Packs
 		Optional<ModContainer> modContainer = FabricLoader.getInstance().getModContainer(SpectralDecorations.MOD_ID);
-		modContainer.ifPresent(container -> ResourceManagerHelper.registerBuiltinResourcePack(SpectralDecorations.locate("spectral_decorations"), container, Text.of("Spectral Decorations Overrides"), ResourcePackActivationType.DEFAULT_ENABLED));
+		modContainer.ifPresent(container -> ResourceManagerHelper.registerBuiltinResourcePack(SpectralDecorations.locate("spectral_decorations"), container, Component.nullToEmpty("Spectral Decorations Overrides"), ResourcePackActivationType.DEFAULT_ENABLED));
 	}
 	
 }

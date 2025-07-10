@@ -1,43 +1,40 @@
 package de.dafuqs.spectral_decorations.recipe;
 
-import de.dafuqs.matchbooks.recipe.*;
 import de.dafuqs.spectral_decorations.*;
 import de.dafuqs.spectrum.*;
+import de.dafuqs.spectrum.api.recipe.*;
 import de.dafuqs.spectrum.blocks.bottomless_bundle.*;
+import de.dafuqs.spectrum.blocks.pedestal.*;
 import de.dafuqs.spectrum.items.*;
-import de.dafuqs.spectrum.recipe.*;
 import de.dafuqs.spectrum.recipe.pedestal.*;
 import de.dafuqs.spectrum.registries.*;
-import net.minecraft.inventory.*;
-import net.minecraft.item.*;
-import net.minecraft.recipe.*;
-import net.minecraft.registry.*;
-import net.minecraft.util.*;
+import net.minecraft.core.*;
+import net.minecraft.resources.*;
+import net.minecraft.world.item.*;
+import net.minecraft.world.item.crafting.*;
 
 import java.util.*;
 
 public class BottomlessBundleColoringRecipe extends ShapelessPedestalRecipe {
 	
-	public static final Identifier UNLOCK_IDENTIFIER = SpectrumCommon.locate("unlocks/items/bottomless_bundle");
-	public static final RecipeSerializer<BottomlessBundleColoringRecipe> SERIALIZER = new EmptyRecipeSerializer<>(BottomlessBundleColoringRecipe::new);
+	public static final ResourceLocation UNLOCK_IDENTIFIER = SpectrumCommon.locate("unlocks/items/bottomless_bundle");
 	
-	public BottomlessBundleColoringRecipe(Identifier id) {
-		super(id, "", false, UNLOCK_IDENTIFIER, PedestalRecipeTier.BASIC, List.of(
-						IngredientStack.of(Ingredient.ofItems(SpectrumItems.BOTTOMLESS_BUNDLE)),
-						IngredientStack.of(Ingredient.fromTag(SpectralDecorationsItemTags.PIGMENTS))),
+	public BottomlessBundleColoringRecipe() {
+		super("", false, Optional.of(UNLOCK_IDENTIFIER), PedestalRecipeTier.BASIC, List.of(
+						IngredientStack.of(Ingredient.of(SpectrumBlocks.BOTTOMLESS_BUNDLE)),
+						IngredientStack.of(Ingredient.of(SpectralDecorationsItemTags.PIGMENTS))),
 				Map.of(),
-				BedrockArmorColorizer.setColor(SpectrumItems.BOTTOMLESS_BUNDLE.getDefaultStack(), DyeColor.CYAN),
+				BedrockArmorColorizer.setColor(SpectrumBlocks.BOTTOMLESS_BUNDLE.asItem().getDefaultInstance(), DyeColor.CYAN),
 				0F, 120, false, false);
 	}
 	
 	@Override
-	public ItemStack craft(Inventory inv, DynamicRegistryManager drm) {
+	public ItemStack assemble(PedestalRecipeInput inv, HolderLookup.Provider drm) {
 		ItemStack bundleStack = null;
 		PigmentItem pigment = null;
 		
-		
 		for (int i = 0; i < inv.size(); ++i) {
-			ItemStack stack = inv.getStack(i);
+			ItemStack stack = inv.getItem(i);
 			if (stack.getItem() instanceof BottomlessBundleItem) {
 				bundleStack = stack;
 			}
@@ -50,12 +47,17 @@ public class BottomlessBundleColoringRecipe extends ShapelessPedestalRecipe {
 			return ItemStack.EMPTY;
 		}
 		
-		return BedrockArmorColorizer.setColor(bundleStack.copy(), pigment.getColor());
+		Optional<DyeColor> dyeColor = pigment.getInkColor().getDyeColor();
+		if (dyeColor.isEmpty()) {
+			return bundleStack;
+		}
+		
+		return BedrockArmorColorizer.setColor(bundleStack.copy(), dyeColor.get());
 	}
 	
 	@Override
 	public RecipeSerializer<?> getSerializer() {
-		return SERIALIZER;
+		return SpectralDecorationsRecipeTypes.BOTTOMLESS_BUNDLE_COLORING_SERIALIZER;
 	}
 	
 }

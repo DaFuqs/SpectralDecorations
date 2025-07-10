@@ -3,10 +3,10 @@ package de.dafuqs.spectral_decorations.mixin.client;
 import de.dafuqs.spectral_decorations.*;
 import de.dafuqs.spectrum.items.armor.*;
 import net.fabricmc.api.*;
-import net.minecraft.client.render.*;
-import net.minecraft.entity.*;
-import net.minecraft.item.*;
-import net.minecraft.util.*;
+import net.minecraft.client.renderer.*;
+import net.minecraft.resources.*;
+import net.minecraft.world.entity.*;
+import net.minecraft.world.item.*;
 import org.spongepowered.asm.mixin.*;
 import org.spongepowered.asm.mixin.injection.*;
 import org.spongepowered.asm.mixin.injection.callback.*;
@@ -17,23 +17,23 @@ import java.util.*;
 @Mixin(BedrockArmorItem.class)
 public abstract class BedrockArmorItemMixin {
 	
-	@Inject(at = @At("HEAD"), method = "getArmorTexture(Lnet/minecraft/item/ItemStack;Lnet/minecraft/entity/EquipmentSlot;)Lnet/minecraft/util/Identifier;", cancellable = true)
-	private void spectral_decorations$modifyBedrockArmorColor(ItemStack stack, EquipmentSlot slot, CallbackInfoReturnable<Identifier> cir) {
+	@Inject(at = @At("HEAD"), method = "getArmorTexture(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/entity/EquipmentSlot;)Lnet/minecraft/resources/ResourceLocation;", cancellable = true)
+	private void spectral_decorations$modifyBedrockArmorColor(ItemStack stack, EquipmentSlot slot, CallbackInfoReturnable<ResourceLocation> cir) {
 		// feet do not have any color and therefore do use the default renderer
 		Optional<DyeColor> color = BedrockArmorColorizer.getColor(stack);
 		if (color.isPresent()) {
-			String colorString = color.get().asString();
+			String colorString = color.get().getSerializedName();
 			cir.setReturnValue(SpectralDecorations.locate("textures/armor/bedrock_armor_" + colorString + ".png"));
 		}
 	}
 	
-	@Inject(at = @At("HEAD"), method = "getRenderLayer(Lnet/minecraft/item/ItemStack;)Lnet/minecraft/client/render/RenderLayer;", cancellable = true)
-	private void spectral_decorations$modifyBedrockArmorRenderLayer(ItemStack stack, CallbackInfoReturnable<RenderLayer> cir) {
+	@Inject(at = @At("HEAD"), method = "getRenderLayer(Lnet/minecraft/world/item/ItemStack;)Lnet/minecraft/client/renderer/RenderType;", cancellable = true)
+	private void spectral_decorations$modifyBedrockArmorRenderLayer(ItemStack stack, CallbackInfoReturnable<RenderType> cir) {
 		Optional<DyeColor> color = BedrockArmorColorizer.getColor(stack);
 		if (color.isPresent()) {
-			String colorString = color.get().asString();
-			Identifier renderLayerId = SpectralDecorations.locate("textures/armor/bedrock_armor_" + colorString + ".png");
-			cir.setReturnValue(RenderLayer.getEntitySolid(renderLayerId));
+			String colorString = color.get().getSerializedName();
+			ResourceLocation renderLayerId = SpectralDecorations.locate("textures/armor/bedrock_armor_" + colorString + ".png");
+			cir.setReturnValue(RenderType.entitySolid(renderLayerId));
 		}
 	}
 	

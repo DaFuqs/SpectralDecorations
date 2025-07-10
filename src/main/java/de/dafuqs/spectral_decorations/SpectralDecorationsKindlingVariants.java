@@ -4,8 +4,8 @@ import com.google.common.collect.*;
 import de.dafuqs.spectrum.entity.variants.*;
 import de.dafuqs.spectrum.helpers.*;
 import de.dafuqs.spectrum.registries.*;
-import net.minecraft.registry.*;
-import net.minecraft.util.*;
+import net.minecraft.core.*;
+import net.minecraft.world.item.*;
 
 import java.util.*;
 
@@ -14,8 +14,8 @@ public class SpectralDecorationsKindlingVariants {
 	public static BiMap<DyeColor, KindlingVariant> COLORED_VARIANTS = EnumHashBiMap.create(DyeColor.class);
 	
 	public static void register() {
-		for (DyeColor color : ColorHelper.VANILLA_DYE_COLORS) {
-			String s = color.asString();
+		for (DyeColor color : SpectrumColorHelper.VANILLA_DYE_COLORS) {
+			String s = color.getSerializedName();
 			COLORED_VARIANTS.put(color, register(s,
 					"textures/entity/kindling/" + s + ".png",
 					"textures/entity/kindling/" + s + "_blinking.png",

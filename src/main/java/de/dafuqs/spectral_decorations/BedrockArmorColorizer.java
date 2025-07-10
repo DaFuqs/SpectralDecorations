@@ -1,26 +1,22 @@
 package de.dafuqs.spectral_decorations;
 
-import net.minecraft.item.*;
-import net.minecraft.nbt.*;
-import net.minecraft.util.*;
+import net.minecraft.core.component.*;
+import net.minecraft.world.item.*;
 
 import java.util.*;
 
 public class BedrockArmorColorizer {
 	
 	public static Optional<DyeColor> getColor(ItemStack stack) {
-		NbtCompound nbt = stack.getNbt();
-		if (nbt == null || !nbt.contains("Color", NbtElement.STRING_TYPE)) {
+		DyeColor dyeColor = stack.get(DataComponents.BASE_COLOR);
+		if (dyeColor == null) {
 			return Optional.empty();
 		}
-		
-		String colorString = nbt.getString("Color");
-		return Optional.of(DyeColor.byName(colorString, DyeColor.RED));
+		return Optional.of(dyeColor);
 	}
 	
 	public static ItemStack setColor(ItemStack stack, DyeColor color) {
-		NbtCompound nbt = stack.getOrCreateNbt();
-		nbt.putString("Color", color.asString());
+		stack.set(DataComponents.BASE_COLOR, color);
 		return stack;
 	}
 	
