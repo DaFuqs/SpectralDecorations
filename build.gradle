@@ -7,17 +7,26 @@ version = project.mod_version
 group = project.maven_group
 
 repositories {
-    mavenLocal()
-    maven { url = "https://maven.is-immensely.gay/releases" } // Spectrum, AEA
+    maven { url = "https://maven.is-immensely.gay/releases" }
+    // Revelationary, Fractal, AEA, Arrowhead, Dimensional Reverb...
     maven { url = "https://maven.shedaniel.me/" } // Cloth Config, REI
     maven { url = "https://maven.terraformersmc.com/" } // Modmenu, EMI
-    maven { url = "https://api.modrinth.com/maven" } // Revelationary, Fractal
     maven { url = "https://maven.nucleoid.xyz/" } // Common Protection API
+    maven { url = "https://maven.blamejared.com" } // JEI
     maven { url = "https://maven.ladysnake.org/releases" } // Cardinal Components API
     maven { url = "https://maven.jamieswhiteshirt.com/libs-release/" } // Entity Reach Attribute
+    maven { url = "https://api.modrinth.com/maven" } // Colorful Hearts, idwtialsimmoedm
+    maven { url = "https://cfa2.cursemaven.com" }
+    maven { url = "https://mvn.devos.one/releases/" } // Porting Lib
+    maven { url = "https://repo.unascribed.com" } // Ears API
     maven { url = "https://dl.cloudsmith.io/public/klikli-dev/mods/maven/" } // Modonomicon
-    maven { url = "https://maven.blamejared.com" } // JEI
-    maven { url = "https://jitpack.io" } // Arrowhead, Dimensional Reverb, Step Height Entity Attribute
+    //maven { url = "https://jitpack.io" }
+    maven { url = "https://maven.wispforest.io/releases" }
+    maven {
+        name = 'ParchmentMC'
+        url = 'https://maven.parchmentmc.org'
+    }
+    mavenCentral()
 }
 
 dependencies {
