@@ -7,7 +7,6 @@ import de.dafuqs.spectrum.blocks.bottomless_bundle.*;
 import de.dafuqs.spectrum.blocks.pedestal.*;
 import de.dafuqs.spectrum.items.*;
 import de.dafuqs.spectrum.recipe.pedestal.*;
-import de.dafuqs.spectrum.registries.*;
 import net.minecraft.core.*;
 import net.minecraft.resources.*;
 import net.minecraft.world.item.*;
@@ -21,7 +20,7 @@ public class BottomlessBundleColoringRecipe extends ShapelessPedestalRecipe {
 	
 	public BottomlessBundleColoringRecipe() {
 		super("", false, Optional.of(UNLOCK_IDENTIFIER), PedestalRecipeTier.BASIC, List.of(
-						IngredientStack.of(Ingredient.of(SpectrumBlocks.BOTTOMLESS_BUNDLE)),
+						IngredientStack.of(Ingredient.of(SpectralDecorationsItemTags.BOTTOMLESS_BUNDLES)),
 						IngredientStack.of(Ingredient.of(SpectralDecorationsItemTags.PIGMENTS))),
 				Map.of(),
 				ItemStack.EMPTY,

@@ -4,6 +4,7 @@ import de.dafuqs.spectrum.api.color.*;
 import de.dafuqs.spectrum.api.interaction.*;
 import de.dafuqs.spectrum.entity.*;
 import de.dafuqs.spectrum.entity.variants.*;
+import de.dafuqs.spectrum.registries.*;
 import net.fabricmc.api.*;
 import net.fabricmc.fabric.api.event.lifecycle.v1.*;
 import net.minecraft.core.*;
@@ -22,8 +23,13 @@ public class SpectralDecorations implements ModInitializer {
 		SpectralDecorationsRecipeTypes.registerRecipeSerializers();
 		
 		ServerLifecycleEvents.SERVER_STARTED.register(server -> {
-			for (SpectralDecorationsBlocks.PropertyHolder entry : SpectralDecorationsBlocks.items) {
+			for (SpectralDecorationsBlocks.PropertyHolder entry : SpectralDecorationsBlocks.holder) {
 				ItemColors.ITEM_COLORS.registerColorMapping(entry.item(), entry.color());
+			}
+			for (SpectralDecorationsBlocks.PropertyHolder entry : SpectralDecorationsBlocks.holder) {
+				if (entry.type() == SpectralDecorationsBlocks.Type.AMPHORA) {
+					SpectrumBlockEntities.AMPHORA.addSupportedBlock(entry.block());
+				}
 			}
 			
 			// Register only after server is started to not cause weird load order behavior

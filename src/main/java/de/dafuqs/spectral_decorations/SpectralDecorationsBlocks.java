@@ -18,7 +18,7 @@ import java.util.*;
 
 public class SpectralDecorationsBlocks {
 	
-	public static final List<PropertyHolder> items = new ArrayList<>();
+	public static final List<PropertyHolder> holder = new ArrayList<>();
 	
 	public static void register() {
 		for (VanillaWood wood : VanillaWood.values()) {
@@ -27,9 +27,7 @@ public class SpectralDecorationsBlocks {
 			boolean isFireResistant = wood.isFireResistant();
 			SoundType blockSoundGroup = wood.getBlockSoundGroup();
 			registerBlockWithItem(SpectrumItemGroups.DECORATION, name + "_beam", new RotatedPillarBlock(BlockBehaviour.Properties.of().strength(2.0F, 3.0F).mapColor(mapColor).sound(blockSoundGroup)), new Item.Properties(), Type.BEAM, InkColors.LIME, isFireResistant ? 0 : 5, isFireResistant ? 0 : 20);
-			AmphoraBlock amphoraBlock = new AmphoraBlock(BlockBehaviour.Properties.of().strength(2.0F, 3.0F).mapColor(mapColor).sound(blockSoundGroup));
-			registerBlockWithItem(SpectrumItemGroups.DECORATION, name + "_amphora", amphoraBlock, new Item.Properties(), Type.AMPHORA, InkColors.LIME, 0, 0);
-			SpectrumBlockEntities.AMPHORA.addSupportedBlock(amphoraBlock);
+			registerBlockWithItem(SpectrumItemGroups.DECORATION, name + "_amphora", new AmphoraBlock(BlockBehaviour.Properties.of().strength(2.0F, 3.0F).mapColor(mapColor).sound(blockSoundGroup)), new Item.Properties(), Type.AMPHORA, InkColors.LIME, 0, 0);
 		}
 		
 		for (DyeColor color : SpectrumColorHelper.VANILLA_DYE_COLORS) {
@@ -39,9 +37,7 @@ public class SpectralDecorationsBlocks {
 			registerBlockWithItem(SpectrumItemGroups.COLORED_WOOD, colorString + "_beam", new RotatedPillarBlock(BlockBehaviour.Properties.of().strength(4.0F).mapColor(color).sound(SoundType.WOOD)), new Item.Properties(), Type.BEAM, inkColor, 5, 20);
 			registerBlockWithItem(SpectrumItemGroups.COLORED_WOOD, colorString + "_lantern", new FlexLanternBlock(BlockBehaviour.Properties.of().strength(4.0F).mapColor(color).sound(SoundType.WOOD).lightLevel(state -> 13)), new Item.Properties(), Type.LANTERN, inkColor, 0, 0);
 			registerBlockWithItem(SpectrumItemGroups.COLORED_WOOD, colorString + "_light", new RotatedPillarBlock(BlockBehaviour.Properties.of().strength(4.0F).mapColor(color).sound(SoundType.WOOD).lightLevel(state -> 15)), new Item.Properties(), Type.LIGHT, inkColor, 5, 20);
-			AmphoraBlock amphoraBlock = new AmphoraBlock(BlockBehaviour.Properties.of().strength(4.0F).mapColor(color).sound(SoundType.WOOD));
-			registerBlockWithItem(SpectrumItemGroups.COLORED_WOOD, colorString + "_amphora", amphoraBlock, new Item.Properties(), Type.AMPHORA, inkColor, 0, 0);
-			SpectrumBlockEntities.AMPHORA.addSupportedBlock(amphoraBlock);
+			registerBlockWithItem(SpectrumItemGroups.COLORED_WOOD, colorString + "_amphora", new AmphoraBlock(BlockBehaviour.Properties.of().strength(4.0F).mapColor(color).sound(SoundType.WOOD)), new Item.Properties(), Type.AMPHORA, inkColor, 0, 0);
 			
 			registerBlockWithItem(SpectrumItemGroups.DECORATION, colorString + "_resplendent_block", new CushionedFacingBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.RED_WOOL).mapColor(color)), new Item.Properties().rarity(Rarity.UNCOMMON), Type.RESPLENDENT_BLOCK, inkColor, 0, 0);
 			registerBlockWithItem(SpectrumItemGroups.DECORATION, colorString + "_resplendent_cushion", new CushionBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.RED_WOOL).mapColor(color).noOcclusion().isValidSpawn((state, world, pos, type) -> false)), new Item.Properties().rarity(Rarity.UNCOMMON), Type.RESPLENDENT_CUSHION, inkColor, 0, 0);
@@ -55,7 +51,7 @@ public class SpectralDecorationsBlocks {
 		BlockItem blockItem = new BlockItem(block, itemSettings);
 		Registry.register(BuiltInRegistries.ITEM, SpectralDecorations.locate(name), blockItem);
 		
-		items.add(new PropertyHolder(blockItem, subGroup, type, color));
+		holder.add(new PropertyHolder(block, blockItem, subGroup, type, color));
 		
 		if(fireBurn > 0 && fireSpread > 0) {
 			FlammableBlockRegistry.getDefaultInstance().add(block, fireBurn, fireSpread);
@@ -115,7 +111,7 @@ public class SpectralDecorationsBlocks {
 		RESPLENDENT_BED
 	}
 	
-	public record PropertyHolder(Item item, ItemSubGroup subGroup, Type type, InkColor color) {
+	public record PropertyHolder(Block block, Item item, ItemSubGroup subGroup, Type type, InkColor color) {
 	}
 	
 }

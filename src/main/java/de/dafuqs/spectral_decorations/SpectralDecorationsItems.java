@@ -12,7 +12,7 @@ import java.util.*;
 
 public class SpectralDecorationsItems {
 	
-	public static final List<PropertyHolder> items = new ArrayList<>();
+	public static final List<PropertyHolder> holder = new ArrayList<>();
 	
 	public static void register() {
 		for (DyeColor color : SpectrumColorHelper.VANILLA_DYE_COLORS) {
@@ -23,7 +23,7 @@ public class SpectralDecorationsItems {
 
 	public static void registerItem(ItemSubGroup subGroup, String name, Item item, DyeColor dyeColor) {
 		Registry.register(BuiltInRegistries.ITEM, SpectralDecorations.locate(name), item);
-		items.add(new PropertyHolder(item, subGroup, dyeColor));
+		holder.add(new PropertyHolder(item, subGroup, dyeColor));
 	}
 	
 	public record PropertyHolder(Item item, ItemSubGroup subGroup, DyeColor color) {

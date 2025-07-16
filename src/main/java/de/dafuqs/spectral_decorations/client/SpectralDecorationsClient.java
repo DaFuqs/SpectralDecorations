@@ -28,7 +28,7 @@ public class SpectralDecorationsClient implements ClientModInitializer {
 	
 	@Override
 	public void onInitializeClient() {
-		for (SpectralDecorationsBlocks.PropertyHolder entry : SpectralDecorationsBlocks.items) {
+		for (SpectralDecorationsBlocks.PropertyHolder entry : SpectralDecorationsBlocks.holder) {
 			Block block = ((BlockItem) entry.item()).getBlock();
 			switch (entry.type()) {
 				case LANTERN -> {
