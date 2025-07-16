@@ -1,7 +1,0 @@
-{
-  "parent": "spectrum:block/effulgent_bed_head",
-  "textures": {
-    "0": "spectral-decorations:block/colored_effulgent_beds/lime",
-    "particle": "spectral-decorations:block/colored_effulgent_beds/lime_particle"
-  }
-}

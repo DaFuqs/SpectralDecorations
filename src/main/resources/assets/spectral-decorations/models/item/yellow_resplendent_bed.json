@@ -1,0 +1,7 @@
+{
+  "parent": "spectrum:item/resplendent_bed",
+  "textures": {
+    "0": "spectral-decorations:block/colored_resplendent_beds/yellow",
+    "particle": "spectral-decorations:block/colored_resplendent_beds/yellow"
+  }
+}

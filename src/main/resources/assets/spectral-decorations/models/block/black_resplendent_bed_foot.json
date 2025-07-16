@@ -1,0 +1,7 @@
+{
+  "parent": "spectrum:block/resplendent_bed_foot",
+  "textures": {
+    "0": "spectral-decorations:block/colored_resplendent_beds/black",
+    "particle": "spectral-decorations:block/colored_resplendent_beds/black_particle"
+  }
+}

@@ -1,0 +1,154 @@
+{
+  "name": "book.spectral-decorations.guidebook.colored_resplendent_deco.name",
+  "condition": {
+    "type": "modonomicon:advancement",
+    "advancement_id": "spectrum:pluck_resplendent_feather"
+  },
+  "icon": "spectral-decorations:green_resplendent_feather",
+  "category": "spectrum:creating_life",
+  "parents": [
+    {
+      "entry": "spectrum:creating_life/resplendent_feathers"
+    }
+  ],
+  "background_u_index": 0,
+  "background_v_index": 0,
+  "x": 7,
+  "y": 4,
+  "pages": [
+    {
+      "type": "modonomicon:spotlight",
+      "item": {
+        "item": "spectrum:paintbrush"
+      },
+      "title": "book.spectral-decorations.guidebook.colored_resplendent_deco.name",
+      "text": "book.spectral-decorations.guidebook.colored_resplendent_deco.kindling_coloring.text"
+    },
+    {
+      "type": "spectrum:collection",
+      "advancement": "spectral-decorations:pluck_colored_resplendent_feather",
+      "title": "book.spectral-decorations.guidebook.colored_resplendent_deco.colored_feathers.title",
+      "items": [
+        "spectral-decorations:black_resplendent_feather",
+        "spectral-decorations:blue_resplendent_feather",
+        "spectral-decorations:brown_resplendent_feather",
+        "spectral-decorations:cyan_resplendent_feather",
+        "spectral-decorations:gray_resplendent_feather",
+        "spectral-decorations:green_resplendent_feather",
+        "spectral-decorations:light_blue_resplendent_feather",
+        "spectral-decorations:light_gray_resplendent_feather",
+        "spectral-decorations:lime_resplendent_feather",
+        "spectral-decorations:magenta_resplendent_feather",
+        "spectral-decorations:orange_resplendent_feather",
+        "spectral-decorations:pink_resplendent_feather",
+        "spectral-decorations:purple_resplendent_feather",
+        "spectral-decorations:red_resplendent_feather",
+        "spectral-decorations:white_resplendent_feather",
+        "spectral-decorations:yellow_resplendent_feather"
+      ],
+      "text": "book.spectral-decorations.guidebook.colored_resplendent_deco.colored_feathers.text"
+    },
+    {
+      "type": "spectrum:pedestal_crafting",
+      "advancement": "spectral-decorations:pluck_colored_resplendent_feather",
+      "title": "book.spectral-decorations.guidebook.colored_resplendent_deco.resplendent_blocks.title",
+      "recipe_id": "spectral-decorations:pedestal/tier1/colored_resplendent/cyan_block",
+      "text": "book.spectral-decorations.guidebook.colored_resplendent_deco.resplendent_blocks.text"
+    },
+    {
+      "type": "spectrum:pedestal_crafting",
+      "advancement": "spectral-decorations:pluck_colored_resplendent_feather",
+      "title": "book.spectral-decorations.guidebook.colored_resplendent_deco.resplendent_cushions.title",
+      "recipe_id": "spectral-decorations:pedestal/tier1/colored_resplendent/magenta_cushion",
+      "text": "book.spectral-decorations.guidebook.colored_resplendent_deco.resplendent_cushions.text"
+    },
+    {
+      "type": "spectrum:pedestal_crafting",
+      "advancement": "spectral-decorations:pluck_colored_resplendent_feather",
+      "title": "book.spectral-decorations.guidebook.colored_resplendent_deco.resplendent_carpets.title",
+      "recipe_id": "spectral-decorations:pedestal/tier1/colored_resplendent/yellow_carpet_from_blocks",
+      "text": "book.spectral-decorations.guidebook.colored_resplendent_deco.resplendent_carpets.text"
+    },
+    {
+      "type": "spectrum:collection",
+      "advancement": "spectral-decorations:pluck_colored_resplendent_feather",
+      "title": "book.spectral-decorations.guidebook.colored_resplendent_deco.resplendent_beds.title",
+      "items": [
+        "spectral-decorations:black_resplendent_bed",
+        "spectral-decorations:blue_resplendent_bed",
+        "spectral-decorations:brown_resplendent_bed",
+        "spectral-decorations:cyan_resplendent_bed",
+        "spectral-decorations:gray_resplendent_bed",
+        "spectral-decorations:green_resplendent_bed",
+        "spectral-decorations:light_blue_resplendent_bed",
+        "spectral-decorations:light_gray_resplendent_bed",
+        "spectral-decorations:lime_resplendent_bed",
+        "spectral-decorations:magenta_resplendent_bed",
+        "spectral-decorations:orange_resplendent_bed",
+        "spectral-decorations:pink_resplendent_bed",
+        "spectral-decorations:purple_resplendent_bed",
+        "spectral-decorations:red_resplendent_bed",
+        "spectral-decorations:white_resplendent_bed",
+        "spectral-decorations:yellow_resplendent_bed"
+      ],
+      "text": "book.spectral-decorations.guidebook.colored_resplendent_deco.resplendent_beds.text"
+    },
+    {
+      "type": "spectrum:collection",
+      "advancement": "spectral-decorations:pluck_colored_resplendent_feather",
+      "items": [
+        "spectral-decorations:black_resplendent_block",
+        "spectral-decorations:blue_resplendent_block",
+        "spectral-decorations:brown_resplendent_block",
+        "spectral-decorations:cyan_resplendent_block",
+        "spectral-decorations:gray_resplendent_block",
+        "spectral-decorations:green_resplendent_block",
+        "spectral-decorations:light_blue_resplendent_block",
+        "spectral-decorations:light_gray_resplendent_block",
+        "spectral-decorations:lime_resplendent_block",
+        "spectral-decorations:magenta_resplendent_block",
+        "spectral-decorations:orange_resplendent_block",
+        "spectral-decorations:pink_resplendent_block",
+        "spectral-decorations:purple_resplendent_block",
+        "spectral-decorations:red_resplendent_block",
+        "spectral-decorations:white_resplendent_block",
+        "spectral-decorations:yellow_resplendent_block",
+
+        "spectral-decorations:black_resplendent_cushion",
+        "spectral-decorations:blue_resplendent_cushion",
+        "spectral-decorations:brown_resplendent_cushion",
+        "spectral-decorations:cyan_resplendent_cushion",
+        "spectral-decorations:gray_resplendent_cushion",
+        "spectral-decorations:green_resplendent_cushion",
+        "spectral-decorations:light_blue_resplendent_cushion",
+        "spectral-decorations:light_gray_resplendent_cushion",
+        "spectral-decorations:lime_resplendent_cushion",
+        "spectral-decorations:magenta_resplendent_cushion",
+        "spectral-decorations:orange_resplendent_cushion",
+        "spectral-decorations:pink_resplendent_cushion",
+        "spectral-decorations:purple_resplendent_cushion",
+        "spectral-decorations:red_resplendent_cushion",
+        "spectral-decorations:white_resplendent_cushion",
+        "spectral-decorations:yellow_resplendent_cushion",
+
+        "spectral-decorations:black_resplendent_carpet",
+        "spectral-decorations:blue_resplendent_carpet",
+        "spectral-decorations:brown_resplendent_carpet",
+        "spectral-decorations:cyan_resplendent_carpet",
+        "spectral-decorations:gray_resplendent_carpet",
+        "spectral-decorations:green_resplendent_carpet",
+        "spectral-decorations:light_blue_resplendent_carpet",
+        "spectral-decorations:light_gray_resplendent_carpet",
+        "spectral-decorations:lime_resplendent_carpet",
+        "spectral-decorations:magenta_resplendent_carpet",
+        "spectral-decorations:orange_resplendent_carpet",
+        "spectral-decorations:pink_resplendent_carpet",
+        "spectral-decorations:purple_resplendent_carpet",
+        "spectral-decorations:red_resplendent_carpet",
+        "spectral-decorations:white_resplendent_carpet",
+        "spectral-decorations:yellow_resplendent_carpet"
+      ],
+      "text": ""
+    }
+  ]
+}

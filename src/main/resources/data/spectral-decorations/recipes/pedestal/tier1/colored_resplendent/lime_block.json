@@ -1,0 +1,27 @@
+{
+  "type": "spectrum:pedestal",
+  "group": "colored_resplendent_deco",
+  "time": 40,
+  "tier": "basic",
+  "cyan": 0,
+  "magenta": 0,
+  "yellow": 0,
+  "white": 0,
+  "black": 0,
+  "experience": 0.0,
+  "pattern": [
+    "GG",
+    "GG"
+  ],
+  "key": {
+    "G": {
+      "item": "spectral-decorations:lime_resplendent_feather"
+    }
+  },
+  "result": {
+    "item": "spectral-decorations:lime_resplendent_block",
+    "count": 1
+  },
+  "required_advancement": "spectral-decorations:pluck_colored_resplendent_feather",
+  "disable_yield_upgrades": true
+}

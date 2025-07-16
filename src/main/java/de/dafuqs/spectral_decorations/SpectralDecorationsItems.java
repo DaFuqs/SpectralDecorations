@@ -17,7 +17,7 @@ public class SpectralDecorationsItems {
 	public static void register() {
 		for (DyeColor color : SpectrumColorHelper.VANILLA_DYE_COLORS) {
 			String colorString = color.getSerializedName();
-			registerItem(SpectrumItemGroups.RESOURCES, colorString + "_effulgent_feather", new ColoredEffulgentFeatherItem(new Item.Properties().rarity(Rarity.UNCOMMON), color), color);
+			registerItem(SpectrumItemGroups.RESOURCES, colorString + "_resplendent_feather", new ColoredResplendentFeatherItem(new Item.Properties().rarity(Rarity.UNCOMMON), color), color);
 		}
 	}
 
