@@ -1,0 +1,9 @@
+{
+  "default_texture": "spectral-decorations:entity/kindling/magenta",
+  "blinking_texture": "spectral-decorations:entity/kindling/magenta_blinking",
+  "angry_texture": "spectral-decorations:entity/kindling/magenta_angry",
+  "clipped_texture": "spectral-decorations:entity/kindling/magenta_clipped",
+  "blinking_clipped_texture": "spectral-decorations:entity/kindling/magenta_clipped_blinking",
+  "angry_clipped_texture": "spectral-decorations:entity/kindling/magenta_angry_clipped",
+  "clipping_loot_table": "spectral-decorations:gameplay/kindling_clipping/magenta"
+}
