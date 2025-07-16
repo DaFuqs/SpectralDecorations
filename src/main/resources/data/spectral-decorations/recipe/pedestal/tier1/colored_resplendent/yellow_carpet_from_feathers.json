@@ -1,0 +1,21 @@
+{
+  "type": "spectrum:pedestal",
+  "group": "colored_resplendent_deco",
+  "time": 40,
+  "tier": "basic",
+  "colors": {},
+  "experience": 0.0,
+  "pattern": [
+    "FF"
+  ],
+  "key": {
+    "F": {
+      "item": "spectral-decorations:yellow_resplendent_feather"
+    }
+  },
+  "result": {
+    "id": "spectral-decorations:yellow_resplendent_carpet",
+    "count": 1
+  },
+  "required_advancement": "spectral-decorations:pluck_colored_resplendent_feather"
+}

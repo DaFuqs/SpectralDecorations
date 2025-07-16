@@ -1,0 +1,21 @@
+{
+  "type": "spectrum:pedestal",
+  "group": "colored_resplendent_deco",
+  "time": 40,
+  "tier": "basic",
+  "colors": {},
+  "experience": 0.0,
+  "pattern": [
+    "BB"
+  ],
+  "key": {
+    "B": {
+      "item": "spectral-decorations:brown_resplendent_block"
+    }
+  },
+  "result": {
+    "id": "spectral-decorations:brown_resplendent_carpet",
+    "count": 4
+  },
+  "required_advancement": "spectral-decorations:pluck_colored_resplendent_feather"
+}

@@ -1,0 +1,32 @@
+{
+  "type": "spectrum:pedestal",
+  "group": "vanilla_wood_amphoras",
+  "time": 240,
+  "tier": "basic",
+  "colors": {},
+  "experience": 1.0,
+  "pattern": [
+    "SAS",
+    "I I",
+    "PSP"
+  ],
+  "key": {
+    "S": {
+      "item": "minecraft:bamboo_slab"
+    },
+    "P": {
+      "item": "minecraft:bamboo_planks"
+    },
+    "I": {
+      "tag": "spectrum:pigments"
+    },
+    "A": {
+      "item": "minecraft:paper"
+    }
+  },
+  "result": {
+    "id": "spectral-decorations:bamboo_amphora",
+    "count": 1
+  },
+  "required_advancement": "spectrum:lategame/collect_noxwood"
+}

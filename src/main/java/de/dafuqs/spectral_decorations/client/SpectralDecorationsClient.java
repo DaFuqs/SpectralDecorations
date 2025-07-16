@@ -39,17 +39,14 @@ public class SpectralDecorationsClient implements ClientModInitializer {
 			}
 		}
 		
-		ItemTooltipCallback.EVENT.register(new ItemTooltipCallback() {
-			@Override
-			public void getTooltip(ItemStack stack, Item.TooltipContext tooltipContext, TooltipFlag tooltipFlag, List<Component> list) {
-				if (stack.is(SpectralDecorationsItemTags.BEDROCK_ARMOR) || stack.is(SpectrumBlocks.BOTTOMLESS_BUNDLE.asItem())) {
-					Optional<DyeColor> optionalColor = BedrockArmorColorizer.getColor(stack);
-					if (optionalColor.isPresent()) {
-						DyeColor c = optionalColor.get();
-						Component t = Component.translatable("tooltip.spectral-decorations.colored")
-								.append(Component.translatable("color.minecraft." + c.getName()).withStyle((style -> style.withColor(c.getTextColor()))));
-						list.add(1, t);
-					}
+		ItemTooltipCallback.EVENT.register((stack, tooltipContext, tooltipFlag, list) -> {
+			if (stack.is(SpectralDecorationsItemTags.BEDROCK_ARMOR) || stack.is(SpectrumBlocks.BOTTOMLESS_BUNDLE.asItem())) {
+				Optional<DyeColor> optionalColor = BedrockArmorColorizer.getColor(stack);
+				if (optionalColor.isPresent()) {
+					DyeColor c = optionalColor.get();
+					Component t = Component.translatable("tooltip.spectral-decorations.colored")
+							.append(Component.translatable("color.minecraft." + c.getName()).withStyle((style -> style.withColor(c.getTextColor()))));
+					list.add(1, t);
 				}
 			}
 		});
