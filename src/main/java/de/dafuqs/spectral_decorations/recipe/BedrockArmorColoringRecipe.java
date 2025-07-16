@@ -7,7 +7,6 @@ import de.dafuqs.spectrum.blocks.pedestal.*;
 import de.dafuqs.spectrum.items.*;
 import de.dafuqs.spectrum.items.armor.*;
 import de.dafuqs.spectrum.recipe.pedestal.*;
-import de.dafuqs.spectrum.registries.*;
 import net.minecraft.core.*;
 import net.minecraft.resources.*;
 import net.minecraft.world.item.*;
@@ -24,7 +23,7 @@ public class BedrockArmorColoringRecipe extends ShapelessPedestalRecipe {
 						IngredientStack.of(Ingredient.of(SpectralDecorationsItemTags.BEDROCK_ARMOR)),
 						IngredientStack.of(Ingredient.of(SpectralDecorationsItemTags.PIGMENTS))),
 				Map.of(),
-				BedrockArmorColorizer.setColor(SpectrumItems.BEDROCK_CHESTPLATE.getDefaultInstance(), DyeColor.CYAN),
+				ItemStack.EMPTY,
 				0F, 120, false, false);
 	}
 	

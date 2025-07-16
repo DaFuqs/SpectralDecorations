@@ -24,7 +24,7 @@ public class BottomlessBundleColoringRecipe extends ShapelessPedestalRecipe {
 						IngredientStack.of(Ingredient.of(SpectrumBlocks.BOTTOMLESS_BUNDLE)),
 						IngredientStack.of(Ingredient.of(SpectralDecorationsItemTags.PIGMENTS))),
 				Map.of(),
-				BedrockArmorColorizer.setColor(SpectrumBlocks.BOTTOMLESS_BUNDLE.asItem().getDefaultInstance(), DyeColor.CYAN),
+				ItemStack.EMPTY,
 				0F, 120, false, false);
 	}
 	

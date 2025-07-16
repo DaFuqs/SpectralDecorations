@@ -1,8 +1,6 @@
 {
   "pack": {
-    "pack_format": 15,
-    "description": {
-      "text": "Spectral Decorations Overrides"
-    }
+    "pack_format": 34,
+    "description": "Spectral Decorations Overrides"
   }
 }

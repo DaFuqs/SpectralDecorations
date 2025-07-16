@@ -4,6 +4,7 @@ import de.dafuqs.spectral_decorations.*;
 import de.dafuqs.spectrum.registries.*;
 import net.fabricmc.api.*;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.*;
+import net.fabricmc.fabric.api.client.event.lifecycle.v1.*;
 import net.fabricmc.fabric.api.client.item.v1.*;
 import net.fabricmc.fabric.api.resource.*;
 import net.fabricmc.loader.api.*;
@@ -51,12 +52,14 @@ public class SpectralDecorationsClient implements ClientModInitializer {
 			}
 		});
 		
-		registerColorPredicate(SpectrumItems.BEDROCK_HELMET);
-		registerColorPredicate(SpectrumItems.BEDROCK_CHESTPLATE);
-		registerColorPredicate(SpectrumItems.BEDROCK_LEGGINGS);
-		registerColorPredicate(SpectrumItems.BEDROCK_BOOTS);
-		
-		registerColorPredicate(SpectrumBlocks.BOTTOMLESS_BUNDLE.asItem());
+		ClientLifecycleEvents.CLIENT_STARTED.register(minecraft -> {
+			registerColorPredicate(SpectrumItems.BEDROCK_HELMET);
+			registerColorPredicate(SpectrumItems.BEDROCK_CHESTPLATE);
+			registerColorPredicate(SpectrumItems.BEDROCK_LEGGINGS);
+			registerColorPredicate(SpectrumItems.BEDROCK_BOOTS);
+			
+			registerColorPredicate(SpectrumBlocks.BOTTOMLESS_BUNDLE.asItem());
+		});
 		
 		// Builtin Resource Packs
 		Optional<ModContainer> modContainer = FabricLoader.getInstance().getModContainer(SpectralDecorations.MOD_ID);

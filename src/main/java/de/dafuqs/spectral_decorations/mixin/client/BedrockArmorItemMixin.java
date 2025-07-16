@@ -22,8 +22,8 @@ public abstract class BedrockArmorItemMixin {
 		// feet do not have any color and therefore do use the default renderer
 		Optional<DyeColor> color = BedrockArmorColorizer.getColor(stack);
 		if (color.isPresent()) {
-			String colorString = color.get().getSerializedName();
-			cir.setReturnValue(SpectralDecorations.locate("textures/armor/bedrock_armor_" + colorString + ".png"));
+			String colorName = color.get().getSerializedName();
+			cir.setReturnValue(SpectralDecorations.locate("textures/armor/bedrock_armor_" + colorName + ".png"));
 		}
 	}
 	
@@ -31,8 +31,8 @@ public abstract class BedrockArmorItemMixin {
 	private void spectral_decorations$modifyBedrockArmorRenderLayer(ItemStack stack, CallbackInfoReturnable<RenderType> cir) {
 		Optional<DyeColor> color = BedrockArmorColorizer.getColor(stack);
 		if (color.isPresent()) {
-			String colorString = color.get().getSerializedName();
-			ResourceLocation renderLayerId = SpectralDecorations.locate("textures/armor/bedrock_armor_" + colorString + ".png");
+			String colorName = color.get().getSerializedName();
+			ResourceLocation renderLayerId = SpectralDecorations.locate("textures/armor/bedrock_armor_" + colorName + ".png");
 			cir.setReturnValue(RenderType.entitySolid(renderLayerId));
 		}
 	}

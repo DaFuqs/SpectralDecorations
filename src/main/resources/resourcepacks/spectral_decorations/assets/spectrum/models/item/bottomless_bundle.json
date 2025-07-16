@@ -1,12 +1,12 @@
 {
-  "parent": "minecraft:item/handheld",
+  "parent": "minecraft:item/generated",
   "textures": {
     "layer0": "spectrum:item/bottomless_bundle_empty"
   },
   "overrides": [
     {
       "predicate": {
-        "color": 0.01,
+        "spectral-decorations:color": 0.01,
         "locked": 0,
         "filled": 0
       },
@@ -14,7 +14,7 @@
     },
     {
       "predicate": {
-        "color": 0.01,
+        "spectral-decorations:color": 0.01,
         "locked": 0,
         "filled": 1
       },
@@ -22,7 +22,7 @@
     },
     {
       "predicate": {
-        "color": 0.01,
+        "spectral-decorations:color": 0.01,
         "locked": 1,
         "filled": 0
       },
@@ -30,7 +30,7 @@
     },
     {
       "predicate": {
-        "color": 0.01,
+        "spectral-decorations:color": 0.01,
         "filled": 1,
         "locked": 1
       },
@@ -38,7 +38,7 @@
     },
     {
       "predicate": {
-        "color": 0.02,
+        "spectral-decorations:color": 0.02,
         "locked": 0,
         "filled": 0
       },
@@ -46,7 +46,7 @@
     },
     {
       "predicate": {
-        "color": 0.02,
+        "spectral-decorations:color": 0.02,
         "locked": 0,
         "filled": 1
       },
@@ -54,7 +54,7 @@
     },
     {
       "predicate": {
-        "color": 0.02,
+        "spectral-decorations:color": 0.02,
         "locked": 1,
         "filled": 0
       },
@@ -62,7 +62,7 @@
     },
     {
       "predicate": {
-        "color": 0.02,
+        "spectral-decorations:color": 0.02,
         "filled": 1,
         "locked": 1
       },
@@ -70,7 +70,7 @@
     },
     {
       "predicate": {
-        "color": 0.03,
+        "spectral-decorations:color": 0.03,
         "locked": 0,
         "filled": 0
       },
@@ -78,7 +78,7 @@
     },
     {
       "predicate": {
-        "color": 0.03,
+        "spectral-decorations:color": 0.03,
         "locked": 0,
         "filled": 1
       },
@@ -86,7 +86,7 @@
     },
     {
       "predicate": {
-        "color": 0.03,
+        "spectral-decorations:color": 0.03,
         "locked": 1,
         "filled": 0
       },
@@ -94,7 +94,7 @@
     },
     {
       "predicate": {
-        "color": 0.03,
+        "spectral-decorations:color": 0.03,
         "filled": 1,
         "locked": 1
       },
@@ -102,7 +102,7 @@
     },
     {
       "predicate": {
-        "color": 0.04,
+        "spectral-decorations:color": 0.04,
         "locked": 0,
         "filled": 0
       },
@@ -110,7 +110,7 @@
     },
     {
       "predicate": {
-        "color": 0.04,
+        "spectral-decorations:color": 0.04,
         "locked": 0,
         "filled": 1
       },
@@ -118,7 +118,7 @@
     },
     {
       "predicate": {
-        "color": 0.04,
+        "spectral-decorations:color": 0.04,
         "locked": 1,
         "filled": 0
       },
@@ -126,7 +126,7 @@
     },
     {
       "predicate": {
-        "color": 0.04,
+        "spectral-decorations:color": 0.04,
         "filled": 1,
         "locked": 1
       },
@@ -134,7 +134,7 @@
     },
     {
       "predicate": {
-        "color": 0.05,
+        "spectral-decorations:color": 0.05,
         "locked": 0,
         "filled": 0
       },
@@ -142,7 +142,7 @@
     },
     {
       "predicate": {
-        "color": 0.05,
+        "spectral-decorations:color": 0.05,
         "locked": 0,
         "filled": 1
       },
@@ -150,7 +150,7 @@
     },
     {
       "predicate": {
-        "color": 0.05,
+        "spectral-decorations:color": 0.05,
         "locked": 1,
         "filled": 0
       },
@@ -158,7 +158,7 @@
     },
     {
       "predicate": {
-        "color": 0.05,
+        "spectral-decorations:color": 0.05,
         "filled": 1,
         "locked": 1
       },
@@ -166,7 +166,7 @@
     },
     {
       "predicate": {
-        "color": 0.06,
+        "spectral-decorations:color": 0.06,
         "locked": 0,
         "filled": 0
       },
@@ -174,7 +174,7 @@
     },
     {
       "predicate": {
-        "color": 0.06,
+        "spectral-decorations:color": 0.06,
         "locked": 0,
         "filled": 1
       },
@@ -182,7 +182,7 @@
     },
     {
       "predicate": {
-        "color": 0.06,
+        "spectral-decorations:color": 0.06,
         "locked": 1,
         "filled": 0
       },
@@ -190,7 +190,7 @@
     },
     {
       "predicate": {
-        "color": 0.06,
+        "spectral-decorations:color": 0.06,
         "filled": 1,
         "locked": 1
       },
@@ -198,7 +198,7 @@
     },
     {
       "predicate": {
-        "color": 0.07,
+        "spectral-decorations:color": 0.07,
         "locked": 0,
         "filled": 0
       },
@@ -206,7 +206,7 @@
     },
     {
       "predicate": {
-        "color": 0.07,
+        "spectral-decorations:color": 0.07,
         "locked": 0,
         "filled": 1
       },
@@ -214,7 +214,7 @@
     },
     {
       "predicate": {
-        "color": 0.07,
+        "spectral-decorations:color": 0.07,
         "locked": 1,
         "filled": 0
       },
@@ -222,7 +222,7 @@
     },
     {
       "predicate": {
-        "color": 0.07,
+        "spectral-decorations:color": 0.07,
         "filled": 1,
         "locked": 1
       },
@@ -230,7 +230,7 @@
     },
     {
       "predicate": {
-        "color": 0.08,
+        "spectral-decorations:color": 0.08,
         "locked": 0,
         "filled": 0
       },
@@ -238,7 +238,7 @@
     },
     {
       "predicate": {
-        "color": 0.08,
+        "spectral-decorations:color": 0.08,
         "locked": 0,
         "filled": 1
       },
@@ -246,7 +246,7 @@
     },
     {
       "predicate": {
-        "color": 0.08,
+        "spectral-decorations:color": 0.08,
         "locked": 1,
         "filled": 0
       },
@@ -254,7 +254,7 @@
     },
     {
       "predicate": {
-        "color": 0.08,
+        "spectral-decorations:color": 0.08,
         "filled": 1,
         "locked": 1
       },
@@ -262,7 +262,7 @@
     },
     {
       "predicate": {
-        "color": 0.09,
+        "spectral-decorations:color": 0.09,
         "locked": 0,
         "filled": 0
       },
@@ -270,7 +270,7 @@
     },
     {
       "predicate": {
-        "color": 0.09,
+        "spectral-decorations:color": 0.09,
         "locked": 0,
         "filled": 1
       },
@@ -278,7 +278,7 @@
     },
     {
       "predicate": {
-        "color": 0.09,
+        "spectral-decorations:color": 0.09,
         "locked": 1,
         "filled": 0
       },
@@ -286,7 +286,7 @@
     },
     {
       "predicate": {
-        "color": 0.09,
+        "spectral-decorations:color": 0.09,
         "filled": 1,
         "locked": 1
       },
@@ -294,7 +294,7 @@
     },
     {
       "predicate": {
-        "color": 0.1,
+        "spectral-decorations:color": 0.1,
         "locked": 0,
         "filled": 0
       },
@@ -302,7 +302,7 @@
     },
     {
       "predicate": {
-        "color": 0.1,
+        "spectral-decorations:color": 0.1,
         "locked": 0,
         "filled": 1
       },
@@ -310,7 +310,7 @@
     },
     {
       "predicate": {
-        "color": 0.1,
+        "spectral-decorations:color": 0.1,
         "locked": 1,
         "filled": 0
       },
@@ -318,7 +318,7 @@
     },
     {
       "predicate": {
-        "color": 0.1,
+        "spectral-decorations:color": 0.1,
         "filled": 1,
         "locked": 1
       },
@@ -326,7 +326,7 @@
     },
     {
       "predicate": {
-        "color": 0.11,
+        "spectral-decorations:color": 0.11,
         "locked": 0,
         "filled": 0
       },
@@ -334,7 +334,7 @@
     },
     {
       "predicate": {
-        "color": 0.11,
+        "spectral-decorations:color": 0.11,
         "locked": 0,
         "filled": 1
       },
@@ -342,7 +342,7 @@
     },
     {
       "predicate": {
-        "color": 0.11,
+        "spectral-decorations:color": 0.11,
         "locked": 1,
         "filled": 0
       },
@@ -350,7 +350,7 @@
     },
     {
       "predicate": {
-        "color": 0.11,
+        "spectral-decorations:color": 0.11,
         "filled": 1,
         "locked": 1
       },
@@ -358,7 +358,7 @@
     },
     {
       "predicate": {
-        "color": 0.12,
+        "spectral-decorations:color": 0.12,
         "locked": 0,
         "filled": 0
       },
@@ -366,7 +366,7 @@
     },
     {
       "predicate": {
-        "color": 0.12,
+        "spectral-decorations:color": 0.12,
         "locked": 0,
         "filled": 1
       },
@@ -374,7 +374,7 @@
     },
     {
       "predicate": {
-        "color": 0.12,
+        "spectral-decorations:color": 0.12,
         "locked": 1,
         "filled": 0
       },
@@ -382,7 +382,7 @@
     },
     {
       "predicate": {
-        "color": 0.12,
+        "spectral-decorations:color": 0.12,
         "filled": 1,
         "locked": 1
       },
@@ -390,7 +390,7 @@
     },
     {
       "predicate": {
-        "color": 0.13,
+        "spectral-decorations:color": 0.13,
         "locked": 0,
         "filled": 0
       },
@@ -398,7 +398,7 @@
     },
     {
       "predicate": {
-        "color": 0.13,
+        "spectral-decorations:color": 0.13,
         "locked": 0,
         "filled": 1
       },
@@ -406,7 +406,7 @@
     },
     {
       "predicate": {
-        "color": 0.13,
+        "spectral-decorations:color": 0.13,
         "locked": 1,
         "filled": 0
       },
@@ -414,7 +414,7 @@
     },
     {
       "predicate": {
-        "color": 0.13,
+        "spectral-decorations:color": 0.13,
         "filled": 1,
         "locked": 1
       },
@@ -422,7 +422,7 @@
     },
     {
       "predicate": {
-        "color": 0.14,
+        "spectral-decorations:color": 0.14,
         "locked": 0,
         "filled": 0
       },
@@ -430,7 +430,7 @@
     },
     {
       "predicate": {
-        "color": 0.14,
+        "spectral-decorations:color": 0.14,
         "locked": 0,
         "filled": 1
       },
@@ -438,7 +438,7 @@
     },
     {
       "predicate": {
-        "color": 0.14,
+        "spectral-decorations:color": 0.14,
         "locked": 1,
         "filled": 0
       },
@@ -446,7 +446,7 @@
     },
     {
       "predicate": {
-        "color": 0.14,
+        "spectral-decorations:color": 0.14,
         "filled": 1,
         "locked": 1
       },
@@ -454,7 +454,7 @@
     },
     {
       "predicate": {
-        "color": 0.15,
+        "spectral-decorations:color": 0.15,
         "locked": 0,
         "filled": 0
       },
@@ -462,7 +462,7 @@
     },
     {
       "predicate": {
-        "color": 0.15,
+        "spectral-decorations:color": 0.15,
         "locked": 0,
         "filled": 1
       },
@@ -470,7 +470,7 @@
     },
     {
       "predicate": {
-        "color": 0.15,
+        "spectral-decorations:color": 0.15,
         "locked": 1,
         "filled": 0
       },
@@ -478,7 +478,7 @@
     },
     {
       "predicate": {
-        "color": 0.15,
+        "spectral-decorations:color": 0.15,
         "filled": 1,
         "locked": 1
       },
@@ -486,7 +486,7 @@
     },
     {
       "predicate": {
-        "color": 0.16,
+        "spectral-decorations:color": 0.16,
         "locked": 0,
         "filled": 0
       },
@@ -494,7 +494,7 @@
     },
     {
       "predicate": {
-        "color": 0.16,
+        "spectral-decorations:color": 0.16,
         "locked": 0,
         "filled": 1
       },
@@ -502,7 +502,7 @@
     },
     {
       "predicate": {
-        "color": 0.16,
+        "spectral-decorations:color": 0.16,
         "locked": 1,
         "filled": 0
       },
@@ -510,7 +510,7 @@
     },
     {
       "predicate": {
-        "color": 0.16,
+        "spectral-decorations:color": 0.16,
         "filled": 1,
         "locked": 1
       },
