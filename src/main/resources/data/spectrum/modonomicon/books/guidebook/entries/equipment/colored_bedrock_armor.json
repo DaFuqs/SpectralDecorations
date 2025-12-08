@@ -26,10 +26,30 @@
       "type": "spectrum:collection",
       "title": "book.spectral-decorations.guidebook.colored_bedrock_armor.name",
       "items": [
-        "spectrum:bedrock_helmet{Color:\"green\"}",
-        "spectrum:bedrock_chestplate{Color:\"orange\"}",
-        "spectrum:bedrock_leggings{Color:\"pink\"}",
-        "spectrum:bedrock_boots{Color:\"yellow\"}"
+        {
+          "id": "spectrum:bedrock_helmet",
+          "components": {
+            "minecraft:base_color": "green"
+          }
+        },
+        {
+          "id": "spectrum:bedrock_chestplate",
+          "components": {
+            "minecraft:base_color": "orange"
+          }
+        },
+        {
+          "id": "spectrum:bedrock_leggings",
+          "components": {
+            "minecraft:base_color": "pink"
+          }
+        },
+        {
+          "id": "spectrum:bedrock_boots",
+          "components": {
+            "minecraft:base_color": "yellow"
+          }
+        }
       ],
       "text": "book.spectral-decorations.guidebook.colored_bedrock_armor.page0.text"
     },

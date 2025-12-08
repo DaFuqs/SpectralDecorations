@@ -17,22 +17,54 @@
       "type": "spectrum:collection",
       "title": "recipeGroup.spectrum.colored_amphoras",
       "items": [
-        "spectral-decorations:black_amphora",
-        "spectral-decorations:blue_amphora",
-        "spectral-decorations:brown_amphora",
-        "spectral-decorations:cyan_amphora",
-        "spectral-decorations:gray_amphora",
-        "spectral-decorations:green_amphora",
-        "spectral-decorations:light_blue_amphora",
-        "spectral-decorations:light_gray_amphora",
-        "spectral-decorations:lime_amphora",
-        "spectral-decorations:magenta_amphora",
-        "spectral-decorations:orange_amphora",
-        "spectral-decorations:pink_amphora",
-        "spectral-decorations:purple_amphora",
-        "spectral-decorations:red_amphora",
-        "spectral-decorations:white_amphora",
-        "spectral-decorations:yellow_amphora"
+        {
+          "id": "spectral-decorations:black_amphora"
+        },
+        {
+          "id": "spectral-decorations:blue_amphora"
+        },
+        {
+          "id": "spectral-decorations:brown_amphora"
+        },
+        {
+          "id": "spectral-decorations:cyan_amphora"
+        },
+        {
+          "id": "spectral-decorations:gray_amphora"
+        },
+        {
+          "id": "spectral-decorations:green_amphora"
+        },
+        {
+          "id": "spectral-decorations:light_blue_amphora"
+        },
+        {
+          "id": "spectral-decorations:light_gray_amphora"
+        },
+        {
+          "id": "spectral-decorations:lime_amphora"
+        },
+        {
+          "id": "spectral-decorations:magenta_amphora"
+        },
+        {
+          "id": "spectral-decorations:orange_amphora"
+        },
+        {
+          "id": "spectral-decorations:pink_amphora"
+        },
+        {
+          "id": "spectral-decorations:purple_amphora"
+        },
+        {
+          "id": "spectral-decorations:red_amphora"
+        },
+        {
+          "id": "spectral-decorations:white_amphora"
+        },
+        {
+          "id": "spectral-decorations:yellow_amphora"
+        }
       ],
       "text": "book.spectral-decorations.guidebook.colored_amphoras.page0.text"
     },

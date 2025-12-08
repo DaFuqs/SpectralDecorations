@@ -17,17 +17,39 @@
       "type": "spectrum:collection",
       "title": "recipeGroup.spectrum.vanilla_wood_amphoras",
       "items": [
-        "spectral-decorations:oak_amphora",
-        "spectral-decorations:spruce_amphora",
-        "spectral-decorations:birch_amphora",
-        "spectral-decorations:dark_oak_amphora",
-        "spectral-decorations:jungle_amphora",
-        "spectral-decorations:acacia_amphora",
-        "spectral-decorations:bamboo_amphora",
-        "spectral-decorations:mangrove_amphora",
-        "spectral-decorations:cherry_amphora",
-        "spectral-decorations:crimson_amphora",
-        "spectral-decorations:warped_amphora"
+        {
+          "id": "spectral-decorations:oak_amphora"
+        },
+        {
+          "id": "spectral-decorations:spruce_amphora"
+        },
+        {
+          "id": "spectral-decorations:birch_amphora"
+        },
+        {
+          "id": "spectral-decorations:dark_oak_amphora"
+        },
+        {
+          "id": "spectral-decorations:jungle_amphora"
+        },
+        {
+          "id": "spectral-decorations:acacia_amphora"
+        },
+        {
+          "id": "spectral-decorations:bamboo_amphora"
+        },
+        {
+          "id": "spectral-decorations:mangrove_amphora"
+        },
+        {
+          "id": "spectral-decorations:cherry_amphora"
+        },
+        {
+          "id": "spectral-decorations:crimson_amphora"
+        },
+        {
+          "id": "spectral-decorations:warped_amphora"
+        }
       ],
       "text": "book.spectral-decorations.guidebook.vanilla_wood_amphoras.page0.text"
     },

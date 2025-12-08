@@ -17,17 +17,39 @@
       "type": "spectrum:collection",
       "title": "recipeGroup.spectrum.vanilla_wood_beams",
       "items": [
-        "spectral-decorations:oak_beam",
-        "spectral-decorations:spruce_beam",
-        "spectral-decorations:birch_beam",
-        "spectral-decorations:dark_oak_beam",
-        "spectral-decorations:jungle_beam",
-        "spectral-decorations:acacia_beam",
-        "spectral-decorations:bamboo_beam",
-        "spectral-decorations:mangrove_beam",
-        "spectral-decorations:cherry_beam",
-        "spectral-decorations:crimson_beam",
-        "spectral-decorations:warped_beam"
+        {
+          "id": "spectral-decorations:oak_beam"
+        },
+        {
+          "id": "spectral-decorations:spruce_beam"
+        },
+        {
+          "id": "spectral-decorations:birch_beam"
+        },
+        {
+          "id": "spectral-decorations:dark_oak_beam"
+        },
+        {
+          "id": "spectral-decorations:jungle_beam"
+        },
+        {
+          "id": "spectral-decorations:acacia_beam"
+        },
+        {
+          "id": "spectral-decorations:bamboo_beam"
+        },
+        {
+          "id": "spectral-decorations:mangrove_beam"
+        },
+        {
+          "id": "spectral-decorations:cherry_beam"
+        },
+        {
+          "id": "spectral-decorations:crimson_beam"
+        },
+        {
+          "id": "spectral-decorations:warped_beam"
+        }
       ],
       "text": "book.spectral-decorations.guidebook.vanilla_wood_beams.page0.text"
     },

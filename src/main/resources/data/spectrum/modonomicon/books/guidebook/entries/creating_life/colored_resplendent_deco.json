@@ -29,22 +29,54 @@
       "advancement": "spectral-decorations:pluck_colored_resplendent_feather",
       "title": "book.spectral-decorations.guidebook.colored_resplendent_deco.colored_feathers.title",
       "items": [
-        "spectral-decorations:black_resplendent_feather",
-        "spectral-decorations:blue_resplendent_feather",
-        "spectral-decorations:brown_resplendent_feather",
-        "spectral-decorations:cyan_resplendent_feather",
-        "spectral-decorations:gray_resplendent_feather",
-        "spectral-decorations:green_resplendent_feather",
-        "spectral-decorations:light_blue_resplendent_feather",
-        "spectral-decorations:light_gray_resplendent_feather",
-        "spectral-decorations:lime_resplendent_feather",
-        "spectral-decorations:magenta_resplendent_feather",
-        "spectral-decorations:orange_resplendent_feather",
-        "spectral-decorations:pink_resplendent_feather",
-        "spectral-decorations:purple_resplendent_feather",
-        "spectral-decorations:red_resplendent_feather",
-        "spectral-decorations:white_resplendent_feather",
-        "spectral-decorations:yellow_resplendent_feather"
+        {
+          "id": "spectral-decorations:black_resplendent_feather"
+        },
+        {
+          "id": "spectral-decorations:blue_resplendent_feather"
+        },
+        {
+          "id": "spectral-decorations:brown_resplendent_feather"
+        },
+        {
+          "id": "spectral-decorations:cyan_resplendent_feather"
+        },
+        {
+          "id": "spectral-decorations:gray_resplendent_feather"
+        },
+        {
+          "id": "spectral-decorations:green_resplendent_feather"
+        },
+        {
+          "id": "spectral-decorations:light_blue_resplendent_feather"
+        },
+        {
+          "id": "spectral-decorations:light_gray_resplendent_feather"
+        },
+        {
+          "id": "spectral-decorations:lime_resplendent_feather"
+        },
+        {
+          "id": "spectral-decorations:magenta_resplendent_feather"
+        },
+        {
+          "id": "spectral-decorations:orange_resplendent_feather"
+        },
+        {
+          "id": "spectral-decorations:pink_resplendent_feather"
+        },
+        {
+          "id": "spectral-decorations:purple_resplendent_feather"
+        },
+        {
+          "id": "spectral-decorations:red_resplendent_feather"
+        },
+        {
+          "id": "spectral-decorations:white_resplendent_feather"
+        },
+        {
+          "id": "spectral-decorations:yellow_resplendent_feather"
+        }
       ],
       "text": "book.spectral-decorations.guidebook.colored_resplendent_deco.colored_feathers.text"
     },
