@@ -8,8 +8,8 @@
   },
   "icon": {
     "item": "spectrum:bedrock_chestplate",
-    "nbt": {
-      "Color": "blue"
+    "components": {
+      "minecraft:base_color": "blue"
     }
   },
   "category": "spectrum:equipment",

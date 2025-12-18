@@ -8,8 +8,8 @@
   },
   "icon": {
     "item": "spectrum:bottomless_bundle",
-    "nbt": {
-      "Color": "blue"
+    "components": {
+      "minecraft:base_color": "orange"
     }
   },
   "category": "spectrum:equipment",
