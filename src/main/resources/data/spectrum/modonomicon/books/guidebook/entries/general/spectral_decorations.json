@@ -1,0 +1,24 @@
+{
+  "name": "book.spectral-decorations.guidebook.spectral-decorations.name",
+  "description": "book.spectral-decorations.guidebook.spectral-decorations.description",
+
+  "icon": "spectral-decorations:icon.png",
+  "category": "spectrum:general",
+
+  "hide_while_locked": false,
+
+  "background_u_index": 0,
+  "background_v_index": 4,
+  "x": -13,
+  "y": -3,
+
+  "read_by_default": true,
+
+  "pages": [
+    {
+      "type": "modonomicon:text",
+      "title": "book.spectral-decorations.guidebook.spectral-decorations.about.title",
+      "text": "book.spectral-decorations.guidebook.spectral-decorations.about.text"
+    }
+  ]
+}

@@ -189,6 +189,13 @@
   "block.spectral-decorations.white_resplendent_bed": "White resplendent Bed",
   "block.spectral-decorations.yellow_resplendent_bed": "Yellow resplendent Bed",
 
+  "book.spectral-decorations.added_by_spectral-decorations": "§oAdded by Spectral Decorations",
+
+  "book.spectral-decorations.guidebook.spectral-decorations.name": "Addon: Spectral Decorations",
+  "book.spectral-decorations.guidebook.spectral-decorations.description": "Dipping the entirety of Spectrum into a rainbowy paint bucket",
+  "book.spectral-decorations.guidebook.spectral-decorations.about.title": "Spectral Decorations",
+  "book.spectral-decorations.guidebook.spectral-decorations.about.text": "*fully textured by brothers_trouble*\\\n\\\nAdds a lot more decoration options and makes various blocks, items and equipment colorable.",
+
   "book.spectral-decorations.guidebook.colored_resplendent_deco.name": "Kindling Coloring",
   "book.spectral-decorations.guidebook.colored_resplendent_deco.kindling_coloring.text": "The Paintbrush is able to dye both blocks and dye creatures like Sheep.\\\nNow for an inherently magical creature like the Kindling...\\\n\\\nI can uncolor Kindlings again by bathing them in [Liquid Crystal](entry://general/liquid_crystal).",
   "book.spectral-decorations.guidebook.colored_resplendent_deco.colored_feathers.title": "Colored Feathers",

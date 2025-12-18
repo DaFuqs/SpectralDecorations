@@ -1,5 +1,7 @@
 {
   "name": "book.spectral-decorations.guidebook.colored_resplendent_deco.name",
+  "description": "book.spectral-decorations.added_by_spectral-decorations",
+
   "condition": {
     "type": "modonomicon:advancement",
     "advancement_id": "spectrum:pluck_resplendent_feather"

@@ -1,5 +1,7 @@
 {
   "name": "book.spectral-decorations.guidebook.colored_bedrock_armor.name",
+  "description": "book.spectral-decorations.added_by_spectral-decorations",
+
   "condition": {
     "type": "modonomicon:advancement",
     "advancement_id": "spectrum:unlocks/equipment/bedrock_tools"
