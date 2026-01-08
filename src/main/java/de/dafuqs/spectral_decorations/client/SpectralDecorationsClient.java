@@ -63,7 +63,7 @@ public class SpectralDecorationsClient implements ClientModInitializer {
 		
 		// Builtin Resource Packs
 		Optional<ModContainer> modContainer = FabricLoader.getInstance().getModContainer(SpectralDecorations.MOD_ID);
-		modContainer.ifPresent(container -> ResourceManagerHelper.registerBuiltinResourcePack(SpectralDecorations.locate("spectral_decorations"), container, Component.nullToEmpty("Spectral Decorations Overrides"), ResourcePackActivationType.DEFAULT_ENABLED));
+		modContainer.ifPresent(container -> ResourceManagerHelper.registerBuiltinResourcePack(SpectralDecorations.locate("spectral_decorations"), container, Component.nullToEmpty("Spectral Decorations Overrides"), ResourcePackActivationType.ALWAYS_ENABLED));
 	}
 	
 }
