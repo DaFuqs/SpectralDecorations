@@ -3,6 +3,7 @@ package de.dafuqs.spectral_decorations;
 import de.dafuqs.spectrum.api.item_group.*;
 import de.dafuqs.spectrum.blocks.amphora.*;
 import de.dafuqs.spectrum.blocks.decoration.*;
+import de.dafuqs.spectrum.blocks.flammable.*;
 import de.dafuqs.spectrum.helpers.*;
 import net.minecraft.resources.*;
 import net.minecraft.world.item.*;
@@ -18,7 +19,7 @@ import java.util.function.*;
 public class SpectralDecorationsBlocks {
 	
 	public static final DeferredRegister.Blocks REGISTRAR = DeferredRegister.createBlocks(SpectralDecorations.MOD_ID);
-	public static final List<PropertyHolder> HOLDER = new ArrayList<>();
+	public static final List<PropertyHolder> BLOCK_TYPE_HOLDER = new ArrayList<>();
 	
 	public static void register(IEventBus modBus) {
 		REGISTRAR.register(modBus);
@@ -26,15 +27,21 @@ public class SpectralDecorationsBlocks {
 		for (VanillaWood wood : VanillaWood.values()) {
 			String name = wood.getName();
 			MapColor mapColor = wood.getMapColor();
+			boolean isFireResistant = wood.isFireResistant();
 			SoundType blockSoundGroup = wood.getBlockSoundGroup();
-			registerBlockWithItem(ItemGroupIDs.SUBTAB_DECORATION, name + "_beam", () -> new RotatedPillarBlock(BlockBehaviour.Properties.of().strength(2.0F, 3.0F).mapColor(mapColor).sound(blockSoundGroup)), new Item.Properties(), Type.BEAM);
+			
 			registerBlockWithItem(ItemGroupIDs.SUBTAB_DECORATION, name + "_amphora", () -> new AmphoraBlock(BlockBehaviour.Properties.of().strength(2.0F, 3.0F).mapColor(mapColor).sound(blockSoundGroup)), new Item.Properties(), Type.AMPHORA);
+			registerBlockWithItem(ItemGroupIDs.SUBTAB_DECORATION, name + "_beam",
+					isFireResistant
+							? () -> new RotatedPillarBlock(BlockBehaviour.Properties.of().strength(2.0F, 3.0F).mapColor(mapColor).sound(blockSoundGroup))
+							: () -> new FlammableRotatedPillarBlock(BlockBehaviour.Properties.of().strength(2.0F, 3.0F).mapColor(mapColor).sound(blockSoundGroup)
+					), new Item.Properties(), Type.BEAM);
 		}
 		
 		for (DyeColor color : SpectrumColorHelper.VANILLA_DYE_COLORS) {
 			String colorString = color.getSerializedName();
 			
-			registerBlockWithItem(ItemGroupIDs.SUBTAB_COLORED_WOOD, colorString + "_beam", () -> new RotatedPillarBlock(BlockBehaviour.Properties.of().strength(4.0F).mapColor(color).sound(SoundType.WOOD)), new Item.Properties(), Type.BEAM);
+			registerBlockWithItem(ItemGroupIDs.SUBTAB_COLORED_WOOD, colorString + "_beam", () -> new FlammableRotatedPillarBlock(BlockBehaviour.Properties.of().strength(4.0F).mapColor(color).sound(SoundType.WOOD)), new Item.Properties(), Type.BEAM);
 			registerBlockWithItem(ItemGroupIDs.SUBTAB_COLORED_WOOD, colorString + "_lantern", () -> new FlexLanternBlock(BlockBehaviour.Properties.of().strength(4.0F).mapColor(color).sound(SoundType.WOOD).lightLevel(state -> 13)), new Item.Properties(), Type.LANTERN);
 			registerBlockWithItem(ItemGroupIDs.SUBTAB_COLORED_WOOD, colorString + "_light", () -> new RotatedPillarBlock(BlockBehaviour.Properties.of().strength(4.0F).mapColor(color).sound(SoundType.WOOD).lightLevel(state -> 15)), new Item.Properties(), Type.LIGHT);
 			registerBlockWithItem(ItemGroupIDs.SUBTAB_COLORED_WOOD, colorString + "_amphora", () -> new AmphoraBlock(BlockBehaviour.Properties.of().strength(4.0F).mapColor(color).sound(SoundType.WOOD)), new Item.Properties(), Type.AMPHORA);
@@ -50,31 +57,33 @@ public class SpectralDecorationsBlocks {
 		DeferredBlock<Block> deferredBlock = REGISTRAR.register(name, block);
 		
 		DeferredItem<BlockItem> bi = SpectralDecorationsItems.REGISTRAR.register(name, () -> new BlockItem(deferredBlock.get(), itemSettings));
-		HOLDER.add(new PropertyHolder(deferredBlock, type));
+		BLOCK_TYPE_HOLDER.add(new PropertyHolder(deferredBlock, type));
 		SpectralDecorations.ITEM_SUB_TAB_HOLDER.put(subTabId, bi);
 	}
 	
 	public enum VanillaWood {
-		OAK("oak", MapColor.WOOD, SoundType.WOOD),
-		SPRUCE("spruce", MapColor.PODZOL, SoundType.WOOD),
-		BIRCH("birch", MapColor.SAND, SoundType.WOOD),
-		DARK_OAK("dark_oak", MapColor.COLOR_BROWN, SoundType.WOOD),
-		JUNGLE("jungle", MapColor.DIRT, SoundType.WOOD),
-		ACACIA("acacia", MapColor.COLOR_ORANGE, SoundType.WOOD),
-		BAMBOO("bamboo", MapColor.COLOR_YELLOW, SoundType.BAMBOO_WOOD),
-		MANGROVE("mangrove", MapColor.COLOR_RED, SoundType.WOOD),
-		CHERRY("cherry", MapColor.TERRACOTTA_WHITE, SoundType.CHERRY_WOOD),
-		CRIMSON("crimson", MapColor.CRIMSON_STEM, SoundType.NETHER_WOOD),
-		WARPED("warped", MapColor.WARPED_STEM, SoundType.NETHER_WOOD);
+		OAK("oak", MapColor.WOOD, SoundType.WOOD, false),
+		SPRUCE("spruce", MapColor.PODZOL, SoundType.WOOD, false),
+		BIRCH("birch", MapColor.SAND, SoundType.WOOD, false),
+		DARK_OAK("dark_oak", MapColor.COLOR_BROWN, SoundType.WOOD, false),
+		JUNGLE("jungle", MapColor.DIRT, SoundType.WOOD, false),
+		ACACIA("acacia", MapColor.COLOR_ORANGE, SoundType.WOOD, false),
+		BAMBOO("bamboo", MapColor.COLOR_YELLOW, SoundType.BAMBOO_WOOD, false),
+		MANGROVE("mangrove", MapColor.COLOR_RED, SoundType.WOOD, false),
+		CHERRY("cherry", MapColor.TERRACOTTA_WHITE, SoundType.CHERRY_WOOD, false),
+		CRIMSON("crimson", MapColor.CRIMSON_STEM, SoundType.NETHER_WOOD, true),
+		WARPED("warped", MapColor.WARPED_STEM, SoundType.NETHER_WOOD, true);
 		
 		private final String name;
 		private final MapColor mapColor;
 		private final SoundType blockSoundGroup;
+		private final boolean isFireResistant;
 		
-		VanillaWood(String name, MapColor mapColor, SoundType blockSoundGroup) {
+		VanillaWood(String name, MapColor mapColor, SoundType blockSoundGroup, boolean isFireResistant) {
 			this.name = name;
 			this.mapColor = mapColor;
 			this.blockSoundGroup = blockSoundGroup;
+			this.isFireResistant = isFireResistant;
 		}
 		
 		public String getName() {
@@ -87,6 +96,10 @@ public class SpectralDecorationsBlocks {
 		
 		public MapColor getMapColor() {
 			return mapColor;
+		}
+		
+		public boolean isFireResistant() {
+			return isFireResistant;
 		}
 	}
 

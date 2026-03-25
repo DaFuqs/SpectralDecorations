@@ -1,0 +1,162 @@
+{
+  "spectrum:black": [
+    "spectral_decorations:black_beam",
+    "spectral_decorations:black_lantern",
+    "spectral_decorations:black_light",
+    "spectral_decorations:black_amphora",
+    "spectral_decorations:black_resplendent_block",
+    "spectral_decorations:black_resplendent_cushion",
+    "spectral_decorations:black_resplendent_carpet",
+    "spectral_decorations:black_resplendent_bed"
+  ],
+  "spectrum:blue": [
+    "spectral_decorations:blue_beam",
+    "spectral_decorations:blue_lantern",
+    "spectral_decorations:blue_light",
+    "spectral_decorations:blue_amphora",
+    "spectral_decorations:blue_resplendent_block",
+    "spectral_decorations:blue_resplendent_cushion",
+    "spectral_decorations:blue_resplendent_carpet",
+    "spectral_decorations:blue_resplendent_bed"
+  ],
+  "spectrum:brown": [
+    "spectral_decorations:brown_beam",
+    "spectral_decorations:brown_lantern",
+    "spectral_decorations:brown_light",
+    "spectral_decorations:brown_amphora",
+    "spectral_decorations:brown_resplendent_block",
+    "spectral_decorations:brown_resplendent_cushion",
+    "spectral_decorations:brown_resplendent_carpet",
+    "spectral_decorations:brown_resplendent_bed"
+  ],
+  "spectrum:cyan": [
+    "spectral_decorations:cyan_beam",
+    "spectral_decorations:cyan_lantern",
+    "spectral_decorations:cyan_light",
+    "spectral_decorations:cyan_amphora",
+    "spectral_decorations:cyan_resplendent_block",
+    "spectral_decorations:cyan_resplendent_cushion",
+    "spectral_decorations:cyan_resplendent_carpet",
+    "spectral_decorations:cyan_resplendent_bed"
+  ],
+  "spectrum:gray": [
+    "spectral_decorations:gray_beam",
+    "spectral_decorations:gray_lantern",
+    "spectral_decorations:gray_light",
+    "spectral_decorations:gray_amphora",
+    "spectral_decorations:gray_resplendent_block",
+    "spectral_decorations:gray_resplendent_cushion",
+    "spectral_decorations:gray_resplendent_carpet",
+    "spectral_decorations:gray_resplendent_bed"
+  ],
+  "spectrum:green": [
+    "spectral_decorations:green_beam",
+    "spectral_decorations:green_lantern",
+    "spectral_decorations:green_light",
+    "spectral_decorations:green_amphora",
+    "spectral_decorations:green_resplendent_block",
+    "spectral_decorations:green_resplendent_cushion",
+    "spectral_decorations:green_resplendent_carpet",
+    "spectral_decorations:green_resplendent_bed"
+  ],
+  "spectrum:light_blue": [
+    "spectral_decorations:light_blue_beam",
+    "spectral_decorations:light_blue_lantern",
+    "spectral_decorations:light_blue_light",
+    "spectral_decorations:light_blue_amphora",
+    "spectral_decorations:light_blue_resplendent_block",
+    "spectral_decorations:light_blue_resplendent_cushion",
+    "spectral_decorations:light_blue_resplendent_carpet",
+    "spectral_decorations:light_blue_resplendent_bed"
+  ],
+  "spectrum:light_gray": [
+    "spectral_decorations:light_gray_beam",
+    "spectral_decorations:light_gray_lantern",
+    "spectral_decorations:light_gray_light",
+    "spectral_decorations:light_gray_amphora",
+    "spectral_decorations:light_gray_resplendent_block",
+    "spectral_decorations:light_gray_resplendent_cushion",
+    "spectral_decorations:light_gray_resplendent_carpet",
+    "spectral_decorations:light_gray_resplendent_bed"
+  ],
+  "spectrum:lime": [
+    "spectral_decorations:lime_beam",
+    "spectral_decorations:lime_lantern",
+    "spectral_decorations:lime_light",
+    "spectral_decorations:lime_amphora",
+    "spectral_decorations:lime_resplendent_block",
+    "spectral_decorations:lime_resplendent_cushion",
+    "spectral_decorations:lime_resplendent_carpet",
+    "spectral_decorations:lime_resplendent_bed"
+  ],
+  "spectrum:magenta": [
+    "spectral_decorations:magenta_beam",
+    "spectral_decorations:magenta_lantern",
+    "spectral_decorations:magenta_light",
+    "spectral_decorations:magenta_amphora",
+    "spectral_decorations:magenta_resplendent_block",
+    "spectral_decorations:magenta_resplendent_cushion",
+    "spectral_decorations:magenta_resplendent_carpet",
+    "spectral_decorations:magenta_resplendent_bed"
+  ],
+  "spectrum:orange": [
+    "spectral_decorations:orange_beam",
+    "spectral_decorations:orange_lantern",
+    "spectral_decorations:orange_light",
+    "spectral_decorations:orange_amphora",
+    "spectral_decorations:orange_resplendent_block",
+    "spectral_decorations:orange_resplendent_cushion",
+    "spectral_decorations:orange_resplendent_carpet",
+    "spectral_decorations:orange_resplendent_bed"
+  ],
+  "spectrum:pink": [
+    "spectral_decorations:pink_beam",
+    "spectral_decorations:pink_lantern",
+    "spectral_decorations:pink_light",
+    "spectral_decorations:pink_amphora",
+    "spectral_decorations:pink_resplendent_block",
+    "spectral_decorations:pink_resplendent_cushion",
+    "spectral_decorations:pink_resplendent_carpet",
+    "spectral_decorations:pink_resplendent_bed"
+  ],
+  "spectrum:purple": [
+    "spectral_decorations:purple_beam",
+    "spectral_decorations:purple_lantern",
+    "spectral_decorations:purple_light",
+    "spectral_decorations:purple_amphora",
+    "spectral_decorations:purple_resplendent_block",
+    "spectral_decorations:purple_resplendent_cushion",
+    "spectral_decorations:purple_resplendent_carpet",
+    "spectral_decorations:purple_resplendent_bed"
+  ],
+  "spectrum:red": [
+    "spectral_decorations:red_beam",
+    "spectral_decorations:red_lantern",
+    "spectral_decorations:red_light",
+    "spectral_decorations:red_amphora",
+    "spectral_decorations:red_resplendent_block",
+    "spectral_decorations:red_resplendent_cushion",
+    "spectral_decorations:red_resplendent_carpet",
+    "spectral_decorations:red_resplendent_bed"
+  ],
+  "spectrum:white": [
+    "spectral_decorations:white_beam",
+    "spectral_decorations:white_lantern",
+    "spectral_decorations:white_light",
+    "spectral_decorations:white_amphora",
+    "spectral_decorations:white_resplendent_block",
+    "spectral_decorations:white_resplendent_cushion",
+    "spectral_decorations:white_resplendent_carpet",
+    "spectral_decorations:white_resplendent_bed"
+  ],
+  "spectrum:yellow": [
+    "spectral_decorations:yellow_beam",
+    "spectral_decorations:yellow_lantern",
+    "spectral_decorations:yellow_light",
+    "spectral_decorations:yellow_amphora",
+    "spectral_decorations:yellow_resplendent_block",
+    "spectral_decorations:yellow_resplendent_cushion",
+    "spectral_decorations:yellow_resplendent_carpet",
+    "spectral_decorations:yellow_resplendent_bed"
+  ]
+}

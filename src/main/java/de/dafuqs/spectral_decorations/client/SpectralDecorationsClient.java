@@ -24,7 +24,7 @@ public class SpectralDecorationsClient {
 	
 	@SubscribeEvent
 	public static void registerClientStuffs(FMLClientSetupEvent event) {
-		for (SpectralDecorationsBlocks.PropertyHolder entry : SpectralDecorationsBlocks.HOLDER) {
+		for (SpectralDecorationsBlocks.PropertyHolder entry : SpectralDecorationsBlocks.BLOCK_TYPE_HOLDER) {
 			switch (entry.type()) {
 				case LANTERN -> ItemBlockRenderTypes.setRenderLayer(entry.block().get(), RenderType.cutout());
 				case LIGHT -> ItemBlockRenderTypes.setRenderLayer(entry.block().get(), RenderType.translucent());

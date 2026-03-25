@@ -53,7 +53,7 @@ public class SpectralDecorations {
 	
 	@SubscribeEvent
 	public static void addBlockEntityTypeBlocks(BlockEntityTypeAddBlocksEvent event) {
-		for (SpectralDecorationsBlocks.PropertyHolder entry : SpectralDecorationsBlocks.HOLDER) {
+		for (SpectralDecorationsBlocks.PropertyHolder entry : SpectralDecorationsBlocks.BLOCK_TYPE_HOLDER) {
 			if (entry.type() == SpectralDecorationsBlocks.Type.AMPHORA) {
 				event.modify(SpectrumBlockEntities.AMPHORA.get(), entry.block().get());
 			}
@@ -62,23 +62,11 @@ public class SpectralDecorations {
 	
 	@SubscribeEvent
 	public static void addItemsToSubTabs(CreativeSubTabEvent event) {
-		if (event.subGroup().getIdentifier().equals(ItemGroupIDs.SUBTAB_COLORED_WOOD)) {
+		ResourceLocation subGroupId = event.subGroup().getIdentifier();
+		
+		if (subGroupId.equals(ItemGroupIDs.SUBTAB_COLORED_WOOD) || subGroupId.equals(ItemGroupIDs.SUBTAB_DECORATION) || subGroupId.equals(ItemGroupIDs.SUBTAB_RESOURCES)) {
 			for (Map.Entry<ResourceLocation, Supplier<? extends ItemLike>> entry : ITEM_SUB_TAB_HOLDER.entrySet()) {
-				if (ItemGroupIDs.SUBTAB_RESOURCES.equals(entry.getKey())) {
-					event.getItemDisplayBuilder().accept(entry.getValue().get().asItem().getDefaultInstance());
-				}
-			}
-		}
-		if (event.subGroup().getIdentifier().equals(ItemGroupIDs.SUBTAB_DECORATION)) {
-			for (Map.Entry<ResourceLocation, Supplier<? extends ItemLike>> entry : ITEM_SUB_TAB_HOLDER.entrySet()) {
-				if (ItemGroupIDs.SUBTAB_DECORATION.equals(entry.getKey())) {
-					event.getItemDisplayBuilder().accept(entry.getValue().get().asItem().getDefaultInstance());
-				}
-			}
-		}
-		if (event.subGroup().getIdentifier().equals(ItemGroupIDs.SUBTAB_RESOURCES)) {
-			for (Map.Entry<ResourceLocation, Supplier<? extends ItemLike>> entry : ITEM_SUB_TAB_HOLDER.entrySet()) {
-				if (ItemGroupIDs.SUBTAB_RESOURCES.equals(entry.getKey())) {
+				if (subGroupId.equals(entry.getKey())) {
 					event.getItemDisplayBuilder().accept(entry.getValue().get().asItem().getDefaultInstance());
 				}
 			}

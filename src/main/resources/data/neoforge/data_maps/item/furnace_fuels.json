@@ -1,0 +1,80 @@
+{
+  "values": {
+    "spectral_decorations:oak_beam": {
+      "burn_time": 300
+    },
+    "spectral_decorations:spruce_beam": {
+      "burn_time": 300
+    },
+    "spectral_decorations:birch_beam": {
+      "burn_time": 300
+    },
+    "spectral_decorations:dark_oak_beam": {
+      "burn_time": 300
+    },
+    "spectral_decorations:jungle_beam": {
+      "burn_time": 300
+    },
+    "spectral_decorations:acacia_beam": {
+      "burn_time": 300
+    },
+    "spectral_decorations:bamboo_beam": {
+      "burn_time": 300
+    },
+    "spectral_decorations:mangrove_beam": {
+      "burn_time": 300
+    },
+    "spectral_decorations:cherry_beam": {
+      "burn_time": 300
+    },
+
+    "spectral_decorations:white_beam": {
+      "burn_time": 300
+    },
+    "spectral_decorations:orange_beam": {
+      "burn_time": 300
+    },
+    "spectral_decorations:magenta_beam": {
+      "burn_time": 300
+    },
+    "spectral_decorations:light_blue_beam": {
+      "burn_time": 300
+    },
+    "spectral_decorations:yellow_beam": {
+      "burn_time": 300
+    },
+    "spectral_decorations:lime_beam": {
+      "burn_time": 300
+    },
+    "spectral_decorations:pink_beam": {
+      "burn_time": 300
+    },
+    "spectral_decorations:gray_beam": {
+      "burn_time": 300
+    },
+    "spectral_decorations:light_gray_beam": {
+      "burn_time": 300
+    },
+    "spectral_decorations:cyan_beam": {
+      "burn_time": 300
+    },
+    "spectral_decorations:purple_beam": {
+      "burn_time": 300
+    },
+    "spectral_decorations:blue_beam": {
+      "burn_time": 300
+    },
+    "spectral_decorations:brown_beam": {
+      "burn_time": 300
+    },
+    "spectral_decorations:green_beam": {
+      "burn_time": 300
+    },
+    "spectral_decorations:red_beam": {
+      "burn_time": 300
+    },
+    "spectral_decorations:black_beam": {
+      "burn_time": 300
+    }
+  }
+}
