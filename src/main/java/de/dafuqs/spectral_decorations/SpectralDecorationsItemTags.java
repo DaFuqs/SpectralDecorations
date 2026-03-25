@@ -11,12 +11,12 @@ public class SpectralDecorationsItemTags {
 	public static final TagKey<Item> PIGMENTS = spectrum("pigments");
 	public static final TagKey<Item> BOTTOMLESS_BUNDLES = spectralDecorations("bottomless_bundles");
 	
-	private static TagKey<Item> spectralDecorations(String id) {
-		return TagKey.create(Registries.ITEM, SpectralDecorations.locate(id));
+	private static TagKey<Item> spectralDecorations(String name) {
+		return TagKey.create(Registries.ITEM, SpectralDecorations.locate(name));
 	}
 	
-	private static TagKey<Item> spectrum(String id) {
-		return TagKey.create(Registries.ITEM, SpectrumCommon.locate(id));
+	private static TagKey<Item> spectrum(String name) {
+		return TagKey.create(Registries.ITEM, SpectrumCommon.locate(name));
 	}
 
 }

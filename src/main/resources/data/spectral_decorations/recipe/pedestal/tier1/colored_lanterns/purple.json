@@ -1,0 +1,29 @@
+{
+  "type": "spectrum:pedestal",
+  "group": "colored_lanterns",
+  "time": 80,
+  "tier": "basic",
+  "colors": {},
+  "experience": 0.1,
+  "pattern": [
+    "III",
+    "XXX",
+    "SSS"
+  ],
+  "key": {
+    "S": {
+      "item": "spectrum:purple_planks"
+    },
+    "I": {
+      "item": "spectrum:purple_pigment"
+    },
+    "X": {
+      "item": "spectrum:shimmerstone_gem"
+    }
+  },
+  "result": {
+    "id": "spectral_decorations:purple_lantern",
+    "count": 2
+  },
+  "required_advancement": "spectrum:hidden/collect_pigment/purple"
+}

@@ -1,12 +1,12 @@
 {
   "name": "recipeGroup.spectrum.vanilla_wood_amphoras",
-  "description": "book.spectral-decorations.added_by_spectral-decorations",
+  "description": "book.spectral_decorations.added_by_spectral_decorations",
 
   "condition": {
     "type": "modonomicon:advancement",
     "advancement_id": "spectrum:lategame/collect_noxwood"
   },
-  "icon": "spectral-decorations:oak_amphora",
+  "icon": "spectral_decorations:oak_amphora",
   "category": "spectrum:decoration",
   "hide_while_locked": true,
   "parents": [],
@@ -20,46 +20,46 @@
       "title": "recipeGroup.spectrum.vanilla_wood_amphoras",
       "items": [
         {
-          "id": "spectral-decorations:oak_amphora"
+          "id": "spectral_decorations:oak_amphora"
         },
         {
-          "id": "spectral-decorations:spruce_amphora"
+          "id": "spectral_decorations:spruce_amphora"
         },
         {
-          "id": "spectral-decorations:birch_amphora"
+          "id": "spectral_decorations:birch_amphora"
         },
         {
-          "id": "spectral-decorations:dark_oak_amphora"
+          "id": "spectral_decorations:dark_oak_amphora"
         },
         {
-          "id": "spectral-decorations:jungle_amphora"
+          "id": "spectral_decorations:jungle_amphora"
         },
         {
-          "id": "spectral-decorations:acacia_amphora"
+          "id": "spectral_decorations:acacia_amphora"
         },
         {
-          "id": "spectral-decorations:bamboo_amphora"
+          "id": "spectral_decorations:bamboo_amphora"
         },
         {
-          "id": "spectral-decorations:mangrove_amphora"
+          "id": "spectral_decorations:mangrove_amphora"
         },
         {
-          "id": "spectral-decorations:cherry_amphora"
+          "id": "spectral_decorations:cherry_amphora"
         },
         {
-          "id": "spectral-decorations:crimson_amphora"
+          "id": "spectral_decorations:crimson_amphora"
         },
         {
-          "id": "spectral-decorations:warped_amphora"
+          "id": "spectral_decorations:warped_amphora"
         }
       ],
-      "text": "book.spectral-decorations.guidebook.vanilla_wood_amphoras.page0.text"
+      "text": "book.spectral_decorations.guidebook.vanilla_wood_amphoras.page0.text"
     },
     {
       "type": "spectrum:pedestal_crafting",
       "title": "Wooden Amphoras",
-      "recipe_id": "spectral-decorations:pedestal/tier1/vanilla_wood_amphoras/oak_amphora",
-      "text": "book.spectral-decorations.guidebook.vanilla_wood_amphoras.page1.text"
+      "recipe_id": "spectral_decorations:pedestal/tier1/vanilla_wood_amphoras/oak_amphora",
+      "text": "book.spectral_decorations.guidebook.vanilla_wood_amphoras.page1.text"
     }
   ]
 }

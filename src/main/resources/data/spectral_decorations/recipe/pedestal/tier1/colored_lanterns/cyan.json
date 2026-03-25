@@ -1,0 +1,29 @@
+{
+  "type": "spectrum:pedestal",
+  "group": "colored_lanterns",
+  "time": 80,
+  "tier": "basic",
+  "colors": {},
+  "experience": 0.1,
+  "pattern": [
+    "III",
+    "XXX",
+    "SSS"
+  ],
+  "key": {
+    "S": {
+      "item": "spectrum:cyan_planks"
+    },
+    "I": {
+      "item": "spectrum:cyan_pigment"
+    },
+    "X": {
+      "item": "spectrum:shimmerstone_gem"
+    }
+  },
+  "result": {
+    "id": "spectral_decorations:cyan_lantern",
+    "count": 2
+  },
+  "required_advancement": "spectrum:hidden/collect_pigment/cyan"
+}

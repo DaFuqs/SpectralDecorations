@@ -56,7 +56,7 @@ public class BottomlessBundleColoringRecipe extends ShapelessPedestalRecipe {
 	
 	@Override
 	public RecipeSerializer<?> getSerializer() {
-		return SpectralDecorationsRecipeTypes.BOTTOMLESS_BUNDLE_COLORING_SERIALIZER;
+		return SpectralDecorationsRecipeSerializers.BOTTOMLESS_BUNDLE_COLORING_SERIALIZER;
 	}
 	
 }

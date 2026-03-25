@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "bottom": "spectral_decorations:block/vanilla_wood_amphoras/crimson_bottom",
+    "side": "spectral_decorations:block/vanilla_wood_amphoras/crimson",
+    "top": "spectral_decorations:block/vanilla_wood_amphoras/crimson_top_open"
+  }
+}

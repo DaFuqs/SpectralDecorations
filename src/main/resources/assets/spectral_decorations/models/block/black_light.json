@@ -1,0 +1,8 @@
+{
+  "parent": "spectrum:templates/multilayer_light",
+  "textures": {
+    "top": "spectral_decorations:block/colored_light/black_top",
+    "side": "spectral_decorations:block/colored_light/black",
+    "inside": "spectrum:block/shimmerstone_block"
+  }
+}

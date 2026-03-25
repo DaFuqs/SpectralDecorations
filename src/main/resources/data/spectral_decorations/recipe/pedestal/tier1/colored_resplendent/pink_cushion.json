@@ -1,0 +1,22 @@
+{
+  "type": "spectrum:pedestal",
+  "group": "colored_resplendent_deco",
+  "time": 40,
+  "tier": "basic",
+  "colors": {},
+  "experience": 0.0,
+  "pattern": [
+    "FFF",
+    "FFF"
+  ],
+  "key": {
+    "F": {
+      "item": "spectral_decorations:pink_resplendent_feather"
+    }
+  },
+  "result": {
+    "id": "spectral_decorations:pink_resplendent_cushion",
+    "count": 1
+  },
+  "required_advancement": "spectral_decorations:pluck_colored_resplendent_feather"
+}

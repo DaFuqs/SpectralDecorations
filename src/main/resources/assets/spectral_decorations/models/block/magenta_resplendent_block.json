@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "particle": "spectral_decorations:block/colored_resplendent_blocks/magenta_side",
+    "north": "spectral_decorations:block/colored_resplendent_blocks/magenta_side",
+    "south": "spectral_decorations:block/colored_resplendent_blocks/magenta_side",
+    "east": "spectral_decorations:block/colored_resplendent_blocks/magenta_side",
+    "west": "spectral_decorations:block/colored_resplendent_blocks/magenta_side",
+    "up": "spectral_decorations:block/colored_resplendent_blocks/magenta_top",
+    "down": "spectral_decorations:block/colored_resplendent_blocks/magenta_bottom"
+  }
+}

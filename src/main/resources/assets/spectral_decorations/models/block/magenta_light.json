@@ -1,0 +1,8 @@
+{
+  "parent": "spectrum:templates/multilayer_light",
+  "textures": {
+    "top": "spectral_decorations:block/colored_light/magenta_top",
+    "side": "spectral_decorations:block/colored_light/magenta",
+    "inside": "spectrum:block/shimmerstone_block"
+  }
+}

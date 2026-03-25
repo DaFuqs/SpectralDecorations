@@ -24,16 +24,13 @@ public abstract class KindlingEntityMixin {
 	@Inject(at = @At("HEAD"), method = "aiStep()V")
 	private void spectral_decorations$bathingThePuppy(CallbackInfo ci) {
 		KindlingEntity kindling = (KindlingEntity) (Object) this;
+		Level level = kindling.level();
 		
-		if (!kindling.isEyeInFluid(SpectrumFluidTags.LIQUID_CRYSTAL)) {
+		if (level != null && !level.isClientSide() && !kindling.isEyeInFluidType(SpectrumFluids.LIQUID_CRYSTAL_TYPE.get())) {
 			if (getKindlingVariant().is(SpectralDecorationsKindlingVariantTags.WASHES_TO_DEFAULT)) {
-				Level level = ((KindlingEntity) (Object) this).level();
-				
 				Registry<KindlingVariant> registry = level.registryAccess().registry(SpectrumRegistryKeys.KINDLING_VARIANT).get();
 				Optional<Holder.Reference<KindlingVariant>> defaultVariant = registry.getHolder(KindlingVariant.DEFAULT);
-				if (defaultVariant.isPresent()) {
-					setKindlingVariant(defaultVariant.get());
-				}
+				defaultVariant.ifPresent(this::setKindlingVariant);
 			}
 		}
 	}

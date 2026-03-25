@@ -1,6 +1,6 @@
 {
-  "name": "book.spectral-decorations.guidebook.colored_bottomless_bundles.name",
-  "description": "book.spectral-decorations.added_by_spectral-decorations",
+  "name": "book.spectral_decorations.guidebook.colored_bottomless_bundles.name",
+  "description": "book.spectral_decorations.added_by_spectral_decorations",
 
   "condition": {
     "type": "modonomicon:advancement",
@@ -26,7 +26,7 @@
   "pages": [
     {
       "type": "spectrum:collection",
-      "title": "book.spectral-decorations.guidebook.colored_bottomless_bundles.name",
+      "title": "book.spectral_decorations.guidebook.colored_bottomless_bundles.name",
       "items": [
         {
           "id": "spectrum:bottomless_bundle",
@@ -53,13 +53,13 @@
           }
         }
       ],
-      "text": "book.spectral-decorations.guidebook.colored_bottomless_bundles.page0.text"
+      "text": "book.spectral_decorations.guidebook.colored_bottomless_bundles.page0.text"
     },
     {
       "type": "spectrum:pedestal_crafting",
       "title": "container.spectrum.rei.pedestal_recipe",
-      "recipe_id": "spectral-decorations:pedestal/tier1/bottomless_bundle_coloring",
-      "text": "book.spectral-decorations.guidebook.colored_bottomless_bundles.page1.text"
+      "recipe_id": "spectral_decorations:pedestal/tier1/bottomless_bundle_coloring",
+      "text": "book.spectral_decorations.guidebook.colored_bottomless_bundles.page1.text"
     }
   ]
 }

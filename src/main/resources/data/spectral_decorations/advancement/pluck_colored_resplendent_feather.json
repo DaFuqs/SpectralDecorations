@@ -1,0 +1,32 @@
+{
+  "parent": "spectrum:pluck_resplendent_feather",
+  "display": {
+    "icon": {
+      "id": "spectral_decorations:green_resplendent_feather"
+    },
+    "title": {
+      "translate": "advancements.spectral_decorations.pluck_colored_resplendent_feather.title"
+    },
+    "description": {
+      "translate": "advancements.spectral_decorations.pluck_colored_resplendent_feather.description"
+    }
+  },
+  "criteria": {
+    "snipped_resplendent_feather": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "spectral_decorations:colored_resplendent_feathers"
+          }
+        ]
+      }
+    },
+    "gotten_previous": {
+      "trigger": "revelationary:advancement_gotten",
+      "conditions": {
+        "advancement_identifier": "spectrum:pluck_resplendent_feather"
+      }
+    }
+  }
+}

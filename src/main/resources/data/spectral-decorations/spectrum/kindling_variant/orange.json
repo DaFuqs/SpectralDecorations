@@ -1,9 +1,0 @@
-{
-  "default_texture": "spectral-decorations:entity/kindling/orange",
-  "blinking_texture": "spectral-decorations:entity/kindling/orange_blinking",
-  "angry_texture": "spectral-decorations:entity/kindling/orange_angry",
-  "clipped_texture": "spectral-decorations:entity/kindling/orange_clipped",
-  "blinking_clipped_texture": "spectral-decorations:entity/kindling/orange_clipped_blinking",
-  "angry_clipped_texture": "spectral-decorations:entity/kindling/orange_angry_clipped",
-  "clipping_loot_table": "spectral-decorations:gameplay/kindling_clipping/orange"
-}

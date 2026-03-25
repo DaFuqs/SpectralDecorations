@@ -1,11 +1,11 @@
 {
   "values": [
-    "#spectral-decorations:colored_beams",
-    "#spectral-decorations:colored_amphoras",
-    "#spectral-decorations:colored_lanterns",
-    "#spectral-decorations:colored_lights",
+    "#spectral_decorations:colored_beams",
+    "#spectral_decorations:colored_amphoras",
+    "#spectral_decorations:colored_lanterns",
+    "#spectral_decorations:colored_lights",
 
-    "#spectral-decorations:vanilla_wood_amphoras",
-    "#spectral-decorations:vanilla_wood_beams"
+    "#spectral_decorations:vanilla_wood_amphoras",
+    "#spectral_decorations:vanilla_wood_beams"
   ]
 }

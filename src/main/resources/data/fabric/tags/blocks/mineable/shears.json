@@ -1,8 +1,8 @@
 {
   "replace": false,
   "values": [
-    "#spectral-decorations:colored_resplendent_blocks",
-    "#spectral-decorations:colored_resplendent_carpets",
-    "#spectral-decorations:colored_resplendent_cushions"
+    "#spectral_decorations:colored_resplendent_blocks",
+    "#spectral_decorations:colored_resplendent_carpets",
+    "#spectral_decorations:colored_resplendent_cushions"
   ]
 }

@@ -1,0 +1,25 @@
+{
+  "type": "spectrum:pedestal",
+  "group": "colored_resplendent_deco",
+  "time": 40,
+  "tier": "basic",
+  "colors": {},
+  "experience": 0.1,
+  "pattern": [
+    "FFF",
+    "###"
+  ],
+  "key": {
+    "F": {
+      "item": "spectral_decorations:black_resplendent_block"
+    },
+    "#": {
+      "tag": "minecraft:planks"
+    }
+  },
+  "result": {
+    "id": "spectral_decorations:black_resplendent_bed",
+    "count": 1
+  },
+  "required_advancement": "spectral_decorations:pluck_colored_resplendent_feather"
+}

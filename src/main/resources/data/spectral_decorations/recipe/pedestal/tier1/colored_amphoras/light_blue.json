@@ -1,0 +1,32 @@
+{
+  "type": "spectrum:pedestal",
+  "group": "colored_amphoras",
+  "time": 240,
+  "tier": "basic",
+  "colors": {},
+  "experience": 1.0,
+  "pattern": [
+    "SAS",
+    "I I",
+    "PSP"
+  ],
+  "key": {
+    "S": {
+      "item": "spectrum:light_blue_slab"
+    },
+    "P": {
+      "item": "spectrum:light_blue_planks"
+    },
+    "I": {
+      "item": "spectrum:light_blue_pigment"
+    },
+    "A": {
+      "item": "minecraft:paper"
+    }
+  },
+  "result": {
+    "id": "spectral_decorations:light_blue_amphora",
+    "count": 1
+  },
+  "required_advancement": "spectrum:lategame/collect_noxwood"
+}

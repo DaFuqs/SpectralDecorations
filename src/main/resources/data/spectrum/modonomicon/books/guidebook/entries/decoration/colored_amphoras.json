@@ -1,12 +1,12 @@
 {
   "name": "recipeGroup.spectrum.colored_amphoras",
-  "description": "book.spectral-decorations.added_by_spectral-decorations",
+  "description": "book.spectral_decorations.added_by_spectral_decorations",
 
   "condition": {
     "type": "modonomicon:advancement",
     "advancement_id": "spectrum:lategame/collect_noxwood"
   },
-  "icon": "spectral-decorations:yellow_amphora",
+  "icon": "spectral_decorations:yellow_amphora",
   "category": "spectrum:decoration",
   "hide_while_locked": true,
   "parents": [],
@@ -20,61 +20,61 @@
       "title": "recipeGroup.spectrum.colored_amphoras",
       "items": [
         {
-          "id": "spectral-decorations:black_amphora"
+          "id": "spectral_decorations:black_amphora"
         },
         {
-          "id": "spectral-decorations:blue_amphora"
+          "id": "spectral_decorations:blue_amphora"
         },
         {
-          "id": "spectral-decorations:brown_amphora"
+          "id": "spectral_decorations:brown_amphora"
         },
         {
-          "id": "spectral-decorations:cyan_amphora"
+          "id": "spectral_decorations:cyan_amphora"
         },
         {
-          "id": "spectral-decorations:gray_amphora"
+          "id": "spectral_decorations:gray_amphora"
         },
         {
-          "id": "spectral-decorations:green_amphora"
+          "id": "spectral_decorations:green_amphora"
         },
         {
-          "id": "spectral-decorations:light_blue_amphora"
+          "id": "spectral_decorations:light_blue_amphora"
         },
         {
-          "id": "spectral-decorations:light_gray_amphora"
+          "id": "spectral_decorations:light_gray_amphora"
         },
         {
-          "id": "spectral-decorations:lime_amphora"
+          "id": "spectral_decorations:lime_amphora"
         },
         {
-          "id": "spectral-decorations:magenta_amphora"
+          "id": "spectral_decorations:magenta_amphora"
         },
         {
-          "id": "spectral-decorations:orange_amphora"
+          "id": "spectral_decorations:orange_amphora"
         },
         {
-          "id": "spectral-decorations:pink_amphora"
+          "id": "spectral_decorations:pink_amphora"
         },
         {
-          "id": "spectral-decorations:purple_amphora"
+          "id": "spectral_decorations:purple_amphora"
         },
         {
-          "id": "spectral-decorations:red_amphora"
+          "id": "spectral_decorations:red_amphora"
         },
         {
-          "id": "spectral-decorations:white_amphora"
+          "id": "spectral_decorations:white_amphora"
         },
         {
-          "id": "spectral-decorations:yellow_amphora"
+          "id": "spectral_decorations:yellow_amphora"
         }
       ],
-      "text": "book.spectral-decorations.guidebook.colored_amphoras.page0.text"
+      "text": "book.spectral_decorations.guidebook.colored_amphoras.page0.text"
     },
     {
       "type": "spectrum:pedestal_crafting",
       "title": "container.spectrum.rei.pedestal_recipe",
-      "recipe_id": "spectral-decorations:pedestal/tier1/colored_amphoras/yellow",
-      "text": "book.spectral-decorations.guidebook.colored_amphoras.page1.text"
+      "recipe_id": "spectral_decorations:pedestal/tier1/colored_amphoras/yellow",
+      "text": "book.spectral_decorations.guidebook.colored_amphoras.page1.text"
     }
   ]
 }

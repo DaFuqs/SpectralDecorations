@@ -1,0 +1,104 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "spectrum:item/bedrock_leggings"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "spectral_decorations:color": 0.01
+      },
+      "model": "spectrum:item/bedrock_leggings_white"
+    },
+    {
+      "predicate": {
+        "spectral_decorations:color": 0.02
+      },
+      "model": "spectrum:item/bedrock_leggings_orange"
+    },
+    {
+      "predicate": {
+        "spectral_decorations:color": 0.03
+      },
+      "model": "spectrum:item/bedrock_leggings_magenta"
+    },
+    {
+      "predicate": {
+        "spectral_decorations:color": 0.04
+      },
+      "model": "spectrum:item/bedrock_leggings_light_blue"
+    },
+    {
+      "predicate": {
+        "spectral_decorations:color": 0.05
+      },
+      "model": "spectrum:item/bedrock_leggings_yellow"
+    },
+    {
+      "predicate": {
+        "spectral_decorations:color": 0.06
+      },
+      "model": "spectrum:item/bedrock_leggings_lime"
+    },
+    {
+      "predicate": {
+        "spectral_decorations:color": 0.07
+      },
+      "model": "spectrum:item/bedrock_leggings_pink"
+    },
+    {
+      "predicate": {
+        "spectral_decorations:color": 0.08
+      },
+      "model": "spectrum:item/bedrock_leggings_gray"
+    },
+    {
+      "predicate": {
+        "spectral_decorations:color": 0.09
+      },
+      "model": "spectrum:item/bedrock_leggings_light_gray"
+    },
+    {
+      "predicate": {
+        "spectral_decorations:color": 0.10
+      },
+      "model": "spectrum:item/bedrock_leggings_cyan"
+    },
+    {
+      "predicate": {
+        "spectral_decorations:color": 0.11
+      },
+      "model": "spectrum:item/bedrock_leggings_purple"
+    },
+    {
+      "predicate": {
+        "spectral_decorations:color": 0.12
+      },
+      "model": "spectrum:item/bedrock_leggings_blue"
+    },
+    {
+      "predicate": {
+        "spectral_decorations:color": 0.13
+      },
+      "model": "spectrum:item/bedrock_leggings_brown"
+    },
+    {
+      "predicate": {
+        "spectral_decorations:color": 0.14
+      },
+      "model": "spectrum:item/bedrock_leggings_green"
+    },
+    {
+      "predicate": {
+        "spectral_decorations:color": 0.15
+      },
+      "model": "spectrum:item/bedrock_leggings_red"
+    },
+    {
+      "predicate": {
+        "spectral_decorations:color": 0.16
+      },
+      "model": "spectrum:item/bedrock_leggings_black"
+    }
+  ]
+}

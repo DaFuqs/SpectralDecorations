@@ -1,12 +1,12 @@
 {
   "name": "recipeGroup.spectrum.colored_lanterns",
-  "description": "book.spectral-decorations.added_by_spectral-decorations",
+  "description": "book.spectral_decorations.added_by_spectral_decorations",
 
   "condition": {
     "type": "modonomicon:advancement",
     "advancement_id": "spectrum:collect_pigment"
   },
-  "icon": "spectral-decorations:cyan_lantern",
+  "icon": "spectral_decorations:cyan_lantern",
   "category": "spectrum:decoration",
   "hide_while_locked": true,
   "parents": [],
@@ -20,61 +20,61 @@
       "title": "recipeGroup.spectrum.colored_lanterns",
       "items": [
         {
-          "id": "spectral-decorations:black_lantern"
+          "id": "spectral_decorations:black_lantern"
         },
         {
-          "id": "spectral-decorations:blue_lantern"
+          "id": "spectral_decorations:blue_lantern"
         },
         {
-          "id": "spectral-decorations:brown_lantern"
+          "id": "spectral_decorations:brown_lantern"
         },
         {
-          "id": "spectral-decorations:cyan_lantern"
+          "id": "spectral_decorations:cyan_lantern"
         },
         {
-          "id": "spectral-decorations:gray_lantern"
+          "id": "spectral_decorations:gray_lantern"
         },
         {
-          "id": "spectral-decorations:green_lantern"
+          "id": "spectral_decorations:green_lantern"
         },
         {
-          "id": "spectral-decorations:light_blue_lantern"
+          "id": "spectral_decorations:light_blue_lantern"
         },
         {
-          "id": "spectral-decorations:light_gray_lantern"
+          "id": "spectral_decorations:light_gray_lantern"
         },
         {
-          "id": "spectral-decorations:lime_lantern"
+          "id": "spectral_decorations:lime_lantern"
         },
         {
-          "id": "spectral-decorations:magenta_lantern"
+          "id": "spectral_decorations:magenta_lantern"
         },
         {
-          "id": "spectral-decorations:orange_lantern"
+          "id": "spectral_decorations:orange_lantern"
         },
         {
-          "id": "spectral-decorations:pink_lantern"
+          "id": "spectral_decorations:pink_lantern"
         },
         {
-          "id": "spectral-decorations:purple_lantern"
+          "id": "spectral_decorations:purple_lantern"
         },
         {
-          "id": "spectral-decorations:red_lantern"
+          "id": "spectral_decorations:red_lantern"
         },
         {
-          "id": "spectral-decorations:white_lantern"
+          "id": "spectral_decorations:white_lantern"
         },
         {
-          "id": "spectral-decorations:yellow_lantern"
+          "id": "spectral_decorations:yellow_lantern"
         }
       ],
-      "text": "book.spectral-decorations.guidebook.colored_lanterns.page0.text"
+      "text": "book.spectral_decorations.guidebook.colored_lanterns.page0.text"
     },
     {
       "type": "spectrum:pedestal_crafting",
       "title": "container.spectrum.rei.pedestal_recipe",
-      "recipe_id": "spectral-decorations:pedestal/tier1/colored_lanterns/cyan",
-      "text": "book.spectral-decorations.guidebook.colored_lanterns.page1.text"
+      "recipe_id": "spectral_decorations:pedestal/tier1/colored_lanterns/cyan",
+      "text": "book.spectral_decorations.guidebook.colored_lanterns.page1.text"
     }
   ]
 }

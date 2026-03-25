@@ -1,0 +1,23 @@
+{
+  "type": "spectrum:pedestal",
+  "group": "colored_resplendent_deco",
+  "time": 40,
+  "tier": "basic",
+  "colors": {},
+  "experience": 0.0,
+  "pattern": [
+    "GG",
+    "GG"
+  ],
+  "key": {
+    "G": {
+      "item": "spectral_decorations:magenta_resplendent_feather"
+    }
+  },
+  "result": {
+    "id": "spectral_decorations:magenta_resplendent_block",
+    "count": 1
+  },
+  "required_advancement": "spectral_decorations:pluck_colored_resplendent_feather",
+  "disable_yield_upgrades": true
+}

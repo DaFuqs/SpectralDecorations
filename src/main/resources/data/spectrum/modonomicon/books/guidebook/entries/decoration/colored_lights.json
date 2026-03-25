@@ -1,12 +1,12 @@
 {
   "name": "recipeGroup.spectrum.colored_lights",
-  "description": "book.spectral-decorations.added_by_spectral-decorations",
+  "description": "book.spectral_decorations.added_by_spectral_decorations",
 
   "condition": {
     "type": "modonomicon:advancement",
     "advancement_id": "spectrum:collect_pigment"
   },
-  "icon": "spectral-decorations:magenta_light",
+  "icon": "spectral_decorations:magenta_light",
   "category": "spectrum:decoration",
   "hide_while_locked": true,
   "parents": [],
@@ -20,61 +20,61 @@
       "title": "recipeGroup.spectrum.colored_lights",
       "items": [
         {
-          "id": "spectral-decorations:black_light"
+          "id": "spectral_decorations:black_light"
         },
         {
-          "id": "spectral-decorations:blue_light"
+          "id": "spectral_decorations:blue_light"
         },
         {
-          "id": "spectral-decorations:brown_light"
+          "id": "spectral_decorations:brown_light"
         },
         {
-          "id": "spectral-decorations:cyan_light"
+          "id": "spectral_decorations:cyan_light"
         },
         {
-          "id": "spectral-decorations:gray_light"
+          "id": "spectral_decorations:gray_light"
         },
         {
-          "id": "spectral-decorations:green_light"
+          "id": "spectral_decorations:green_light"
         },
         {
-          "id": "spectral-decorations:light_blue_light"
+          "id": "spectral_decorations:light_blue_light"
         },
         {
-          "id": "spectral-decorations:light_gray_light"
+          "id": "spectral_decorations:light_gray_light"
         },
         {
-          "id": "spectral-decorations:lime_light"
+          "id": "spectral_decorations:lime_light"
         },
         {
-          "id": "spectral-decorations:magenta_light"
+          "id": "spectral_decorations:magenta_light"
         },
         {
-          "id": "spectral-decorations:orange_light"
+          "id": "spectral_decorations:orange_light"
         },
         {
-          "id": "spectral-decorations:pink_light"
+          "id": "spectral_decorations:pink_light"
         },
         {
-          "id": "spectral-decorations:purple_light"
+          "id": "spectral_decorations:purple_light"
         },
         {
-          "id": "spectral-decorations:red_light"
+          "id": "spectral_decorations:red_light"
         },
         {
-          "id": "spectral-decorations:white_light"
+          "id": "spectral_decorations:white_light"
         },
         {
-          "id": "spectral-decorations:yellow_light"
+          "id": "spectral_decorations:yellow_light"
         }
       ],
-      "text": "book.spectral-decorations.guidebook.colored_lights.page0.text"
+      "text": "book.spectral_decorations.guidebook.colored_lights.page0.text"
     },
     {
       "type": "spectrum:pedestal_crafting",
       "title": "container.spectrum.rei.pedestal_recipe",
-      "recipe_id": "spectral-decorations:pedestal/tier1/colored_lights/magenta",
-      "text": "book.spectral-decorations.guidebook.colored_lights.page1.text"
+      "recipe_id": "spectral_decorations:pedestal/tier1/colored_lights/magenta",
+      "text": "book.spectral_decorations.guidebook.colored_lights.page1.text"
     }
   ]
 }

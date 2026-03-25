@@ -1,0 +1,6 @@
+{
+  "parent": "spectrum:templates/noxwood_lamp_small",
+  "textures": {
+    "all": "spectral_decorations:block/colored_lantern/red"
+  }
+}

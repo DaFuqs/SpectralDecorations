@@ -56,7 +56,7 @@ public class BedrockArmorColoringRecipe extends ShapelessPedestalRecipe {
 	
 	@Override
 	public RecipeSerializer<?> getSerializer() {
-		return SpectralDecorationsRecipeTypes.BEDROCK_ARMOR_COLORING_SERIALIZER;
+		return SpectralDecorationsRecipeSerializers.BEDROCK_ARMOR_COLORING_SERIALIZER;
 	}
 	
 }

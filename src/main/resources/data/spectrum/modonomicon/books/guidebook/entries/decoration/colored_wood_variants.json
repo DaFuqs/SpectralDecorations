@@ -1,12 +1,12 @@
 {
   "name": "recipeGroup.spectrum.colored_beams",
-  "description": "book.spectral-decorations.added_by_spectral-decorations",
+  "description": "book.spectral_decorations.added_by_spectral_decorations",
 
   "condition": {
     "type": "modonomicon:advancement",
     "advancement_id": "spectrum:collect_pigment"
   },
-  "icon": "spectral-decorations:orange_beam",
+  "icon": "spectral_decorations:orange_beam",
   "category": "spectrum:decoration",
   "hide_while_locked": true,
   "parents": [],
@@ -20,61 +20,61 @@
       "title": "recipeGroup.spectrum.colored_beams",
       "items": [
         {
-          "id": "spectral-decorations:black_beam"
+          "id": "spectral_decorations:black_beam"
         },
         {
-          "id": "spectral-decorations:blue_beam"
+          "id": "spectral_decorations:blue_beam"
         },
         {
-          "id": "spectral-decorations:brown_beam"
+          "id": "spectral_decorations:brown_beam"
         },
         {
-          "id": "spectral-decorations:cyan_beam"
+          "id": "spectral_decorations:cyan_beam"
         },
         {
-          "id": "spectral-decorations:gray_beam"
+          "id": "spectral_decorations:gray_beam"
         },
         {
-          "id": "spectral-decorations:green_beam"
+          "id": "spectral_decorations:green_beam"
         },
         {
-          "id": "spectral-decorations:light_blue_beam"
+          "id": "spectral_decorations:light_blue_beam"
         },
         {
-          "id": "spectral-decorations:light_gray_beam"
+          "id": "spectral_decorations:light_gray_beam"
         },
         {
-          "id": "spectral-decorations:lime_beam"
+          "id": "spectral_decorations:lime_beam"
         },
         {
-          "id": "spectral-decorations:magenta_beam"
+          "id": "spectral_decorations:magenta_beam"
         },
         {
-          "id": "spectral-decorations:orange_beam"
+          "id": "spectral_decorations:orange_beam"
         },
         {
-          "id": "spectral-decorations:pink_beam"
+          "id": "spectral_decorations:pink_beam"
         },
         {
-          "id": "spectral-decorations:purple_beam"
+          "id": "spectral_decorations:purple_beam"
         },
         {
-          "id": "spectral-decorations:red_beam"
+          "id": "spectral_decorations:red_beam"
         },
         {
-          "id": "spectral-decorations:white_beam"
+          "id": "spectral_decorations:white_beam"
         },
         {
-          "id": "spectral-decorations:yellow_beam"
+          "id": "spectral_decorations:yellow_beam"
         }
       ],
-      "text": "book.spectral-decorations.guidebook.colored_wood_variants.page0.text"
+      "text": "book.spectral_decorations.guidebook.colored_wood_variants.page0.text"
     },
     {
       "type": "spectrum:pedestal_crafting",
       "title": "Colored Beams",
-      "recipe_id": "spectral-decorations:pedestal/tier1/colored_beams/orange",
-      "text": "book.spectral-decorations.guidebook.colored_wood_variants.page1.text"
+      "recipe_id": "spectral_decorations:pedestal/tier1/colored_beams/orange",
+      "text": "book.spectral_decorations.guidebook.colored_wood_variants.page1.text"
     }
   ]
 }

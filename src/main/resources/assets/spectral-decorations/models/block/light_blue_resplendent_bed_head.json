@@ -1,7 +1,0 @@
-{
-  "parent": "spectrum:block/resplendent_bed_head",
-  "textures": {
-    "0": "spectral-decorations:block/colored_resplendent_beds/light_blue",
-    "particle": "spectral-decorations:block/colored_resplendent_beds/light_blue_particle"
-  }
-}

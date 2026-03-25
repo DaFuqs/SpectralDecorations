@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "particle": "spectral_decorations:block/colored_resplendent_blocks/light_gray_side",
+    "north": "spectral_decorations:block/colored_resplendent_blocks/light_gray_side",
+    "south": "spectral_decorations:block/colored_resplendent_blocks/light_gray_side",
+    "east": "spectral_decorations:block/colored_resplendent_blocks/light_gray_side",
+    "west": "spectral_decorations:block/colored_resplendent_blocks/light_gray_side",
+    "up": "spectral_decorations:block/colored_resplendent_blocks/light_gray_top",
+    "down": "spectral_decorations:block/colored_resplendent_blocks/light_gray_bottom"
+  }
+}

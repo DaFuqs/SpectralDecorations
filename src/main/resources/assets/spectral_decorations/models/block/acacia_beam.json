@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "spectral_decorations:block/vanilla_wood_beams/acacia_top",
+    "side": "spectral_decorations:block/vanilla_wood_beams/acacia"
+  }
+}

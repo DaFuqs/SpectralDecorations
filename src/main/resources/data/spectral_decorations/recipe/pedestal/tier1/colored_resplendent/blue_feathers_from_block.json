@@ -1,0 +1,19 @@
+{
+  "type": "spectrum:pedestal_shapeless",
+  "group": "colored_resplendent_deco",
+  "time": 40,
+  "tier": "basic",
+  "colors": {},
+  "experience": 0.0,
+  "ingredients": [
+    {
+      "item": "spectral_decorations:blue_resplendent_block"
+    }
+  ],
+  "result": {
+    "id": "spectral_decorations:blue_resplendent_feather",
+    "count": 4
+  },
+  "required_advancement": "spectral_decorations:pluck_colored_resplendent_feather",
+  "disable_yield_upgrades": true
+}

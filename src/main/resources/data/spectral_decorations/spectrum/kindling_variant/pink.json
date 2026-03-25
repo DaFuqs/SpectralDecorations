@@ -1,0 +1,9 @@
+{
+  "default_texture": "spectral_decorations:entity/kindling/pink",
+  "blinking_texture": "spectral_decorations:entity/kindling/pink_blinking",
+  "angry_texture": "spectral_decorations:entity/kindling/pink_angry",
+  "clipped_texture": "spectral_decorations:entity/kindling/pink_clipped",
+  "blinking_clipped_texture": "spectral_decorations:entity/kindling/pink_clipped_blinking",
+  "angry_clipped_texture": "spectral_decorations:entity/kindling/pink_angry_clipped",
+  "clipping_loot_table": "spectral_decorations:gameplay/kindling_clipping/pink"
+}

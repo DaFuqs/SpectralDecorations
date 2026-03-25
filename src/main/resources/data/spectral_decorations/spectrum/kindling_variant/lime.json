@@ -1,0 +1,9 @@
+{
+  "default_texture": "spectral_decorations:entity/kindling/lime",
+  "blinking_texture": "spectral_decorations:entity/kindling/lime_blinking",
+  "angry_texture": "spectral_decorations:entity/kindling/lime_angry",
+  "clipped_texture": "spectral_decorations:entity/kindling/lime_clipped",
+  "blinking_clipped_texture": "spectral_decorations:entity/kindling/lime_clipped_blinking",
+  "angry_clipped_texture": "spectral_decorations:entity/kindling/lime_angry_clipped",
+  "clipping_loot_table": "spectral_decorations:gameplay/kindling_clipping/lime"
+}

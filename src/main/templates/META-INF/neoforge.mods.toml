@@ -1,0 +1,39 @@
+# TODO: remove modLoader and loaderVersion in 1.21.6+
+modLoader = "javafml"
+loaderVersion = "[1,)"
+license = "lGPL3"
+issueTrackerURL = "https://github.com/DaFuqs/SpectralDecorations/issues"
+
+[[mods]]
+modId = "spectral_decorations"
+version = "${version}"
+displayName = "Spectral Decorations"
+displayURL = "https://github.com/DaFuqs/SpectralDecorations"
+logoFile = "assets/spectral_decorations/icon.png"
+authors = "Brothers_trouble, Garbage Data, Detrilogue , DaFuqs"
+description = '''Dipping the entirety of Spectrum into a rainbowy paint bucket'''
+
+[[mixins]]
+config = "spectral_decorations.mixins.json"
+
+[[dependencies.spectral_decorations]]
+modId = "neoforge"
+type = "required"
+versionRange = "${neoforge_version_range}"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.spectral_decorations]]
+modId = "minecraft"
+type = "required"
+versionRange = "[${minecraft_version}]"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.spectral_decorations]]
+modId = "spectrum"
+type = "required"
+versionRange = "${spectrum_version_range}"
+ordering = "AFTER"
+reason = "load after Spectrum to override Spectrum's resource files"
+side = "BOTH"
