@@ -1,5 +1,6 @@
 package de.dafuqs.spectral_decorations;
 
+import com.mojang.datafixers.util.*;
 import de.dafuqs.spectral_decorations.items.*;
 import de.dafuqs.spectrum.api.item_group.*;
 import de.dafuqs.spectrum.helpers.*;
@@ -25,7 +26,7 @@ public class SpectralDecorationsItems {
 	
 	public static <I extends Item> DeferredItem<I> registerItem(ResourceLocation subTabId, String name, Supplier<I> entry) {
 		DeferredItem<I> i = REGISTRAR.register(name, entry);
-		SpectralDecorations.ITEM_SUB_TAB_HOLDER.put(subTabId, i);
+		SpectralDecorations.ITEM_SUB_TAB_HOLDER.add(new Pair<>(subTabId, i));
 		return i;
 	}
 	

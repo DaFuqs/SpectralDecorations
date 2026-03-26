@@ -1,12 +1,12 @@
 package de.dafuqs.spectral_decorations;
 
+import com.mojang.datafixers.util.*;
 import de.dafuqs.fractal.api.*;
 import de.dafuqs.spectrum.api.interaction.*;
 import de.dafuqs.spectrum.api.item_group.*;
 import de.dafuqs.spectrum.entity.*;
 import de.dafuqs.spectrum.entity.variants.*;
 import de.dafuqs.spectrum.registries.*;
-import it.unimi.dsi.fastutil.objects.*;
 import net.minecraft.core.*;
 import net.minecraft.network.chat.*;
 import net.minecraft.resources.*;
@@ -27,7 +27,7 @@ import java.util.function.*;
 public class SpectralDecorations {
 	
 	public static final String MOD_ID = "spectral_decorations";
-	public static final Map<ResourceLocation, Supplier<? extends ItemLike>> ITEM_SUB_TAB_HOLDER = new Object2ObjectArrayMap<>();
+	public static final List<Pair<ResourceLocation, Supplier<? extends ItemLike>>> ITEM_SUB_TAB_HOLDER = new ArrayList<>();
 	
 	public SpectralDecorations(ModContainer container, IEventBus modBus) {
 		SpectralDecorationsBlocks.register(modBus);
@@ -65,9 +65,9 @@ public class SpectralDecorations {
 		ResourceLocation subGroupId = event.subGroup().getIdentifier();
 		
 		if (subGroupId.equals(ItemGroupIDs.SUBTAB_COLORED_WOOD) || subGroupId.equals(ItemGroupIDs.SUBTAB_DECORATION) || subGroupId.equals(ItemGroupIDs.SUBTAB_RESOURCES)) {
-			for (Map.Entry<ResourceLocation, Supplier<? extends ItemLike>> entry : ITEM_SUB_TAB_HOLDER.entrySet()) {
-				if (subGroupId.equals(entry.getKey())) {
-					event.getItemDisplayBuilder().accept(entry.getValue().get().asItem().getDefaultInstance());
+			for (Pair<ResourceLocation, Supplier<? extends ItemLike>> entry : ITEM_SUB_TAB_HOLDER) {
+				if (subGroupId.equals(entry.getFirst())) {
+					event.getItemDisplayBuilder().accept(entry.getSecond().get().asItem().getDefaultInstance());
 				}
 			}
 		}

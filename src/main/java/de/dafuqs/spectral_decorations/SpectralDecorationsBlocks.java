@@ -1,5 +1,6 @@
 package de.dafuqs.spectral_decorations;
 
+import com.mojang.datafixers.util.*;
 import de.dafuqs.spectrum.api.item_group.*;
 import de.dafuqs.spectrum.blocks.amphora.*;
 import de.dafuqs.spectrum.blocks.decoration.*;
@@ -58,7 +59,7 @@ public class SpectralDecorationsBlocks {
 		
 		DeferredItem<BlockItem> bi = SpectralDecorationsItems.REGISTRAR.register(name, () -> new BlockItem(deferredBlock.get(), itemSettings));
 		BLOCK_TYPE_HOLDER.add(new PropertyHolder(deferredBlock, type));
-		SpectralDecorations.ITEM_SUB_TAB_HOLDER.put(subTabId, bi);
+		SpectralDecorations.ITEM_SUB_TAB_HOLDER.add(new Pair<>(subTabId, bi));
 	}
 	
 	public enum VanillaWood {
