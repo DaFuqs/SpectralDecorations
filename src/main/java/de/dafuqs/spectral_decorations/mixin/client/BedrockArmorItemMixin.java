@@ -14,8 +14,8 @@ import java.util.*;
 @Mixin(BedrockArmorItem.class)
 public abstract class BedrockArmorItemMixin {
 	
-	@Inject(at = @At("HEAD"), method = "getArmorTexture(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/entity/EquipmentSlot;)Lnet/minecraft/resources/ResourceLocation;", cancellable = true)
-	private void spectral_decorations$modifyBedrockArmorColor(ItemStack stack, EquipmentSlot slot, CallbackInfoReturnable<ResourceLocation> cir) {
+	@Inject(at = @At("HEAD"), method = "getArmorTexture(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/entity/Entity;Lnet/minecraft/world/entity/EquipmentSlot;Lnet/minecraft/world/item/ArmorMaterial$Layer;Z)Lnet/minecraft/resources/ResourceLocation;", cancellable = true)
+	private void spectral_decorations$modifyBedrockArmorColor(ItemStack stack, Entity entity, EquipmentSlot slot, ArmorMaterial.Layer layer, boolean innerModel, CallbackInfoReturnable<ResourceLocation> cir) {
 		Optional<DyeColor> color = BedrockArmorColorizer.getColor(stack);
 		if (color.isPresent()) {
 			String colorName = color.get().getSerializedName();
@@ -24,7 +24,7 @@ public abstract class BedrockArmorItemMixin {
 	}
 	
 	@Inject(at = @At("HEAD"), method = "getArmorTexture(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/entity/EquipmentSlot;)Lnet/minecraft/resources/ResourceLocation;", cancellable = true)
-	private void spectral_decorations$modifyBedrockArmorRenderLayer(ItemStack stack, EquipmentSlot slot, CallbackInfoReturnable<ResourceLocation> cir) {
+	private void spectral_decorations$modifyBedrockArmorColor2(ItemStack stack, EquipmentSlot slot, CallbackInfoReturnable<ResourceLocation> cir) {
 		Optional<DyeColor> color = BedrockArmorColorizer.getColor(stack);
 		if (color.isPresent()) {
 			String colorName = color.get().getSerializedName();

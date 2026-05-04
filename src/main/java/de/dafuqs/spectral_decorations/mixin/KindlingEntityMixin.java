@@ -1,4 +1,4 @@
-package de.dafuqs.spectral_decorations.mixin.client;
+package de.dafuqs.spectral_decorations.mixin;
 
 import de.dafuqs.spectral_decorations.*;
 import de.dafuqs.spectrum.entity.entity.*;
