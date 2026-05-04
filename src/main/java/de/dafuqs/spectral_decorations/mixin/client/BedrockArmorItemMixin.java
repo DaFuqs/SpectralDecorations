@@ -23,13 +23,4 @@ public abstract class BedrockArmorItemMixin {
 		}
 	}
 	
-	@Inject(at = @At("HEAD"), method = "getArmorTexture(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/entity/EquipmentSlot;)Lnet/minecraft/resources/ResourceLocation;", cancellable = true)
-	private void spectral_decorations$modifyBedrockArmorColor2(ItemStack stack, EquipmentSlot slot, CallbackInfoReturnable<ResourceLocation> cir) {
-		Optional<DyeColor> color = BedrockArmorColorizer.getColor(stack);
-		if (color.isPresent()) {
-			String colorName = color.get().getSerializedName();
-			cir.setReturnValue(SpectralDecorations.locate("textures/armor/bedrock_armor_" + colorName + ".png"));
-		}
-	}
-	
 }
