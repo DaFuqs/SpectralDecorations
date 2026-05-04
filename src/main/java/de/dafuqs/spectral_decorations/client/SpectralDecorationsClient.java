@@ -1,21 +1,29 @@
 package de.dafuqs.spectral_decorations.client;
 
-import de.dafuqs.spectral_decorations.*;
-import de.dafuqs.spectrum.registries.*;
-import net.fabricmc.api.*;
-import net.fabricmc.fabric.api.blockrenderlayer.v1.*;
-import net.fabricmc.fabric.api.client.event.lifecycle.v1.*;
-import net.fabricmc.fabric.api.client.item.v1.*;
-import net.fabricmc.fabric.api.resource.*;
-import net.fabricmc.loader.api.*;
-import net.minecraft.client.renderer.*;
-import net.minecraft.client.renderer.item.*;
-import net.minecraft.network.chat.*;
-import net.minecraft.resources.*;
-import net.minecraft.world.item.*;
-import net.minecraft.world.level.block.*;
+import de.dafuqs.spectral_decorations.BedrockArmorColorizer;
+import de.dafuqs.spectral_decorations.SpectralDecorations;
+import de.dafuqs.spectral_decorations.SpectralDecorationsBlocks;
+import de.dafuqs.spectral_decorations.SpectralDecorationsItemTags;
+import de.dafuqs.spectrum.registries.SpectrumBlocks;
+import de.dafuqs.spectrum.registries.SpectrumItems;
+import net.fabricmc.api.ClientModInitializer;
+import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
+import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientLifecycleEvents;
+import net.fabricmc.fabric.api.client.item.v1.ItemTooltipCallback;
+import net.fabricmc.fabric.api.resource.ResourceManagerHelper;
+import net.fabricmc.fabric.api.resource.ResourcePackActivationType;
+import net.fabricmc.loader.api.FabricLoader;
+import net.fabricmc.loader.api.ModContainer;
+import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.item.ItemProperties;
+import net.minecraft.network.chat.Component;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.DyeColor;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.level.block.Block;
 
-import java.util.*;
+import java.util.Optional;
 
 public class SpectralDecorationsClient implements ClientModInitializer {
 	
@@ -45,14 +53,15 @@ public class SpectralDecorationsClient implements ClientModInitializer {
 				Optional<DyeColor> optionalColor = BedrockArmorColorizer.getColor(stack);
 				if (optionalColor.isPresent()) {
 					DyeColor c = optionalColor.get();
-					Component t = Component.translatable("tooltip.spectral-decorations.colored")
-							.append(Component.translatable("color.minecraft." + c.getName()).withStyle((style -> style.withColor(c.getTextColor()))));
+					Component t = Component.translatable("tooltip.spectral-decorations.colored").append(Component.translatable("color.minecraft." + c.getName()).withStyle((style -> style.withColor(c.getTextColor()))));
 					list.add(1, t);
 				}
 			}
 		});
 		
 		ClientLifecycleEvents.CLIENT_STARTED.register(minecraft -> {
+			SpectralDecorations.delayedLoad();
+
 			registerColorPredicate(SpectrumItems.BEDROCK_HELMET);
 			registerColorPredicate(SpectrumItems.BEDROCK_CHESTPLATE);
 			registerColorPredicate(SpectrumItems.BEDROCK_LEGGINGS);
@@ -60,7 +69,7 @@ public class SpectralDecorationsClient implements ClientModInitializer {
 			
 			registerColorPredicate(SpectrumBlocks.BOTTOMLESS_BUNDLE.asItem());
 		});
-		
+
 		// Builtin Resource Packs
 		Optional<ModContainer> modContainer = FabricLoader.getInstance().getModContainer(SpectralDecorations.MOD_ID);
 		modContainer.ifPresent(container -> ResourceManagerHelper.registerBuiltinResourcePack(SpectralDecorations.locate("spectral_decorations"), container, Component.nullToEmpty("Spectral Decorations Overrides"), ResourcePackActivationType.ALWAYS_ENABLED));
