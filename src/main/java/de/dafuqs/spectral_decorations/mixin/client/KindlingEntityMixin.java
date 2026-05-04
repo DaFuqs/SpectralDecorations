@@ -1,16 +1,20 @@
 package de.dafuqs.spectral_decorations.mixin.client;
 
-import de.dafuqs.spectral_decorations.*;
-import de.dafuqs.spectrum.entity.entity.*;
-import de.dafuqs.spectrum.entity.variants.*;
-import de.dafuqs.spectrum.registries.*;
-import net.minecraft.core.*;
-import net.minecraft.world.level.*;
-import org.spongepowered.asm.mixin.*;
-import org.spongepowered.asm.mixin.injection.*;
-import org.spongepowered.asm.mixin.injection.callback.*;
+import de.dafuqs.spectral_decorations.SpectralDecorationsKindlingVariantTags;
+import de.dafuqs.spectrum.entity.entity.KindlingEntity;
+import de.dafuqs.spectrum.entity.variants.KindlingVariant;
+import de.dafuqs.spectrum.registries.SpectrumFluidTags;
+import de.dafuqs.spectrum.registries.SpectrumRegistryKeys;
+import net.minecraft.core.Holder;
+import net.minecraft.core.Registry;
+import net.minecraft.world.level.Level;
+import org.spongepowered.asm.mixin.Mixin;
+import org.spongepowered.asm.mixin.Shadow;
+import org.spongepowered.asm.mixin.injection.At;
+import org.spongepowered.asm.mixin.injection.Inject;
+import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
-import java.util.*;
+import java.util.Optional;
 
 @Mixin(KindlingEntity.class)
 public abstract class KindlingEntityMixin {
@@ -27,7 +31,7 @@ public abstract class KindlingEntityMixin {
 		
 		if (!kindling.isEyeInFluid(SpectrumFluidTags.LIQUID_CRYSTAL)) {
 			if (getKindlingVariant().is(SpectralDecorationsKindlingVariantTags.WASHES_TO_DEFAULT)) {
-				Level level = ((KindlingEntity) (Object) this).level();
+				Level level = kindling.level();
 				
 				Registry<KindlingVariant> registry = level.registryAccess().registry(SpectrumRegistryKeys.KINDLING_VARIANT).get();
 				Optional<Holder.Reference<KindlingVariant>> defaultVariant = registry.getHolder(KindlingVariant.DEFAULT);
