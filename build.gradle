@@ -84,7 +84,7 @@ configurations {
 }
 
 dependencies {
-	implementation("de.dafuqs:spectrum:${project.spectrum_version}")
+	implementation("de.dafuqs:Spectrum:${project.spectrum_version}")
 	implementation("de.dafuqs:Fractal:${project.fractal_version}")
 	implementation("de.dafuqs:revelationary-neoforge:${project.revelationary_version}")
 
