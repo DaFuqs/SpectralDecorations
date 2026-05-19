@@ -11,6 +11,7 @@ import net.minecraft.core.*;
 import net.minecraft.resources.*;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.crafting.*;
+import org.jetbrains.annotations.*;
 
 import java.util.*;
 
@@ -28,7 +29,7 @@ public class BedrockArmorColoringRecipe extends ShapelessPedestalRecipe {
 	}
 	
 	@Override
-	public ItemStack assemble(PedestalRecipeInput inv, HolderLookup.Provider drm) {
+	public @NotNull ItemStack assemble(PedestalRecipeInput inv, HolderLookup.Provider drm) {
 		ItemStack armorStack = null;
 		PigmentItem pigment = null;
 		
@@ -55,7 +56,7 @@ public class BedrockArmorColoringRecipe extends ShapelessPedestalRecipe {
 	}
 	
 	@Override
-	public RecipeSerializer<?> getSerializer() {
+	public @NotNull RecipeSerializer<?> getSerializer() {
 		return SpectralDecorationsRecipeSerializers.BEDROCK_ARMOR_COLORING_SERIALIZER;
 	}
 	
