@@ -6,6 +6,13 @@
     "#spectral_decorations:colored_lights",
 
     "#spectral_decorations:vanilla_wood_amphoras",
-    "#spectral_decorations:vanilla_wood_beams"
+    "#spectral_decorations:vanilla_wood_beams",
+
+    "spectral_decorations:iron_tubing",
+    "spectral_decorations:gold_tubing",
+    "spectral_decorations:copper_tubing",
+    "spectral_decorations:exposed_copper_tubing",
+    "spectral_decorations:weathered_copper_tubing",
+    "spectral_decorations:oxidized_copper_tubing"
   ]
 }

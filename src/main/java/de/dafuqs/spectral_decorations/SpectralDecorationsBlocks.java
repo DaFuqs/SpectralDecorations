@@ -52,6 +52,13 @@ public class SpectralDecorationsBlocks {
 			registerBlockWithItem(ItemGroupIDs.SUBTAB_DECORATION, colorString + "_resplendent_carpet", () -> new CushionedCarpetBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.RED_CARPET).mapColor(color)), new Item.Properties().rarity(Rarity.UNCOMMON), Type.RESPLENDENT_CARPET);
 			registerBlockWithItem(ItemGroupIDs.SUBTAB_DECORATION, colorString + "_resplendent_bed", () -> new SpectrumBedBlock(color, BlockBehaviour.Properties.ofFullCopy(Blocks.RED_BED).mapColor(color)), new Item.Properties().stacksTo(1).rarity(Rarity.UNCOMMON), Type.RESPLENDENT_BED);
 		}
+		
+		registerBlockWithItem(ItemGroupIDs.SUBTAB_DECORATION, "iron_tubing", () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK)), new Item.Properties(), Type.TUBING);
+		registerBlockWithItem(ItemGroupIDs.SUBTAB_DECORATION, "gold_tubing", () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.GOLD_BLOCK)), new Item.Properties(), Type.TUBING);
+		registerBlockWithItem(ItemGroupIDs.SUBTAB_DECORATION, "copper_tubing", () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_BLOCK)), new Item.Properties(), Type.TUBING);
+		registerBlockWithItem(ItemGroupIDs.SUBTAB_DECORATION, "exposed_copper_tubing", () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.EXPOSED_COPPER)), new Item.Properties(), Type.TUBING);
+		registerBlockWithItem(ItemGroupIDs.SUBTAB_DECORATION, "weathered_copper_tubing", () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.WEATHERED_COPPER)), new Item.Properties(), Type.TUBING);
+		registerBlockWithItem(ItemGroupIDs.SUBTAB_DECORATION, "oxidized_copper_tubing", () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OXIDIZED_COPPER)), new Item.Properties(), Type.TUBING);
 	}
 	
 	public static void registerBlockWithItem(ResourceLocation subTabId, String name, Supplier<Block> block, Item.Properties itemSettings, Type type) {
@@ -112,7 +119,8 @@ public class SpectralDecorationsBlocks {
 		RESPLENDENT_BLOCK,
 		RESPLENDENT_CUSHION,
 		RESPLENDENT_CARPET,
-		RESPLENDENT_BED
+		RESPLENDENT_BED,
+		TUBING
 	}
 	
 	public record PropertyHolder(DeferredBlock<?> block, Type type) {

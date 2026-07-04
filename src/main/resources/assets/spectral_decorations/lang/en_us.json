@@ -8,6 +8,7 @@
   "recipeGroup.spectrum.colored_lights": "Colored Lights",
   "recipeGroup.spectrum.vanilla_wood_amphoras": "Wooden Amphoras",
   "recipeGroup.spectrum.vanilla_wood_beams": "Wooden Beams",
+  "recipeGroup.spectrum.metal_decorations": "Metal Decorations",
 
   "tag.spectral_decorations.colored_resplendent_feathers": "Colored resplendent Feathers",
 
@@ -189,6 +190,13 @@
   "block.spectral_decorations.white_resplendent_bed": "White resplendent Bed",
   "block.spectral_decorations.yellow_resplendent_bed": "Yellow resplendent Bed",
 
+  "block.spectral_decorations.iron_tubing": "Iron Tubing",
+  "block.spectral_decorations.gold_tubing": "Gold Tubing",
+  "block.spectral_decorations.copper_tubing": "Copper Tubing",
+  "block.spectral_decorations.exposed_copper_tubing": "Exposed Copper Tubing",
+  "block.spectral_decorations.weathered_copper_tubing": "Weathered Copper Tubing",
+  "block.spectral_decorations.oxidized_copper_tubing": "Oxidized Copper Tubing",
+
   "book.spectral_decorations.added_by_spectral_decorations": "§oAdded by Spectral Decorations",
 
   "book.spectral_decorations.guidebook.spectral_decorations.name": "Addon: Spectral Decorations",
@@ -228,5 +236,8 @@
 
   "book.spectral_decorations.guidebook.colored_bottomless_bundles.name": "Bottomless Bundle Coloring",
   "book.spectral_decorations.guidebook.colored_bottomless_bundles.page0.text": "Bottomless bundles very quickly became an indispensable item when it comes to cave adventures. However, I sometimes found it difficult to tell the individual bundles with the different types of stone apart.\\\n\\\nLet's add a bit of colour to fix that!",
-  "book.spectral_decorations.guidebook.colored_bottomless_bundles.page1.text": "I can combine a Bottomless Bundle with Pigment any to dye it."
+  "book.spectral_decorations.guidebook.colored_bottomless_bundles.page1.text": "I can combine a Bottomless Bundle with Pigment any to dye it.",
+
+  "book.spectral_decorations.guidebook.metal_decorations.about.text": "TODO",
+  "book.spectral_decorations.guidebook.metal_decorations.recipe.text": "TODO"
 }

@@ -1,0 +1,49 @@
+{
+  "name": "recipeGroup.spectrum.metal_decorations",
+  "description": "book.spectral_decorations.added_by_spectral_decorations",
+
+  "condition": {
+    "type": "modonomicon:advancement",
+    "advancement_id": "spectrum:place_pedestal"
+  },
+  "icon": "spectral_decorations:iron_tubing",
+  "category": "spectrum:decoration",
+  "hide_while_locked": true,
+  "parents": [],
+  "background_u_index": 0,
+  "background_v_index": 0,
+  "x": 11,
+  "y": 2,
+  "pages": [
+    {
+      "type": "spectrum:collection",
+      "title": "recipeGroup.spectrum.metal_decorations",
+      "items": [
+        {
+          "id": "spectral_decorations:iron_tubing"
+        },
+        {
+          "id": "spectral_decorations:gold_tubing"
+        },
+        {
+          "id": "spectral_decorations:copper_tubing"
+        },
+        {
+          "id": "spectral_decorations:exposed_copper_tubing"
+        },
+        {
+          "id": "spectral_decorations:weathered_copper_tubing"
+        },
+        {
+          "id": "spectral_decorations:oxidized_copper_tubing"
+        }
+      ],
+      "text": "book.spectral_decorations.guidebook.metal_decorations.about.text"
+    },
+    {
+      "type": "modonomicon:stonecutting_recipe",
+      "recipe_id_1": "spectral_decorations:stonecutting/metal_decorations/iron_tubing_from_iron_block",
+      "text": "book.spectral_decorations.guidebook.metal_decorations.recipe.text"
+    }
+  ]
+}

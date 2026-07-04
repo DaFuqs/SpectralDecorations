@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "spectral_decorations:block/metal_decorations/copper_tubing_top",
+    "side": "spectral_decorations:block/metal_decorations/copper_tubing_side"
+  }
+}

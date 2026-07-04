@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:stonecutting",
+  "group": "metal_decorations",
+  "ingredient": [
+    {
+      "item": "minecraft:oxidized_copper_block"
+    }
+  ],
+  "result": {
+    "id": "spectral_decorations:oxidized_copper_tubing",
+    "count": 3
+  }
+}
