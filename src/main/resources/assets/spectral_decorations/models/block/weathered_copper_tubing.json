@@ -1,7 +1,11 @@
 {
-  "parent": "minecraft:block/cube_column",
+  "parent": "minecraft:block/cube",
   "textures": {
-    "end": "spectral_decorations:block/metal_decorations/weathered_copper_tubing_top",
-    "side": "spectral_decorations:block/metal_decorations/weathered_copper_tubing_side"
+    "down": "spectral_decorations:block/metal_decorations/weathered_copper_tubing_top",
+    "up": "spectral_decorations:block/metal_decorations/weathered_copper_tubing_top",
+    "north": "spectral_decorations:block/metal_decorations/weathered_copper_tubing_side",
+    "south": "spectral_decorations:block/metal_decorations/weathered_copper_tubing_side",
+    "west": "spectral_decorations:block/metal_decorations/weathered_copper_tubing",
+    "east": "spectral_decorations:block/metal_decorations/weathered_copper_tubing"
   }
 }
