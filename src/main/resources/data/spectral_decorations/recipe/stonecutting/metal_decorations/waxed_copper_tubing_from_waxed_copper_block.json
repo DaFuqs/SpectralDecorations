@@ -3,11 +3,11 @@
   "group": "metal_decorations",
   "ingredient": [
     {
-      "item": "minecraft:exposed_copper"
+      "item": "minecraft:waxed_copper_block"
     }
   ],
   "result": {
-    "id": "spectral_decorations:exposed_copper_tubing",
+    "id": "spectral_decorations:waxed_copper_tubing",
     "count": 3
   }
 }

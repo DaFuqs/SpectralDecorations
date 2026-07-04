@@ -196,6 +196,10 @@
   "block.spectral_decorations.exposed_copper_tubing": "Exposed Copper Tubing",
   "block.spectral_decorations.weathered_copper_tubing": "Weathered Copper Tubing",
   "block.spectral_decorations.oxidized_copper_tubing": "Oxidized Copper Tubing",
+  "block.spectral_decorations.waxed_copper_tubing": "Waxed Copper Tubing",
+  "block.spectral_decorations.waxed_exposed_copper_tubing": "Waxed Exposed Copper Tubing",
+  "block.spectral_decorations.waxed_weathered_copper_tubing": "Waxed Weathered Copper Tubing",
+  "block.spectral_decorations.waxed_oxidized_copper_tubing": "Waxed Oxidized Copper Tubing",
 
   "book.spectral_decorations.added_by_spectral_decorations": "§oAdded by Spectral Decorations",
 
@@ -238,6 +242,7 @@
   "book.spectral_decorations.guidebook.colored_bottomless_bundles.page0.text": "Bottomless bundles very quickly became an indispensable item when it comes to cave adventures. However, I sometimes found it difficult to tell the individual bundles with the different types of stone apart.\\\n\\\nLet's add a bit of colour to fix that!",
   "book.spectral_decorations.guidebook.colored_bottomless_bundles.page1.text": "I can combine a Bottomless Bundle with Pigment any to dye it.",
 
-  "book.spectral_decorations.guidebook.metal_decorations.about.text": "TODO",
-  "book.spectral_decorations.guidebook.metal_decorations.recipe.text": "TODO"
+  "book.spectral_decorations.guidebook.metal_decorations.about.text": "With all that tinkering around gemstones I almost forgot to take a second look at other types of blocks. Metallic blocks deserve some fun shapes and sizes, too! How about these?\\\n\\\nWaxing the copper ones makes them stop oxidizing, as expected.",
+  "book.spectral_decorations.guidebook.metal_decorations.recipe.title": "Crafting",
+  "book.spectral_decorations.guidebook.metal_decorations.recipe.text": "All of them can be crafted in the Stonecutter using a metal block."
 }

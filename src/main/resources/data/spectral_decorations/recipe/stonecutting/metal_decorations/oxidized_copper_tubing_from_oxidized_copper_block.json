@@ -3,7 +3,7 @@
   "group": "metal_decorations",
   "ingredient": [
     {
-      "item": "minecraft:oxidized_copper_block"
+      "item": "minecraft:oxidized_copper"
     }
   ],
   "result": {

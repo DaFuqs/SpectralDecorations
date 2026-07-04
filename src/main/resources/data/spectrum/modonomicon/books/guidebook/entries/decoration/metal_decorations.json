@@ -36,12 +36,25 @@
         },
         {
           "id": "spectral_decorations:oxidized_copper_tubing"
+        },
+        {
+          "id": "spectral_decorations:waxed_copper_tubing"
+        },
+        {
+          "id": "spectral_decorations:waxed_exposed_copper_tubing"
+        },
+        {
+          "id": "spectral_decorations:waxed_weathered_copper_tubing"
+        },
+        {
+          "id": "spectral_decorations:waxed_oxidized_copper_tubing"
         }
       ],
       "text": "book.spectral_decorations.guidebook.metal_decorations.about.text"
     },
     {
       "type": "modonomicon:stonecutting_recipe",
+      "title1": "book.spectral_decorations.guidebook.metal_decorations.recipe.title",
       "recipe_id_1": "spectral_decorations:stonecutting/metal_decorations/iron_tubing_from_iron_block",
       "text": "book.spectral_decorations.guidebook.metal_decorations.recipe.text"
     }

@@ -1,6 +1,7 @@
 package de.dafuqs.spectral_decorations;
 
 import com.mojang.datafixers.util.*;
+import de.dafuqs.spectral_decorations.blocks.*;
 import de.dafuqs.spectrum.api.item_group.*;
 import de.dafuqs.spectrum.blocks.amphora.*;
 import de.dafuqs.spectrum.blocks.decoration.*;
@@ -55,10 +56,16 @@ public class SpectralDecorationsBlocks {
 		
 		registerBlockWithItem(ItemGroupIDs.SUBTAB_DECORATION, "iron_tubing", () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK)), new Item.Properties(), Type.TUBING);
 		registerBlockWithItem(ItemGroupIDs.SUBTAB_DECORATION, "gold_tubing", () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.GOLD_BLOCK)), new Item.Properties(), Type.TUBING);
-		registerBlockWithItem(ItemGroupIDs.SUBTAB_DECORATION, "copper_tubing", () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_BLOCK)), new Item.Properties(), Type.TUBING);
-		registerBlockWithItem(ItemGroupIDs.SUBTAB_DECORATION, "exposed_copper_tubing", () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.EXPOSED_COPPER)), new Item.Properties(), Type.TUBING);
-		registerBlockWithItem(ItemGroupIDs.SUBTAB_DECORATION, "weathered_copper_tubing", () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.WEATHERED_COPPER)), new Item.Properties(), Type.TUBING);
-		registerBlockWithItem(ItemGroupIDs.SUBTAB_DECORATION, "oxidized_copper_tubing", () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OXIDIZED_COPPER)), new Item.Properties(), Type.TUBING);
+		
+		registerBlockWithItem(ItemGroupIDs.SUBTAB_DECORATION, "copper_tubing", () -> new WeatheringCopperRotatedPillarBlockBlock(WeatheringCopper.WeatherState.UNAFFECTED, BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_BLOCK)), new Item.Properties(), Type.TUBING);
+		registerBlockWithItem(ItemGroupIDs.SUBTAB_DECORATION, "exposed_copper_tubing", () -> new WeatheringCopperRotatedPillarBlockBlock(WeatheringCopper.WeatherState.EXPOSED, BlockBehaviour.Properties.ofFullCopy(Blocks.EXPOSED_COPPER)), new Item.Properties(), Type.TUBING);
+		registerBlockWithItem(ItemGroupIDs.SUBTAB_DECORATION, "weathered_copper_tubing", () -> new WeatheringCopperRotatedPillarBlockBlock(WeatheringCopper.WeatherState.WEATHERED, BlockBehaviour.Properties.ofFullCopy(Blocks.WEATHERED_COPPER)), new Item.Properties(), Type.TUBING);
+		registerBlockWithItem(ItemGroupIDs.SUBTAB_DECORATION, "oxidized_copper_tubing", () -> new WeatheringCopperRotatedPillarBlockBlock(WeatheringCopper.WeatherState.OXIDIZED, BlockBehaviour.Properties.ofFullCopy(Blocks.OXIDIZED_COPPER)), new Item.Properties(), Type.TUBING);
+		
+		registerBlockWithItem(ItemGroupIDs.SUBTAB_DECORATION, "waxed_copper_tubing", () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.WAXED_COPPER_BLOCK)), new Item.Properties(), Type.TUBING);
+		registerBlockWithItem(ItemGroupIDs.SUBTAB_DECORATION, "waxed_exposed_copper_tubing", () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.WAXED_EXPOSED_COPPER)), new Item.Properties(), Type.TUBING);
+		registerBlockWithItem(ItemGroupIDs.SUBTAB_DECORATION, "waxed_weathered_copper_tubing", () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.WAXED_WEATHERED_COPPER)), new Item.Properties(), Type.TUBING);
+		registerBlockWithItem(ItemGroupIDs.SUBTAB_DECORATION, "waxed_oxidized_copper_tubing", () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.WAXED_OXIDIZED_COPPER)), new Item.Properties(), Type.TUBING);
 	}
 	
 	public static void registerBlockWithItem(ResourceLocation subTabId, String name, Supplier<Block> block, Item.Properties itemSettings, Type type) {
