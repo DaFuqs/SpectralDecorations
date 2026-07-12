@@ -6,6 +6,7 @@
     "north": "spectral_decorations:block/metal_decorations/exposed_copper_tubing_side",
     "south": "spectral_decorations:block/metal_decorations/exposed_copper_tubing_side",
     "west": "spectral_decorations:block/metal_decorations/exposed_copper_tubing",
-    "east": "spectral_decorations:block/metal_decorations/exposed_copper_tubing"
+    "east": "spectral_decorations:block/metal_decorations/exposed_copper_tubing",
+    "particle": "spectral_decorations:block/metal_decorations/oxidized_copper_tubing"
   }
 }
