@@ -26,7 +26,7 @@ public abstract class KindlingEntityMixin {
 		KindlingEntity kindling = (KindlingEntity) (Object) this;
 		Level level = kindling.level();
 		
-		if (level != null && !level.isClientSide() && !kindling.isEyeInFluidType(SpectrumFluids.LIQUID_CRYSTAL_TYPE.get())) {
+		if (level != null && !level.isClientSide() && kindling.isEyeInFluidType(SpectrumFluids.LIQUID_CRYSTAL_TYPE.get())) {
 			if (getKindlingVariant().is(SpectralDecorationsKindlingVariantTags.WASHES_TO_DEFAULT)) {
 				Registry<KindlingVariant> registry = level.registryAccess().registry(SpectrumRegistryKeys.KINDLING_VARIANT).get();
 				Optional<Holder.Reference<KindlingVariant>> defaultVariant = registry.getHolder(KindlingVariant.DEFAULT);
