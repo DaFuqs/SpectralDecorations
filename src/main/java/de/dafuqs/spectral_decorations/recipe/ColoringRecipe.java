@@ -9,7 +9,6 @@ import net.minecraft.core.*;
 import net.minecraft.resources.*;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.crafting.*;
-import org.jetbrains.annotations.*;
 
 import java.util.*;
 
@@ -26,7 +25,7 @@ public abstract class ColoringRecipe extends ShapelessPedestalRecipe {
 	public abstract boolean testColorable(ItemStack stack);
 	
 	@Override
-	public @NotNull ItemStack assemble(PedestalRecipeInput inv, HolderLookup.Provider drm) {
+	public ItemStack assemble(PedestalRecipeInput inv, HolderLookup.Provider drm) {
 		ItemStack colorable = null;
 		PigmentItem pigment = null;
 		

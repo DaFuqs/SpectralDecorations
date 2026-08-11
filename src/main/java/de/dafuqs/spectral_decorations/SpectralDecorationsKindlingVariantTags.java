@@ -8,8 +8,8 @@ public class SpectralDecorationsKindlingVariantTags {
 	
 	public static final TagKey<KindlingVariant> WASHES_TO_DEFAULT = of("washes_to_default");
 	
-	private static TagKey<KindlingVariant> of(String id) {
-		return TagKey.create(SpectrumRegistryKeys.KINDLING_VARIANT, SpectralDecorations.locate(id));
+	private static TagKey<KindlingVariant> of(String name) {
+		return TagKey.create(SpectrumRegistryKeys.KINDLING_VARIANT, SpectralDecorations.locate(name));
 	}
 	
 }

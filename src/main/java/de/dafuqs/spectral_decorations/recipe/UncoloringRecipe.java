@@ -23,8 +23,7 @@ public class UncoloringRecipe extends SingleItemCraftingRecipe {
 	public ItemStack assemble(ItemStack stack) {
 		ItemStack returnStack = stack.copy();
 		returnStack.setCount(1);
-		SpectralDecorationsColorizer.removeColor(returnStack);
-		return returnStack;
+		return SpectralDecorationsColorizer.removeColor(returnStack);
 	}
 	
 	@Override

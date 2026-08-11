@@ -6,7 +6,6 @@ import de.dafuqs.spectrum.items.armor.*;
 import net.minecraft.resources.*;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.crafting.*;
-import org.jetbrains.annotations.*;
 
 import java.util.*;
 
@@ -24,7 +23,7 @@ public class BedrockArmorColoringRecipe extends ColoringRecipe {
 	}
 	
 	@Override
-	public @NotNull RecipeSerializer<?> getSerializer() {
+	public RecipeSerializer<?> getSerializer() {
 		return SpectralDecorationsRecipeSerializers.BEDROCK_ARMOR_COLORING_SERIALIZER;
 	}
 	

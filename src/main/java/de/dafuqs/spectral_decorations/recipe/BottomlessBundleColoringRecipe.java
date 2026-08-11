@@ -6,7 +6,6 @@ import de.dafuqs.spectrum.blocks.bottomless_bundle.*;
 import net.minecraft.resources.*;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.crafting.*;
-import org.jetbrains.annotations.*;
 
 import java.util.*;
 
@@ -24,7 +23,7 @@ public class BottomlessBundleColoringRecipe extends ColoringRecipe {
 	}
 	
 	@Override
-	public @NotNull RecipeSerializer<?> getSerializer() {
+	public RecipeSerializer<?> getSerializer() {
 		return SpectralDecorationsRecipeSerializers.BOTTOMLESS_BUNDLE_COLORING_SERIALIZER;
 	}
 	

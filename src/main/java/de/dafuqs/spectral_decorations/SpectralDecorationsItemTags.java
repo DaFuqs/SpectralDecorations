@@ -8,7 +8,7 @@ import net.minecraft.world.item.*;
 public class SpectralDecorationsItemTags {
 	
 	public static final TagKey<Item> BEDROCK_ARMOR = spectrum("bedrock_armor");
-	public static final TagKey<Item> PIGMENTS = spectrum("pigments");
+	
 	public static final TagKey<Item> BOTTOMLESS_BUNDLES = spectralDecorations("bottomless_bundles");
 	
 	private static TagKey<Item> spectralDecorations(String name) {

@@ -17,7 +17,6 @@ import net.neoforged.fml.*;
 import net.neoforged.fml.common.*;
 import net.neoforged.neoforge.event.*;
 import net.neoforged.neoforge.event.entity.player.*;
-import org.jetbrains.annotations.*;
 
 import java.util.*;
 import java.util.function.*;
@@ -39,7 +38,7 @@ public class SpectralDecorations {
 				return false;
 			}
 			
-			@Nullable Holder<KindlingVariant> coloredVariant = SpectralDecorationsKindlingVariants.getColoredVariant(entity.level(), dyeColor.get());
+			Holder<KindlingVariant> coloredVariant = SpectralDecorationsKindlingVariants.getColoredVariant(entity.level(), dyeColor.get());
 			if (coloredVariant == null) {
 				return false;
 			}
