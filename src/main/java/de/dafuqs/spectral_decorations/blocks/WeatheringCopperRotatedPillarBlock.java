@@ -8,16 +8,16 @@ import net.minecraft.util.*;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.*;
 
-public class WeatheringCopperRotatedPillarBlockBlock extends RotatedPillarBlock implements WeatheringCopper {
+public class WeatheringCopperRotatedPillarBlock extends RotatedPillarBlock implements WeatheringCopper {
 	
-	public static final MapCodec<WeatheringCopperRotatedPillarBlockBlock> CODEC = RecordCodecBuilder.mapCodec((p_308850_) -> p_308850_.group(WeatherState.CODEC.fieldOf("weathering_state").forGetter(ChangeOverTimeBlock::getAge), propertiesCodec()).apply(p_308850_, WeatheringCopperRotatedPillarBlockBlock::new));
+	public static final MapCodec<WeatheringCopperRotatedPillarBlock> CODEC = RecordCodecBuilder.mapCodec((p_308850_) -> p_308850_.group(WeatherState.CODEC.fieldOf("weathering_state").forGetter(ChangeOverTimeBlock::getAge), propertiesCodec()).apply(p_308850_, WeatheringCopperRotatedPillarBlock::new));
 	private final WeatheringCopper.WeatherState weatherState;
 	
-	public MapCodec<WeatheringCopperRotatedPillarBlockBlock> codec() {
+	public MapCodec<WeatheringCopperRotatedPillarBlock> codec() {
 		return CODEC;
 	}
 	
-	public WeatheringCopperRotatedPillarBlockBlock(WeatheringCopper.WeatherState weatherState, BlockBehaviour.Properties properties) {
+	public WeatheringCopperRotatedPillarBlock(WeatheringCopper.WeatherState weatherState, BlockBehaviour.Properties properties) {
 		super(properties);
 		this.weatherState = weatherState;
 	}

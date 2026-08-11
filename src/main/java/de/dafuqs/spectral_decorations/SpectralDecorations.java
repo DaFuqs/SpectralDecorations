@@ -78,7 +78,7 @@ public class SpectralDecorations {
 		ItemStack stack = event.getItemStack();
 		
 		if (stack.is(SpectralDecorationsItemTags.BEDROCK_ARMOR) || stack.is(SpectrumBlocks.BOTTOMLESS_BUNDLE.asItem())) {
-			Optional<DyeColor> optionalColor = BedrockArmorColorizer.getColor(stack);
+			Optional<DyeColor> optionalColor = SpectralDecorationsColorizer.getColor(stack);
 			if (optionalColor.isPresent()) {
 				DyeColor c = optionalColor.get();
 				Component t = Component.translatable("tooltip.spectral_decorations.colored").append(Component.translatable("color.minecraft." + c.getName()).withStyle((style -> style.withColor(c.getTextColor()))));

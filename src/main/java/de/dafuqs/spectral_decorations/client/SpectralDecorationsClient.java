@@ -40,7 +40,7 @@ public class SpectralDecorationsClient {
 	
 	private static void registerColorPredicate(Item item) {
 		ItemProperties.register(item, ResourceLocation.fromNamespaceAndPath(SpectralDecorations.MOD_ID, "color"), (itemStack, clientWorld, livingEntity, i) -> {
-			Optional<DyeColor> color = BedrockArmorColorizer.getColor(itemStack);
+			Optional<DyeColor> color = SpectralDecorationsColorizer.getColor(itemStack);
 			return color.map(dyeColor -> (1F + dyeColor.getId()) / 100F).orElse(0F);
 		});
 	}
