@@ -15,7 +15,7 @@ import java.util.*;
 public abstract class ColoringRecipe extends ShapelessPedestalRecipe {
 	
 	public ColoringRecipe(Ingredient colorable, Optional<ResourceLocation> unlockIdentifier) {
-		super("", false, unlockIdentifier, PedestalRecipeTier.BASIC,
+		super("", unlockIdentifier, Optional.empty(), List.of(), PedestalRecipeTier.BASIC,
 				List.of(IngredientStack.of(colorable)),
 				Map.of(),
 				ItemStack.EMPTY,
