@@ -212,6 +212,7 @@
   "book.spectral_decorations.guidebook.colored_resplendent_deco.kindling_coloring.text": "The Paintbrush is able to dye both blocks and dye creatures like Sheep.\\\nNow for an inherently magical creature like the Kindling...\\\n\\\nI can uncolor Kindlings again by bathing them in [Liquid Crystal](entry://general/liquid_crystal).",
   "book.spectral_decorations.guidebook.colored_resplendent_deco.colored_feathers.title": "Colored Feathers",
   "book.spectral_decorations.guidebook.colored_resplendent_deco.colored_feathers.text": "The Kindlings soak up the magical paint like a sponge, saturating the entire plumage with a single brushstroke - unlike Sheep with only superficially coloured wool. Matching feathers were a logical consequence.",
+  "book.spectral_decorations.guidebook.colored_resplendent_deco.potion_reagent.text": "The colored feathers can be used as reagents for the [Potion Workshop](entry://brewing/potion_workshop)!\n- +1 yield\n- colors the potion in the feather's color",
   "book.spectral_decorations.guidebook.colored_resplendent_deco.resplendent_blocks.title": "Resplendent Blocks",
   "book.spectral_decorations.guidebook.colored_resplendent_deco.resplendent_blocks.text": "*Super fluffy.*",
   "book.spectral_decorations.guidebook.colored_resplendent_deco.resplendent_cushions.title": "Resplendent Cushions",
@@ -244,5 +245,22 @@
 
   "book.spectral_decorations.guidebook.metal_decorations.about.text": "With all that tinkering around gemstones I almost forgot to take a second look at other types of blocks. Metallic blocks deserve some fun shapes and sizes, too! How about these?\\\n\\\nWaxing the copper ones makes them stop oxidizing, as expected.",
   "book.spectral_decorations.guidebook.metal_decorations.recipe.title": "Crafting",
-  "book.spectral_decorations.guidebook.metal_decorations.recipe.text": "All of them can be crafted in the Stonecutter using a metal block."
+  "book.spectral_decorations.guidebook.metal_decorations.recipe.text": "All of them can be crafted in the Stonecutter using a metal block.",
+
+  "spectrum.rei.potion_workshop_reacting.spectral_decorations.black_resplendent_feather": "• +1 yield\n• colors the potion black",
+  "spectrum.rei.potion_workshop_reacting.spectral_decorations.blue_resplendent_feather": "• +1 yield\n• colors the potion blue",
+  "spectrum.rei.potion_workshop_reacting.spectral_decorations.brown_resplendent_feather": "• +1 yield\n• colors the potion brown",
+  "spectrum.rei.potion_workshop_reacting.spectral_decorations.cyan_resplendent_feather": "• +1 yield\n• colors the potion cyan",
+  "spectrum.rei.potion_workshop_reacting.spectral_decorations.gray_resplendent_feather": "• +1 yield\n• colors the potion gray",
+  "spectrum.rei.potion_workshop_reacting.spectral_decorations.green_resplendent_feather": "• +1 yield\n• colors the potion green",
+  "spectrum.rei.potion_workshop_reacting.spectral_decorations.light_blue_resplendent_feather": "• +1 yield\n• colors the potion light blue",
+  "spectrum.rei.potion_workshop_reacting.spectral_decorations.light_gray_resplendent_feather": "• +1 yield\n• colors the potion light gray",
+  "spectrum.rei.potion_workshop_reacting.spectral_decorations.lime_resplendent_feather": "• +1 yield\n• colors the potion lime",
+  "spectrum.rei.potion_workshop_reacting.spectral_decorations.magenta_resplendent_feather": "• +1 yield\n• colors the potion magenta",
+  "spectrum.rei.potion_workshop_reacting.spectral_decorations.orange_resplendent_feather": "• +1 yield\n• colors the potion orange",
+  "spectrum.rei.potion_workshop_reacting.spectral_decorations.pink_resplendent_feather": "• +1 yield\n• colors the potion pink",
+  "spectrum.rei.potion_workshop_reacting.spectral_decorations.purple_resplendent_feather": "• +1 yield\n• colors the potion purple",
+  "spectrum.rei.potion_workshop_reacting.spectral_decorations.red_resplendent_feather": "• +1 yield\n• colors the potion red",
+  "spectrum.rei.potion_workshop_reacting.spectral_decorations.white_resplendent_feather": "• +1 yield\n• colors the potion white",
+  "spectrum.rei.potion_workshop_reacting.spectral_decorations.yellow_resplendent_feather": "• +1 yield\n• colors the potion yellow"
 }

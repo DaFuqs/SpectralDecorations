@@ -1,0 +1,9 @@
+{
+  "type": "spectrum:potion_workshop_reacting",
+  "item": "spectral_decorations:light_gray_resplendent_feather",
+  "modifiers": {
+    "flat_yield_bonus": 1.0,
+    "color": 11382189
+  },
+  "required_advancement": "spectral_decorations:pluck_colored_resplendent_feather"
+}

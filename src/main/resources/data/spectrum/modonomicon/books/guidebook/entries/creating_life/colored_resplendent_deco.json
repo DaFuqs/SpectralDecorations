@@ -83,6 +83,15 @@
       "text": "book.spectral_decorations.guidebook.colored_resplendent_deco.colored_feathers.text"
     },
     {
+      "type": "modonomicon:spotlight",
+      "advancement": "spectral_decorations:pluck_colored_resplendent_feather",
+      "title": "container.spectrum.rei.potion_workshop_reacting.title",
+      "item": {
+        "item": "spectral_decorations:pink_resplendent_feather"
+      },
+      "text": "book.spectral_decorations.guidebook.colored_resplendent_deco.potion_reagent.text"
+    },
+    {
       "type": "spectrum:pedestal_crafting",
       "advancement": "spectral_decorations:pluck_colored_resplendent_feather",
       "title": "book.spectral_decorations.guidebook.colored_resplendent_deco.resplendent_blocks.title",
