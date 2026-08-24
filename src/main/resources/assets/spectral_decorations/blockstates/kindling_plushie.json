@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "spectral_decorations:block/kindling_plushie",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "spectral_decorations:block/kindling_plushie"
+    },
+    "facing=south": {
+      "model": "spectral_decorations:block/kindling_plushie",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "spectral_decorations:block/kindling_plushie",
+      "y": 270
+    }
+  }
+}

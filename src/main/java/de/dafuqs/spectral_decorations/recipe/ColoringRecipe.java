@@ -16,10 +16,10 @@ public abstract class ColoringRecipe extends ShapelessPedestalRecipe {
 	
 	public ColoringRecipe(Ingredient colorable, Optional<ResourceLocation> unlockIdentifier) {
 		super("", unlockIdentifier, Optional.empty(), List.of(), PedestalRecipeTier.BASIC,
-				List.of(IngredientStack.of(colorable)),
+				List.of(IngredientStack.of(colorable), IngredientStack.of(Ingredient.of(SpectralDecorationsItemTags.PIGMENTS))),
 				Map.of(),
 				ItemStack.EMPTY,
-				0F, 120, false, false);
+				0F, 120, false, true);
 	}
 	
 	public abstract boolean testColorable(ItemStack stack);

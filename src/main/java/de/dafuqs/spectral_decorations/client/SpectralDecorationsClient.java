@@ -27,6 +27,7 @@ public class SpectralDecorationsClient {
 		for (SpectralDecorationsBlocks.PropertyHolder entry : SpectralDecorationsBlocks.BLOCK_TYPE_HOLDER) {
 			switch (entry.type()) {
 				case LANTERN -> ItemBlockRenderTypes.setRenderLayer(entry.block().get(), RenderType.cutout());
+				case PLUSHIE -> ItemBlockRenderTypes.setRenderLayer(entry.block().get(), RenderType.cutout());
 				case LIGHT -> ItemBlockRenderTypes.setRenderLayer(entry.block().get(), RenderType.translucent());
 			}
 		}

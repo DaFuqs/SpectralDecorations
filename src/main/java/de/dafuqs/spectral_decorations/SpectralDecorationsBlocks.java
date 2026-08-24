@@ -26,6 +26,8 @@ public class SpectralDecorationsBlocks {
 	public static void register(IEventBus modBus) {
 		REGISTRAR.register(modBus);
 		
+		registerBlockWithItem(ItemGroupIDs.SUBTAB_DECORATION, "kindling_plushie", () -> new CuddlyBlock(BlockBehaviour.Properties.of().strength(2.0F, 3.0F).sound(SoundType.WOOL)), new Item.Properties(), Type.PLUSHIE);
+		
 		for (VanillaWood wood : VanillaWood.values()) {
 			String name = wood.getName();
 			MapColor mapColor = wood.getMapColor();
@@ -127,7 +129,8 @@ public class SpectralDecorationsBlocks {
 		RESPLENDENT_CUSHION,
 		RESPLENDENT_CARPET,
 		RESPLENDENT_BED,
-		TUBING
+		TUBING,
+		PLUSHIE
 	}
 	
 	public record PropertyHolder(DeferredBlock<?> block, Type type) {
