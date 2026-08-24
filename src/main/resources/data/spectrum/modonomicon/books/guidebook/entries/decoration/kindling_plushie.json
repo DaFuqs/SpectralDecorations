@@ -1,0 +1,30 @@
+{
+  "name": "block.spectral_decorations.kindling_plushie",
+  "description": "book.spectral_decorations.added_by_spectral_decorations",
+
+  "condition": {
+    "type": "modonomicon:advancement",
+    "advancement_id": "spectral_decorations:pluck_colored_resplendent_feather"
+  },
+  "icon": "spectral_decorations:kindling_plushie",
+  "category": "spectrum:decoration",
+  "hide_while_locked": true,
+  "parents": [],
+  "background_u_index": 0,
+  "background_v_index": 0,
+  "x": 13,
+  "y": 5,
+  "pages": [
+    {
+      "type": "modonomicon:text",
+      "title": "block.spectral_decorations.kindling_plushie",
+      "text": "book.spectrum.guidebook.kindling_plushie.about.text"
+    },
+    {
+      "type": "spectrum:fusion_shrine_crafting",
+      "title": "container.spectrum.rei.fusion_recipe",
+      "recipe_id": "spectral_decorations:fusion_shrine/kindling_plushie",
+      "text": "book.spectrum.guidebook.kindling_plushie.recipe.text"
+    }
+  ]
+}
