@@ -1,0 +1,16 @@
+{
+  "values": {
+    "spectral_decorations:copper_tubing": {
+      "waxed": "spectral_decorations:waxed_copper_tubing"
+    },
+    "spectral_decorations:exposed_copper_tubing": {
+      "waxed": "spectral_decorations:waxed_exposed_copper_tubing"
+    },
+    "spectral_decorations:weathered_copper_tubing": {
+      "waxed": "spectral_decorations:waxed_weathered_copper_tubing"
+    },
+      "spectral_decorations:oxidized_copper_tubing": {
+      "waxed": "spectral_decorations:waxed_oxidized_copper_tubing"
+    }
+  }
+}
