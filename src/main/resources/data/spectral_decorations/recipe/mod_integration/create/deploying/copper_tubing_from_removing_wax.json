@@ -1,0 +1,23 @@
+{
+  "type": "create:deploying",
+  "ingredients": [
+    {
+      "item": "spectral_decorations:waxed_copper_tubing"
+    },
+    {
+      "tag": "minecraft:axes"
+    }
+  ],
+  "keep_held_item": true,
+  "results": [
+    {
+      "id": "spectral_decorations:copper_tubing"
+    }
+  ],
+  "neoforge:conditions": [
+    {
+      "type": "spectrum:integration_pack_active",
+      "integration_pack": "create"
+    }
+  ]
+}
