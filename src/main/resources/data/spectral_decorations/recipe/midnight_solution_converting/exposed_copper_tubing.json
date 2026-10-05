@@ -1,0 +1,12 @@
+{
+  "type": "spectrum:midnight_solution_converting",
+  "ingredient": [
+    {
+      "item": "spectral_decorations:copper_tubing"
+    }
+  ],
+  "result": {
+    "id": "spectral_decorations:exposed_copper_tubing",
+    "count": 1
+  }
+}

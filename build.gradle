@@ -96,11 +96,17 @@ dependencies {
 		case "disabled": break
 		default: println("Unknown recipe viewer specified: $recipe_viewer. Must be EMI, REI or disabled.")
 	}
+
+	// Mod Compat
+	/*implementation*/ /*runtimeOnly*/ compileOnly("maven.modrinth:create:${project.create_version}") { transitive = false }
+
+	// Datagen dependencies
+	compileOnly("maven.modrinth:create:${project.create_version}")
 }
 
 jar {
 	from("LICENSE") {
-		rename { "${it}_${project.archivesBaseName}" }
+		rename { "${it}_${project.archives_base_name}" }
 	}
 }
 
